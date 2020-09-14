@@ -5,9 +5,5 @@ import org.junit.jupiter.api.Test;
 
 class ProjectAppClientTest {
 
-    @org.junit.jupiter.api.Test
-    void logBasicInfo() {
-        ProjectAppClient client = new ProjectAppClient();
-        client.logBasicInfo();
-    }
+
 }
