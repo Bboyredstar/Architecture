@@ -11,15 +11,11 @@ import static ru.sfedu.my_pckg.Constants.SOURCE;
 import static ru.sfedu.my_pckg.utils.ConfigurationUtil.getConfigurationEntry;
 
 public class ProjectAppClient {
+
 //    logger
     private static Logger log = LogManager.getLogger(ProjectAppClient.class);
 //    initialization logger
-    public static void main (String []args) throws IOException {
-        ProjectAppClient project = new ProjectAppClient();
-        project.logBasicInfo();
-
-    }
-    public ProjectAppClient(){
+    public  ProjectAppClient(){
         log.debug("ProjectApp: Starting application");
     }
     public void logBasicInfo() throws IOException {
@@ -32,8 +28,10 @@ public class ProjectAppClient {
         log.info("Java Class :" + System.getProperty("java.class.path"));
         log.info("Java Library: " + System.getProperty("java.library.path"));
         log.info("Test INFO logging.");
-        System.out.println(getConfigurationEntry(SOURCE));
+        log.info(getConfigurationEntry(SOURCE));
     }
 
-
+    public static void main(String[] args){
+        log.debug("NAME");
+    }
 }

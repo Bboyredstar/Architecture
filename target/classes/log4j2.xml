@@ -5,11 +5,11 @@
       <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} %-5p %c{1}:%L - %m%n"></PatternLayout>
     </Console>
     <RollingFile name="RollingFile" fileName="./src/main/resources/logs/app.log"
-    filePattern="logs/$${date:yyyy-MM}/app-%d{dd-MM-yyyy}-%i.log.gz"
+    filePattern="logs/$${date:yyyy-MM}/app-%d{dd-MM-yyyy}-%i.log.zip"
     immediateFlush="true" append="true"
     >
       <PatternLayout>
-        <Pattern>%d{dd.MM:mm.HH.ss} %5p\t%c:%L - %m%n</Pattern>
+        <Pattern>%d{MM-dd-yyyy HH:mm:ss,SSS} %-5p %c{1}:%L - %m%n</Pattern>
       </PatternLayout>
       <Policies>
         <TimeBasedTriggeringPolicy/>
