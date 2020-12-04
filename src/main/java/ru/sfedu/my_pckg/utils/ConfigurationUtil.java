@@ -1,5 +1,9 @@
 package ru.sfedu.my_pckg.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import ru.sfedu.my_pckg.ProjectAppClient;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +17,8 @@ import java.util.Properties;
  * @author Boris Jmailov
  */
 public class ConfigurationUtil {
-
+    public static Logger log =  LogManager.getLogger(ConfigurationUtil .class);
+    private static final String USER_CONFIG_PATH = System.getProperty("enviroment");
     private static final String DEFAULT_CONFIG_PATH = "./src/main/resources/enviroment.properties";
     private static final Properties configuration = new Properties();
     /**
@@ -34,15 +39,17 @@ public class ConfigurationUtil {
      * @throws IOException In case of the configuration file read failure
      */
     private static void loadConfiguration() throws IOException{
-        File nf = new File(DEFAULT_CONFIG_PATH);
-        InputStream in = new FileInputStream(nf);// DEFAULT_CONFIG_PATH.getClass().getResourceAsStream(DEFAULT_CONFIG_PATH);
-        try {
+        File nf;
+        // DEFAULT_CONFIG_PATH.getClass().getResourceAsStream(DEFAULT_CONFIG_PATH);
+        nf = (USER_CONFIG_PATH ==null) ? new File(DEFAULT_CONFIG_PATH) : new File(USER_CONFIG_PATH);
+        log.info("Config path: " + nf);
+        try (InputStream in = new FileInputStream(nf)) {
             configuration.load(in);
         } catch (IOException ex) {
+            log.error(ex);
             throw new IOException(ex);
-        } finally{
-            in.close();
         }
+
     }
     /**
      * Gets configuration entry value

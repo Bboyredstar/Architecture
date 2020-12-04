@@ -12,7 +12,7 @@
 
     <build>
 <!--      <mainClass>ru.sfedu.my_pckg </mainClass>-->
-      <finalName>Project</finalName>
+      <finalName>App</finalName>
         <plugins>
 
             <plugin>
@@ -75,6 +75,11 @@
         <artifactId>junit-jupiter-api</artifactId>
         <version>5.7.0-RC1</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.opencsv</groupId>
+        <artifactId>opencsv</artifactId>
+        <version>5.3</version>
       </dependency>
     </dependencies>
 

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration  strict="true" name="XMLConfigTest"
+               packages="org.apache.logging.log4j.test">
+  <Properties>
+    <Property name="filename">src\main\resources\logs\logs.log</Property>
+  </Properties>
   <Appenders>
-    <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{dd-MM-yyyy HH:mm:ss} %-5p %c{1}:%L - %m%n"></PatternLayout>
-    </Console>
-    <RollingFile name="RollingFile" fileName="./src/main/resources/logs/app.log"
-    filePattern="logs/$${date:yyyy-MM}/app-%d{dd-MM-yyyy}-%i.log.zip"
-    immediateFlush="true" append="true"
-    >
-      <PatternLayout>
-        <Pattern>%d{MM-dd-yyyy HH:mm:ss,SSS} %-5p %c{1}:%L - %m%n</Pattern>
-      </PatternLayout>
-      <Policies>
-        <TimeBasedTriggeringPolicy/>
-        <SizeBasedTriggeringPolicy size="500KB"/>
-      </Policies>
-    </RollingFile>
+    <Appender type="Console" name="SYSTEM_OUT">
+      <Layout type="PatternLayout" pattern="%d{yyyy-MM-dd HH:mm:ss} [ %-5p] %c{1}:%L - %m%n" />
+    </Appender>
+    <Appender type="File" name="File" fileName="${filename}">
+      <Layout type="PatternLayout">
+        <Pattern>%d{MM.dd:HH.mm.ss} %5p\t%c:%L - %m%n</Pattern>
+      </Layout>
+    </Appender>
   </Appenders>
+
   <Loggers>
+
     <Root level="debug">
-      <AppenderRef ref="Console"/>
-      <AppenderRef ref="RollingFile"/>
+      <AppenderRef ref="SYSTEM_OUT"/>
+      <AppenderRef ref="File"/>
     </Root>
   </Loggers>
+
 </Configuration>
