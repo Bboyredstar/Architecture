@@ -1,6 +1,6 @@
 package ru.sfedu.my_pckg.beans;
-
-import com.sun.corba.se.spi.ior.ObjectKey;
+import com.opencsv.bean.CsvBindByName;
+import ru.sfedu.my_pckg.enums.UserType;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -8,10 +8,13 @@ import java.util.Objects;
 /**
  * The type Student.
  */
-public class Student extends User implements Serializable {
+public class Student extends User {
+    @CsvBindByName
     private String preferences;
 
-    public Student () { };
+    public Student () {
+        super.setType(UserType.STUDENT);
+    };
     /**
      * Gets preferences.
      *
@@ -57,7 +60,6 @@ public class Student extends User implements Serializable {
         if (!getEmail().equals(newStudent.getEmail())) return false;
         if (getAge()!= newStudent.getAge()) return false;
         if (!getCountry().equals(newStudent.getCountry())) return false;
-        if (!getPreferences().equals(newStudent.getPreferences())) return false;
-        return true;
+        return getPreferences().equals(newStudent.getPreferences());
     }
 }

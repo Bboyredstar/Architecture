@@ -1,22 +1,33 @@
 package ru.sfedu.my_pckg.beans;
 
 
-import java.util.*;
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvCustomBindByName;
+import ru.sfedu.my_pckg.utils.csvConverters.IdTransformer;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 
 /**
  * Class CourseActivity
  */
-public class CourseActivity {
+public class CourseActivity implements Serializable{
 
   //
   // Fields
   //
-
+  @CsvBindByName
   private long id;
+  @CsvBindByName
   private long courseId;
-  private ArrayList <Long> questionsId;
+  @CsvCustomBindByName(column = "questions", converter = IdTransformer.class)
+  private ArrayList<Long> questionsId;
+  @CsvBindByName
   private long review;
+  @CsvBindByName
   private long student;
 
   //
@@ -116,5 +127,32 @@ public class CourseActivity {
   //
   // Other methods
   //
+  @Override
+  public String toString(){
+    return " CourseActivity : { "+
+            "\nid: " + getId() +
+            "\ncourseId: " + getCourse() +
+            "\nquestions: " + questionsId.stream().map(Objects::toString).collect(Collectors.joining(" ,"))+
+            "\nreview: " + getReview() +
+            "\nstudent: " + getStudent() +
+            "\n}";
+  }
+  @Override
+  public int hashCode(){
+    return Objects.hash(getId(),getCourse(),
+            questionsId.stream().map(Objects::toString).collect(Collectors.joining(" ,")),
+            getReview(),getStudent());
+  }
 
+  @Override
+  public boolean equals(Object Obj){
+    if (this == Obj) return true;
+    if (Obj == null || getClass() != Obj.getClass()) return false;
+    CourseActivity course = (CourseActivity) Obj;
+    if (getId() != course.getId()) return false;
+    if (getCourse() != course.getCourse()) return false;
+    if (!getQuestion().equals(course.getQuestion())) return false;
+    if (getReview() != course.getReview()) return false;
+    return getStudent() == course.getStudent();
+  }
 }

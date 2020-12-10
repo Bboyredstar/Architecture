@@ -1,15 +1,23 @@
 package ru.sfedu.my_pckg.beans;
 
+import com.opencsv.bean.CsvBindByName;
+import ru.sfedu.my_pckg.enums.UserType;
+
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * The type Teacher.
  */
-public class Teacher extends User{
+public class Teacher extends User  {
+    @CsvBindByName
     private String competence;
+    @CsvBindByName
     private int experience;
 
-    public Teacher () { };
+    public Teacher () {
+        super.setType(UserType.TEACHER);
+    };
     /**
      * Gets competence.
      *
@@ -55,8 +63,8 @@ public class Teacher extends User{
                 "\nemail: " + getEmail() +
                 "\nage: " + getAge()+
                 "\ncountry: " + getCountry()+
-                "\ncompetence" + getCompetence() +
-                "\nexperience" + getExperience() +
+                "\ncompetence: " + getCompetence() +
+                "\nexperience: " + getExperience() +
                 "\n}";
     }
     @Override
@@ -79,8 +87,7 @@ public class Teacher extends User{
         if (getAge()!= newTeacher.getAge()) return false;
         if (!getCountry().equals(newTeacher.getCountry())) return false;
         if (!getCompetence().equals(newTeacher.getCompetence())) return false;
-        if (getExperience()!= newTeacher.getExperience()) return false;
-        return true;
+        return getExperience() == newTeacher.getExperience();
     }
 
 

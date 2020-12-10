@@ -1,3 +1,16 @@
 C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\Constants.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\schema\BaseClass.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Course.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\enums\UserType.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Question.java
 C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\utils\ConfigurationUtil.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\helpers\Helper.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\api\DataProviderCsv.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Answer.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Teacher.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\CourseActivity.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Review.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\User.java
 C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\ProjectAppClient.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Section.java
+C:\Users\mbdoy\Desktop\ProjectApp\src\main\java\ru\sfedu\my_pckg\beans\Student.java

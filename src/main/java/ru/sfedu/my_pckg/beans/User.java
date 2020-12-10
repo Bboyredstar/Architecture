@@ -1,15 +1,30 @@
 package ru.sfedu.my_pckg.beans;
 
+import com.opencsv.bean.CsvBindByName;
+import ru.sfedu.my_pckg.enums.UserType;
+
+
+import java.io.Serializable;
+
 /**
  * The type User.
  */
-public abstract class User{
+public class User implements Serializable {
+    @CsvBindByName
     private long id;
+    @CsvBindByName
     private String firstName;
+    @CsvBindByName
     private String secondName;
+    @CsvBindByName
     private String email;
+    @CsvBindByName
     private int age;
+    @CsvBindByName
     private String country;
+    private UserType type;
+
+
 
     /**
      * Gets id.
@@ -119,10 +134,11 @@ public abstract class User{
         this.country = country;
     }
 
+    public UserType getType() {
+        return type;
+    }
 
-
-
-
-
-
+    public void setType(UserType type) {
+        this.type = type;
+    }
 }

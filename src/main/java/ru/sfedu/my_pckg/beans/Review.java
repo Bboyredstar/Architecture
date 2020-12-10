@@ -1,18 +1,24 @@
 package ru.sfedu.my_pckg.beans;
 
+import com.opencsv.bean.CsvBindByName;
+
+
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * Class Review
  */
-public class Review {
+public class Review implements Serializable {
 
   //
   // Fields
   //
-
+  @CsvBindByName
   private long id;
+  @CsvBindByName
   private int rating;
+  @CsvBindByName
   private String comment;
   
   //

@@ -68,3 +68,1251 @@
 12.04:19.32.02  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - John
 12.04:19.32.02  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - null
 12.04:19.32.02  INFO	ru.sfedu.my_pckg.ProjectAppClient:36 - null
+12.04:20.06.15  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:20.06.15  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - John
+12.04:20.06.15  INFO	ru.sfedu.my_pckg.ProjectAppClient:35 - null
+12.04:20.06.15  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - null
+12.04:20.08.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:20.08.55  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - John
+12.04:20.08.55  INFO	ru.sfedu.my_pckg.ProjectAppClient:35 - null
+12.04:20.08.55  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - null
+12.04:20.14.04  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:20.14.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - John
+12.04:20.14.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:35 - null
+12.04:20.14.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - null
+12.04:21.00.39  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:21.00.39  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - John
+12.04:21.00.39  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - null
+12.04:21.00.39  INFO	ru.sfedu.my_pckg.ProjectAppClient:40 - null
+12.04:21.02.30  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:21.02.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - John
+12.04:21.02.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - null
+12.04:21.02.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:40 - null
+12.04:21.02.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:51 - 86997722
+12.04:23.57.42  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.04:23.57.42  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - John
+12.04:23.57.42  INFO	ru.sfedu.my_pckg.ProjectAppClient:42 - true
+12.05:11.36.14  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:11.36.14  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - John
+12.05:12.45.30  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:12.45.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - John
+12.05:12.45.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:40 - ./src/main/resources/data/csv/
+12.05:13.17.30  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:13.17.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - John
+12.05:13.17.30  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:30 - createPath path to csv files: ./src/main/resources/data/csv/
+12.05:13.17.30  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:31 - createPath files extension: .csv
+12.05:13.17.30  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:39 - File: ./src/main/resources/data/csv/student.csvnot exist!
+12.05:13.19.49  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:13.19.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - John
+12.05:13.19.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:30 - createPath path to csv files: ./src/main/resources/data/csv/
+12.05:13.19.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:31 - createPath files extension: .csv
+12.05:13.19.49  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:39 - File: ./src/main/resources/data/csv/student.csv is not exist!
+12.05:13.19.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:43 - File: ./src/main/resources/data/csv/student.csvwas created
+12.05:13.20.14  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:13.20.14  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - John
+12.05:13.20.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:30 - createPath path to csv files: ./src/main/resources/data/csv/
+12.05:13.20.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:31 - createPath files extension: .csv
+12.05:13.20.34  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:13.20.34  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - John
+12.05:13.20.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:30 - createPath path to csv files: ./src/main/resources/data/csv/
+12.05:13.20.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:31 - createPath files extension: .csv
+12.05:13.20.34  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:39 - File: ./src/main/resources/data/csv/student.csv is not exist!
+12.05:13.20.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:43 - File: ./src/main/resources/data/csv/student.csv was created
+12.05:13.20.39  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.05:13.20.39  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - John
+12.05:13.20.39  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:30 - createPath path to csv files: ./src/main/resources/data/csv/
+12.05:13.20.39  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:31 - createPath files extension: .csv
+12.06:19.29.15 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.29.15 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.31.11 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.31.11 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.32.05  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.32.05  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.32.05 DEBUG	ru.sfedu.my_pckg.ProjectAppClient:29 - JRE version 1.8.0_261
+12.06:19.32.05 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.32.05 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.32.05  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.32.05  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.32.05  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.32.58 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.32.58 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.35.27  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.35.27  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.35.27 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.35.27 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.35.27  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.35.27  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.35.27  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.36.25  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.06:19.36.25  INFO	ru.sfedu.my_pckg.ProjectAppClient:39 - John
+12.06:19.36.25  INFO	ru.sfedu.my_pckg.ProjectAppClient:40 - null
+12.06:19.37.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.37.04  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.37.04 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jre1.8.0_261
+12.06:19.37.04 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.37.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :./target/App.jar
+12.06:19.37.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.37.04  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.38.17  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.38.17  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.38.17 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jre1.8.0_261
+12.06:19.38.17 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.38.17  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :./target/App.jar
+12.06:19.38.17  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.38.17  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.38.36  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.38.36  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.38.36 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jre1.8.0_261
+12.06:19.38.36 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.38.36  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :./target/App.jar
+12.06:19.38.36  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.38.36  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.43.44  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.43.44  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.43.44 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.43.44 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.43.44  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.43.44  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.43.44  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.43.44  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - null
+12.06:19.44.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.44.30  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.44.30 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.44.30 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.44.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.44.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.44.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.44.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - null
+12.06:19.45.38  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.45.38  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.45.38 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.45.38 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.45.38  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.45.38  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.45.38  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.45.38  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - null
+12.06:19.46.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:26 - Launching application:
+12.06:19.46.49  WARN	ru.sfedu.my_pckg.ProjectAppClient:27 - Operating System Windows 10 10.0
+12.06:19.46.49 FATAL	ru.sfedu.my_pckg.ProjectAppClient:30 - Java launched from C:\Program Files\Java\jdk1.8.0_261\jre
+12.06:19.46.49 ERROR	ru.sfedu.my_pckg.ProjectAppClient:31 - User Home Directory: C:\Users\mbdoy
+12.06:19.46.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:32 - Java Class :C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Users\mbdoy\Desktop\ProjectApp\target\classes;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\mbdoy\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\mbdoy\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\mbdoy\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\mbdoy\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mbdoy\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\mbdoy\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\lib\idea_rt.jar
+12.06:19.46.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:33 - Java Library: C:\Program Files\Java\jdk1.8.0_261\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\mbdoy\AppData\Local\Programs\Python\Python37\;C:\Users\mbdoy\AppData\Local\Microsoft\WindowsApps;C:\Users\mbdoy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mbdoy\AppData\Roaming\npm;C:\Users\mbdoy\AppData\Local\Yarn\bin;C:\Users\mbdoy\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.3\bin;;.
+12.06:19.46.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - Test INFO logging.
+12.06:19.46.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - null
+12.06:19.49.30  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.06:19.49.30  INFO	ru.sfedu.my_pckg.ProjectAppClient:42 - John
+12.06:19.51.53  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: C:\Users\mbdoy\Desktop\enviroment.properties
+12.06:19.51.53  INFO	ru.sfedu.my_pckg.ProjectAppClient:42 - "NAME"
+12.08:18.25.57  INFO	ru.sfedu.my_pckg.ProjectAppClient:42 - https://www.youtube.io?video=VrMODgZIZm
+12.08:18.25.57  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - https://www.youtube.su?video=eePRQhVKXo
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:20 - On test TeacherInsertSuccess
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:45 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath files extension: .csv
+12.08:19.44.19  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:54 - File: ./src/main/resources/data/csv/teacher.csv is not exist!
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:58 - File: ./src/main/resources/data/csv/teacher.csv was created
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:74 - Bean to CSV Creating process success
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:80 - Data was successfully inserted!
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:45 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:19.44.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath files extension: .csv
+12.08:19.44.19 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:97 - java.util.NoSuchElementException: No value present
+12.08:19.44.19 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:98 - Object with id: 11 not +found!
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:20 - On test TeacherInsertSuccess
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:47 - createPath files extension: .csv
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:75 - Bean to CSV Creating process success
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:81 - Data was successfully inserted!
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:19.58.48  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:47 - createPath files extension: .csv
+12.08:19.58.48 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:114 - java.util.NoSuchElementException: No value present
+12.08:19.58.48 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:115 - Object with id: 11 not +found!
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:20 - On test TeacherInsertSuccess
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:47 - createPath files extension: .csv
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:75 - Bean to CSV Creating process success
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:81 - Data was successfully inserted!
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:20.00.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:47 - createPath files extension: .csv
+12.08:20.00.41 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:114 - java.util.NoSuchElementException: No value present
+12.08:20.00.41 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:115 - Object with id: 12 not +found!
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:41 - On test TeacherInsertSuccess
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:45 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath files extension: .csv
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:74 - Bean to CSV Creating process success
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:80 - Data was successfully inserted!
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:45 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:20.15.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:46 - createPath files extension: .csv
+12.08:20.15.19 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:104 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:20.15.19 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:115 - java.util.NoSuchElementException: No value present
+12.08:20.15.19 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:116 - Object with id: 4 not +found!
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:62 - On test getTeacherByIdSuccess
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:113 - Data was successfully inserted!
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:22.25.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.08:22.25.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:152 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:74 - On test getTeacherByIdSuccess
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:113 - Data was successfully inserted!
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.08:22.28.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:22.28.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:162 - Teacher with id: -2 was found!
+12.08:22.28.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:165 - java.util.NoSuchElementException: No value present
+12.08:22.28.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - Object with id: -2 not found!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:24 - On test TeacherInsertSuccess
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 12 was found!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:66 - On test getTeacherByIdSuccess
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 12 was found!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:78 - On test getTeacherByIdFail
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: -2 was found!
+12.08:23.02.55 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - java.util.NoSuchElementException: No value present
+12.08:23.02.55 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:167 - Object with id: -2 not found!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:45 - On test TeacherInsertSuccess
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.02.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.02.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 4 was found!
+12.08:23.02.55 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - java.util.NoSuchElementException: No value present
+12.08:23.02.55 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:167 - Object with id: 4 not found!
+12.08:23.07.16  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.07.16  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.07.16  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.07.16  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.07.16  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:77 - File: ./src/main/resources/data/csv/section.csv is not exist!
+12.08:23.07.16  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:81 - File: ./src/main/resources/data/csv/section.csv was created
+12.08:23.08.06  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.08.06  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.08.06  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.08.06  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.09.08  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.09.08  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.09.08  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.09.08  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.10.27  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.10.27  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.10.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.10.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.11.16  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.11.16  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.11.16  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.11.16  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.12.13  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.12.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.12.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.12.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.13.01  INFO	ru.sfedu.my_pckg.ProjectAppClient:54 - ru.sfedu.my_pckg.beans.Section@5cdd8682
+12.08:23.23.10  INFO	ru.sfedu.my_pckg.ProjectAppClient:54 -  Section : { 
+id: 123
+courseId: 123
+name: wzuyS
+description: bTAxvjUaIcIpNhocOXwk
+videos: https://www.edyoda.ru?video=nhCrvwxyAH ,http://www.udemy.ru?video=GbLCYFlwaW ,https://www.udemy.su?video=ZlecTaZPPu ,https://www.edyoda.ru?video=fTIWpRoZKd ,https://www.udemy.io?video=zgMhOdvvxQ ,https://www.youtube.io?video=UceZvPumVf ,http://www.udemy.su?video=QVfZLcUUND ,https://www.youtube.io?video=AmVPDImhPw ,http://www.youtube.ru?video=KoSYHuprrw ,http://www.youtube.ru?video=ofJITIqnwT
+materials: http://www.udemy.su?video=LaLoDrPNSk ,https://www.edyoda.io?video=EIxMFfNciB ,https://www.youtube.com?video=utnTAxwGkI ,https://www.udemy.com?video=LnDIorTDsZ ,https://www.udemy.su?video=kogwNObzAr ,http://www.youtube.io?video=CJOuFhVRIv ,http://www.udemy.su?video=nICfIuTZOu ,http://www.edyoda.io?video=zJaNWJOpcp ,https://www.youtube.ru?video=arXEENkYXc ,http://www.youtube.ru?video=IkSuygIxZG
+}
+12.08:23.23.31  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.23.31  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.23.31  INFO	ru.sfedu.my_pckg.ProjectAppClient:54 -  Section : { 
+id: 123
+courseId: 123
+name: YMJuM
+description: urSyOcDAurBXzWlAmKLj
+videos: http://www.udemy.io?video=XJdtefrMMB ,https://www.udemy.com?video=hTdicAdUqS ,http://www.youtube.su?video=befgEdoXAA ,http://www.udemy.io?video=ocXViKshEo ,http://www.youtube.com?video=pPqhABvvlN ,https://www.youtube.com?video=QldjGaLlio ,http://www.youtube.com?video=PhIxtgXiUE ,https://www.udemy.su?video=nxmuIhAERy ,http://www.edyoda.su?video=ULxqNcwyrk ,https://www.udemy.io?video=djuWmnLcGc
+materials: http://www.udemy.su?video=MbIRjNlaVw ,http://www.edyoda.ru?video=MZEULRIZoO ,https://www.edyoda.com?video=pstlqcXFDO ,http://www.edyoda.su?video=HzcgTcvpKS ,https://www.edyoda.io?video=PpIUkDUmtw ,http://www.youtube.ru?video=FGWBLzUjxL ,http://www.youtube.ru?video=HlzYRsBarP ,http://www.youtube.ru?video=osrlhsKfGF ,https://www.edyoda.ru?video=aHYQDGGywt ,https://www.youtube.com?video=RThyDIddry
+}
+12.08:23.23.31  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.23.31  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.25.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.25.49  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.25.49  INFO	ru.sfedu.my_pckg.ProjectAppClient:53 -  Section : { 
+id: 123
+courseId: 0
+name: aAJVN
+description: IsqakgtqMnHcMGdyyoUi
+videos: https://www.udemy.su?video=URhOGASIXq ,https://www.udemy.io?video=YxGtCVZHKe ,http://www.youtube.com?video=dHVVrHDFXQ ,http://www.youtube.ru?video=MeyLHTNYNV ,https://www.youtube.io?video=yqlEZDKovd ,https://www.udemy.com?video=DWARbottaj ,http://www.udemy.io?video=aUJrBPAVpl ,http://www.edyoda.com?video=XOBjAgiSvu ,https://www.youtube.su?video=mVLfFYSaAD ,http://www.udemy.su?video=gCujZwoXml
+materials: https://www.youtube.su?video=ongoqrgOCe ,https://www.edyoda.io?video=PDIjANahnc ,http://www.youtube.su?video=TUxMYcSJKh ,https://www.youtube.io?video=jKutnVkJbh ,http://www.youtube.ru?video=wtlwOdwwcp ,https://www.youtube.su?video=NMXGGLMgZu ,https://www.edyoda.io?video=eZoFBUENqX ,http://www.udemy.ru?video=ChxEUgSkuZ ,https://www.youtube.com?video=CCBKlGYtml ,http://www.youtube.ru?video=yaMsVBFJWs
+}
+12.08:23.25.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.25.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.ProjectAppClient:43 - On test insertSectionSuccess
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.ProjectAppClient:53 -  Section : { 
+id: 123
+courseId: 0
+name: LBkpU
+description: eBZVOkIZVyqUqXyewcJp
+videos: https://www.udemy.ru?video=egLJHlpjNl ,https://www.edyoda.com?video=zXGwnpRevq ,https://www.edyoda.com?video=vAjOfjNqrL ,https://www.youtube.ru?video=NwVJpxeFdK ,http://www.edyoda.com?video=HJMSjTcIJn ,https://www.edyoda.com?video=aQffWxtYzD ,https://www.udemy.com?video=eQyqHrwibP ,http://www.youtube.su?video=JkjjMlKjuJ ,https://www.udemy.io?video=KLDZpqIBRM ,http://www.youtube.ru?video=NbSGUMXlqU
+materials: https://www.udemy.com?video=XcveoGhQMU ,http://www.youtube.ru?video=WeZdDgxiEg ,https://www.youtube.ru?video=lDZCSpEDwB ,https://www.youtube.ru?video=qpsrUkUVIV ,https://www.youtube.su?video=jTLhiaMYLQ ,https://www.udemy.com?video=CMvjbAFaDc ,http://www.edyoda.ru?video=JKUFpUzeMc ,https://www.youtube.io?video=rqkpDeMqFB ,https://www.udemy.ru?video=tLxeoLHUMh ,https://www.edyoda.su?video=uHgsJiRZux
+}
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.27.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:24 - On test TeacherInsertSuccess
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 12 was found!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:66 - On test getTeacherByIdSuccess
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 12 was found!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:78 - On test getTeacherByIdFail
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: -2 was found!
+12.08:23.29.14 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - java.util.NoSuchElementException: No value present
+12.08:23.29.14 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:167 - Object with id: -2 not found!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:45 - On test TeacherInsertSuccess
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.14 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.08:23.29.14  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Teacher with id: 4 was found!
+12.08:23.29.14 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - java.util.NoSuchElementException: No value present
+12.08:23.29.14 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:167 - Object with id: 4 not found!
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:108 - Bean to CSV Creating process success
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:114 - Data was successfully inserted!
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.08:23.29.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.08:23.29.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:175 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 33014125
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 33266202
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 61518497
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 26554046
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 16866801
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 20376659
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 24743400
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 65447657
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 95339217
+12.09:20.01.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 36179578
+12.09:21.05.12  INFO	ru.sfedu.my_pckg.ProjectAppClient:44 - [sadad, asdasd]
+12.09:21.10.26  INFO	ru.sfedu.my_pckg.ProjectAppClient:46 - ad | asda
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.11.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.11.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 42517260 was found!
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.19.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.19.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.23.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.23.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.24.32 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.24.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 160376808 was found!
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.27.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.27.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 25220619 was found!
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.28.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.28.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 17813509 was found!
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.29.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.29.18  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 16419875 was found!
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.com?video=lFiKrzfczo | https://www.youtube.io?video=CEnoDWtdoJ | http://www.youtube.com?video=lJSOsZLZmY | http://www.youtube.io?video=yNkDlbwxGf | https://www.youtube.su?video=aAEzvfbBvU | https://www.udemy.io?video=OkGWRdQUCB | http://www.youtube.com?video=ozPmhcZgAc | http://www.udemy.com?video=ipeZXAFVvp | https://www.udemy.com?video=oFiMOcUBqt | http://www.youtube.com?video=XZpZgOpLqc
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - https://www.youtube.su?video=GGqiBRjeSh | https://www.youtube.io?video=NJAGPbNRmS | http://www.youtube.ru?video=atNCUeMZuj | http://www.udemy.su?video=pyXiEzdRwh | https://www.youtube.com?video=QrlDYfhvBT | http://www.udemy.su?video=JZRuatJNug | http://www.udemy.com?video=UHTremgtzU | https://www.edyoda.io?video=bcdwyAVuAf | https://www.youtube.su?video=jwMIGTuFjZ | http://www.youtube.su?video=mcbKtHDebb
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.31.12 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.com?video=lFiKrzfczo | https://www.youtube.io?video=CEnoDWtdoJ | http://www.youtube.com?video=lJSOsZLZmY | http://www.youtube.io?video=yNkDlbwxGf | https://www.youtube.su?video=aAEzvfbBvU | https://www.udemy.io?video=OkGWRdQUCB | http://www.youtube.com?video=ozPmhcZgAc | http://www.udemy.com?video=ipeZXAFVvp | https://www.udemy.com?video=oFiMOcUBqt | http://www.youtube.com?video=XZpZgOpLqc
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.com?video=lFiKrzfczo | https://www.youtube.io?video=CEnoDWtdoJ | http://www.youtube.com?video=lJSOsZLZmY | http://www.youtube.io?video=yNkDlbwxGf | https://www.youtube.su?video=aAEzvfbBvU | https://www.udemy.io?video=OkGWRdQUCB | http://www.youtube.com?video=ozPmhcZgAc | http://www.udemy.com?video=ipeZXAFVvp | https://www.udemy.com?video=oFiMOcUBqt | http://www.youtube.com?video=XZpZgOpLqc
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - https://www.youtube.su?video=GGqiBRjeSh | https://www.youtube.io?video=NJAGPbNRmS | http://www.youtube.ru?video=atNCUeMZuj | http://www.udemy.su?video=pyXiEzdRwh | https://www.youtube.com?video=QrlDYfhvBT | http://www.udemy.su?video=JZRuatJNug | http://www.udemy.com?video=UHTremgtzU | https://www.edyoda.io?video=bcdwyAVuAf | https://www.youtube.su?video=jwMIGTuFjZ | http://www.youtube.su?video=mcbKtHDebb
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - https://www.youtube.su?video=GGqiBRjeSh | https://www.youtube.io?video=NJAGPbNRmS | http://www.youtube.ru?video=atNCUeMZuj | http://www.udemy.su?video=pyXiEzdRwh | https://www.youtube.com?video=QrlDYfhvBT | http://www.udemy.su?video=JZRuatJNug | http://www.udemy.com?video=UHTremgtzU | https://www.edyoda.io?video=bcdwyAVuAf | https://www.youtube.su?video=jwMIGTuFjZ | http://www.youtube.su?video=mcbKtHDebb
+12.09:21.31.12  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 43812717 was found!
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.edyoda.io?video=VfLOoyeHdc | http://www.youtube.com?video=pRnjzKdiYg | http://www.edyoda.su?video=LfTfjFUksZ | http://www.udemy.ru?video=zoGoNxqxUK | https://www.udemy.su?video=PRjACsPVIp | http://www.edyoda.com?video=LfKkChyznJ | http://www.udemy.ru?video=ixqaWshQkp | http://www.youtube.com?video=lkUskfKsqv | https://www.youtube.io?video=lnZGeADpvp | https://www.youtube.com?video=eILgFpaGFc
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.com?video=AZvmBCXcFz | http://www.udemy.su?video=jWFMcGwRfb | http://www.edyoda.ru?video=eIVPDtYkFK | https://www.udemy.ru?video=hvIDFUkUCn | http://www.edyoda.com?video=GUGLwBVRaU | http://www.edyoda.com?video=EJQfytBFnz | https://www.youtube.ru?video=zbCLZMLLYP | https://www.udemy.su?video=NyTqbySHWK | https://www.edyoda.com?video=HdhDYhMZEn | https://www.edyoda.io?video=YFfTTOcdSi
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.31.51 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.edyoda.io?video=VfLOoyeHdc | http://www.youtube.com?video=pRnjzKdiYg | http://www.edyoda.su?video=LfTfjFUksZ | http://www.udemy.ru?video=zoGoNxqxUK | https://www.udemy.su?video=PRjACsPVIp | http://www.edyoda.com?video=LfKkChyznJ | http://www.udemy.ru?video=ixqaWshQkp | http://www.youtube.com?video=lkUskfKsqv | https://www.youtube.io?video=lnZGeADpvp | https://www.youtube.com?video=eILgFpaGFc
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.edyoda.io?video=VfLOoyeHdc, |, http://www.youtube.com?video=pRnjzKdiYg, |, http://www.edyoda.su?video=LfTfjFUksZ, |, http://www.udemy.ru?video=zoGoNxqxUK, |, https://www.udemy.su?video=PRjACsPVIp, |, http://www.edyoda.com?video=LfKkChyznJ, |, http://www.udemy.ru?video=ixqaWshQkp, |, http://www.youtube.com?video=lkUskfKsqv, |, https://www.youtube.io?video=lnZGeADpvp, |, https://www.youtube.com?video=eILgFpaGFc
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.com?video=AZvmBCXcFz | http://www.udemy.su?video=jWFMcGwRfb | http://www.edyoda.ru?video=eIVPDtYkFK | https://www.udemy.ru?video=hvIDFUkUCn | http://www.edyoda.com?video=GUGLwBVRaU | http://www.edyoda.com?video=EJQfytBFnz | https://www.youtube.ru?video=zbCLZMLLYP | https://www.udemy.su?video=NyTqbySHWK | https://www.edyoda.com?video=HdhDYhMZEn | https://www.edyoda.io?video=YFfTTOcdSi
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.com?video=AZvmBCXcFz, |, http://www.udemy.su?video=jWFMcGwRfb, |, http://www.edyoda.ru?video=eIVPDtYkFK, |, https://www.udemy.ru?video=hvIDFUkUCn, |, http://www.edyoda.com?video=GUGLwBVRaU, |, http://www.edyoda.com?video=EJQfytBFnz, |, https://www.youtube.ru?video=zbCLZMLLYP, |, https://www.udemy.su?video=NyTqbySHWK, |, https://www.edyoda.com?video=HdhDYhMZEn, |, https://www.edyoda.io?video=YFfTTOcdSi
+12.09:21.31.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 110103154 was found!
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.com?video=UacQeWtPnQ | https://www.udemy.ru?video=UhGZwBleLE | http://www.youtube.com?video=tMZedRzZpZ | https://www.youtube.ru?video=wYnOTLkGGW | https://www.youtube.ru?video=ISLpEeHuAy | http://www.youtube.io?video=LIbMqDGtbF | http://www.udemy.io?video=OUIuTkXcmf | https://www.udemy.io?video=QlBhBLrSvi | https://www.udemy.su?video=mWvxKobbOz | http://www.udemy.ru?video=XsIxIZZWdI
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.su?video=HiVhlXbGQJ | http://www.youtube.ru?video=aBBzdmncOX | https://www.udemy.io?video=mIuXaNjQSO | http://www.edyoda.io?video=rrPqzhQThi | http://www.edyoda.com?video=WQzJaeoCiu | http://www.edyoda.io?video=bVpevFxWQk | https://www.youtube.com?video=YRGiKKGQbM | https://www.youtube.ru?video=dggCzYzqFY | https://www.youtube.ru?video=VYExDsTgfP | https://www.youtube.io?video=YoyAWIdlTQ
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.32.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.com?video=UacQeWtPnQ | https://www.udemy.ru?video=UhGZwBleLE | http://www.youtube.com?video=tMZedRzZpZ | https://www.youtube.ru?video=wYnOTLkGGW | https://www.youtube.ru?video=ISLpEeHuAy | http://www.youtube.io?video=LIbMqDGtbF | http://www.udemy.io?video=OUIuTkXcmf | https://www.udemy.io?video=QlBhBLrSvi | https://www.udemy.su?video=mWvxKobbOz | http://www.udemy.ru?video=XsIxIZZWdI
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.com?video=UacQeWtPnQ, |, https://www.udemy.ru?video=UhGZwBleLE, |, http://www.youtube.com?video=tMZedRzZpZ, |, https://www.youtube.ru?video=wYnOTLkGGW, |, https://www.youtube.ru?video=ISLpEeHuAy, |, http://www.youtube.io?video=LIbMqDGtbF, |, http://www.udemy.io?video=OUIuTkXcmf, |, https://www.udemy.io?video=QlBhBLrSvi, |, https://www.udemy.su?video=mWvxKobbOz, |, http://www.udemy.ru?video=XsIxIZZWdI
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.su?video=HiVhlXbGQJ | http://www.youtube.ru?video=aBBzdmncOX | https://www.udemy.io?video=mIuXaNjQSO | http://www.edyoda.io?video=rrPqzhQThi | http://www.edyoda.com?video=WQzJaeoCiu | http://www.edyoda.io?video=bVpevFxWQk | https://www.youtube.com?video=YRGiKKGQbM | https://www.youtube.ru?video=dggCzYzqFY | https://www.youtube.ru?video=VYExDsTgfP | https://www.youtube.io?video=YoyAWIdlTQ
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.su?video=HiVhlXbGQJ, |, http://www.youtube.ru?video=aBBzdmncOX, |, https://www.udemy.io?video=mIuXaNjQSO, |, http://www.edyoda.io?video=rrPqzhQThi, |, http://www.edyoda.com?video=WQzJaeoCiu, |, http://www.edyoda.io?video=bVpevFxWQk, |, https://www.youtube.com?video=YRGiKKGQbM, |, https://www.youtube.ru?video=dggCzYzqFY, |, https://www.youtube.ru?video=VYExDsTgfP, |, https://www.youtube.io?video=YoyAWIdlTQ
+12.09:21.32.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 20301823 was found!
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - https://www.youtube.io?video=uXKDNQKjYK | http://www.udemy.su?video=nczfFWDWdC | https://www.youtube.io?video=ngaZKVmuoN | http://www.edyoda.com?video=LVprWxtIuc | https://www.edyoda.com?video=lrEsFqtzFc | http://www.udemy.su?video=EDBQBhtiPF | http://www.youtube.su?video=WUwAOrNJCW | https://www.edyoda.ru?video=TUdTGzSlqh | http://www.udemy.ru?video=cgxBrHFPyp | https://www.youtube.su?video=spAXevEexF
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.com?video=jphmMSZEvF | https://www.youtube.com?video=fOxaCGZyhE | https://www.edyoda.io?video=FFHegxUUgs | http://www.edyoda.io?video=sYArgIMLrU | http://www.edyoda.com?video=fSHIFFrLZC | https://www.edyoda.io?video=yRXhumeRIn | http://www.edyoda.com?video=fUIvYijtUl | https://www.youtube.io?video=fRkrZnSXzh | http://www.youtube.com?video=aICRDPDMFa | https://www.youtube.su?video=TdDYBqOhOk
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.33.24 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - https://www.youtube.io?video=uXKDNQKjYK | http://www.udemy.su?video=nczfFWDWdC | https://www.youtube.io?video=ngaZKVmuoN | http://www.edyoda.com?video=LVprWxtIuc | https://www.edyoda.com?video=lrEsFqtzFc | http://www.udemy.su?video=EDBQBhtiPF | http://www.youtube.su?video=WUwAOrNJCW | https://www.edyoda.ru?video=TUdTGzSlqh | http://www.udemy.ru?video=cgxBrHFPyp | https://www.youtube.su?video=spAXevEexF
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - https://www.youtube.io?video=uXKDNQKjYK sadasd| sadasdhttp://www.udemy.su?video=nczfFWDWdC sadasd| sadasdhttps://www.youtube.io?video=ngaZKVmuoN sadasd| sadasdhttp://www.edyoda.com?video=LVprWxtIuc sadasd| sadasdhttps://www.edyoda.com?video=lrEsFqtzFc sadasd| sadasdhttp://www.udemy.su?video=EDBQBhtiPF sadasd| sadasdhttp://www.youtube.su?video=WUwAOrNJCW sadasd| sadasdhttps://www.edyoda.ru?video=TUdTGzSlqh sadasd| sadasdhttp://www.udemy.ru?video=cgxBrHFPyp sadasd| sadasdhttps://www.youtube.su?video=spAXevEexF
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.com?video=jphmMSZEvF | https://www.youtube.com?video=fOxaCGZyhE | https://www.edyoda.io?video=FFHegxUUgs | http://www.edyoda.io?video=sYArgIMLrU | http://www.edyoda.com?video=fSHIFFrLZC | https://www.edyoda.io?video=yRXhumeRIn | http://www.edyoda.com?video=fUIvYijtUl | https://www.youtube.io?video=fRkrZnSXzh | http://www.youtube.com?video=aICRDPDMFa | https://www.youtube.su?video=TdDYBqOhOk
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.com?video=jphmMSZEvF sadasd| sadasdhttps://www.youtube.com?video=fOxaCGZyhE sadasd| sadasdhttps://www.edyoda.io?video=FFHegxUUgs sadasd| sadasdhttp://www.edyoda.io?video=sYArgIMLrU sadasd| sadasdhttp://www.edyoda.com?video=fSHIFFrLZC sadasd| sadasdhttps://www.edyoda.io?video=yRXhumeRIn sadasd| sadasdhttp://www.edyoda.com?video=fUIvYijtUl sadasd| sadasdhttps://www.youtube.io?video=fRkrZnSXzh sadasd| sadasdhttp://www.youtube.com?video=aICRDPDMFa sadasd| sadasdhttps://www.youtube.su?video=TdDYBqOhOk
+12.09:21.33.24  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 122785496 was found!
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:91 - On test insertSectionSuccess
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - http://www.youtube.com?video=ZMPevJohYW::http://www.youtube.su?video=SUHExUnPRs::http://www.edyoda.com?video=KZuHoxHBLa::https://www.youtube.ru?video=MSvXoKtqwZ::http://www.youtube.com?video=mBOFAenQzE::https://www.edyoda.io?video=uLTlRxInoI::http://www.youtube.su?video=rXbsIUaJVr::https://www.edyoda.ru?video=sRNvnyGccn::http://www.udemy.su?video=XWJEflUFGp::http://www.edyoda.com?video=IoqiSauDXF
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:23 - https://www.youtube.com?video=hAfvrvjQEZ::https://www.youtube.ru?video=yVJQZLFevD::https://www.edyoda.io?video=eXLVwVWWrn::http://www.youtube.com?video=ZetXlLnYUO::http://www.edyoda.su?video=MzQhzCRhBt::http://www.youtube.su?video=ilRVswrLyl::https://www.udemy.io?video=AeVVUDtjAS::https://www.edyoda.ru?video=zPdsueOeby::http://www.edyoda.io?video=eMrwhkkqnm::https://www.edyoda.ru?video=VLfOFzTchX
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.34.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - http://www.youtube.com?video=ZMPevJohYW::http://www.youtube.su?video=SUHExUnPRs::http://www.edyoda.com?video=KZuHoxHBLa::https://www.youtube.ru?video=MSvXoKtqwZ::http://www.youtube.com?video=mBOFAenQzE::https://www.edyoda.io?video=uLTlRxInoI::http://www.youtube.su?video=rXbsIUaJVr::https://www.edyoda.ru?video=sRNvnyGccn::http://www.udemy.su?video=XWJEflUFGp::http://www.edyoda.com?video=IoqiSauDXF
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - http://www.youtube.com?video=ZMPevJohYW http://www.youtube.su?video=SUHExUnPRs http://www.edyoda.com?video=KZuHoxHBLa https://www.youtube.ru?video=MSvXoKtqwZ http://www.youtube.com?video=mBOFAenQzE https://www.edyoda.io?video=uLTlRxInoI http://www.youtube.su?video=rXbsIUaJVr https://www.edyoda.ru?video=sRNvnyGccn http://www.udemy.su?video=XWJEflUFGp http://www.edyoda.com?video=IoqiSauDXF
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:29 - https://www.youtube.com?video=hAfvrvjQEZ::https://www.youtube.ru?video=yVJQZLFevD::https://www.edyoda.io?video=eXLVwVWWrn::http://www.youtube.com?video=ZetXlLnYUO::http://www.edyoda.su?video=MzQhzCRhBt::http://www.youtube.su?video=ilRVswrLyl::https://www.udemy.io?video=AeVVUDtjAS::https://www.edyoda.ru?video=zPdsueOeby::http://www.edyoda.io?video=eMrwhkkqnm::https://www.edyoda.ru?video=VLfOFzTchX
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.utils.csvConverters.IdTransformer:30 - https://www.youtube.com?video=hAfvrvjQEZ https://www.youtube.ru?video=yVJQZLFevD https://www.edyoda.io?video=eXLVwVWWrn http://www.youtube.com?video=ZetXlLnYUO http://www.edyoda.su?video=MzQhzCRhBt http://www.youtube.su?video=ilRVswrLyl https://www.udemy.io?video=AeVVUDtjAS https://www.edyoda.ru?video=zPdsueOeby http://www.edyoda.io?video=eMrwhkkqnm https://www.edyoda.ru?video=VLfOFzTchX
+12.09:21.34.10  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: 18082159 was found!
+12.09:21.44.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:105 - On test insertSectionSuccess
+12.09:21.44.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.44.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.44.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.44.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.09:21.44.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.09:21.44.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.44.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.44.51 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:179 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.44.51  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:188 - Section with id: -1 was found!
+12.09:21.44.51 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:191 - java.util.NoSuchElementException: No value present
+12.09:21.44.51 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:192 - Object with id: -1 not found!
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:107 - On test insertSectionSuccess
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:112 - Data was successfully inserted!
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.09:21.58.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:174 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.09:21.58.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:183 - Section with id: -1 was found!
+12.09:21.58.41 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:186 - java.util.NoSuchElementException: No value present
+12.09:21.58.41 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:187 - Object with id: -1 not found!
+12.09:22.20.00  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:22.20.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:60 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:22.20.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath files extension: .csv
+12.09:22.21.32  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:22.21.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:60 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:22.21.32  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath files extension: .csv
+12.09:22.21.32  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - 0
+12.09:22.22.19  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:22.22.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:60 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:22.22.19  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath files extension: .csv
+12.09:22.22.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - 3
+12.09:22.29.21  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.09:22.29.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:60 - createPath path to csv files: ./src/main/resources/data/csv/
+12.09:22.29.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath files extension: .csv
+12.09:22.29.21  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:75 - File: ./src/main/resources/data/csv/class ru.sfedu.my_pckg.beans.Question.csv is not exist!
+12.09:22.29.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:79 - File: ./src/main/resources/data/csv/class ru.sfedu.my_pckg.beans.Question.csv was created
+12.09:22.29.22  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - 0
+12.10:15.01.32  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.01.32  INFO	ru.sfedu.my_pckg.ProjectAppClient:39 - true
+12.10:15.01.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.01.46  INFO	ru.sfedu.my_pckg.ProjectAppClient:39 - true
+12.10:15.01.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.01.55  INFO	ru.sfedu.my_pckg.ProjectAppClient:39 - false
+12.10:15.07.38  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.10:15.18.28  INFO	ru.sfedu.my_pckg.ProjectAppClient:44 - true
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:15.26.13  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:76 - File: ./src/main/resources/data/csv/Question.csv is not exist!
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:80 - File: ./src/main/resources/data/csv/Question.csv was created
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:111 - Data was successfully inserted!
+12.10:15.26.13  INFO	ru.sfedu.my_pckg.ProjectAppClient:44 - true
+12.10:15.30.06  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:15.30.06  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:15.30.06  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:15.30.06  INFO	ru.sfedu.my_pckg.ProjectAppClient:45 - 0
+12.10:16.05.19  INFO	ru.sfedu.my_pckg.ProjectAppClient:34 - [asdad,asdad,123,asdad,2131313,asdasda,12313,]
+12.10:16.19.47  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.21.17  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.21.17  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:215 - name
+12.10:16.21.17  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:216 - null
+12.10:16.21.17  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:217 - 123
+12.10:16.29.39  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.30.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.32.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.32.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:222 -  CourseActivity : { 
+id: 20431649
+name: null
+description: null
+owner: 123
+owner: 
+}
+12.10:16.41.42  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.41.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.42.15  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.42.57  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.43.22  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.43.22 ERROR	ru.sfedu.my_pckg.ProjectAppClient:40 - java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of ru/sfedu/my_pckg/api/DataProviderCsv.createCourse must not be null
+12.10:16.43.52  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.44.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:16.44.55 ERROR	ru.sfedu.my_pckg.ProjectAppClient:40 - java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of ru/sfedu/my_pckg/api/DataProviderCsv.createCourse must not be null
+12.10:17.18.06  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:17.18.20  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:17.18.20  INFO	ru.sfedu.my_pckg.ProjectAppClient:37 - STUDENT
+12.10:17.40.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:17.40.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:17.40.41  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:17.40.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:254 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:17.41.46  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:76 - File: ./src/main/resources/data/csv/teacher.csv is not exist!
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:80 - File: ./src/main/resources/data/csv/teacher.csv was created
+12.10:17.41.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:255 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:264 - Teacher with id: 132 was found!
+12.10:17.41.46 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:267 - java.util.NoSuchElementException: No value present
+12.10:17.41.46 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:268 - Object with id: 132 not found!
+12.10:17.41.46  INFO	ru.sfedu.my_pckg.ProjectAppClient:35 - false
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.17.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:283 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:292 - Teacher with id: 0 was found!
+12.10:18.17.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:295 - java.util.NoSuchElementException: No value present
+12.10:18.17.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:296 - Object with id: 0 not found!
+12.10:18.17.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:245 - Teacher with id: 0 not exist!
+12.10:18.17.28 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:246 - Creating process error
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.17.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:257 - false
+12.10:18.17.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:264 -  CourseActivity : { 
+id: 16612543
+name: asd
+description: asd
+owner: 0
+students: null
+}
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:70 - On test testInsertStudentSuccess
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.21.33  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:76 - File: ./src/main/resources/data/csv/student.csv is not exist!
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:80 - File: ./src/main/resources/data/csv/student.csv was created
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:105 - Bean to CSV Creating process success
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.21.33 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:18.21.33  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:162 - Student with id: 12 was found!
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.21.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:283 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:292 - Teacher with id: 0 was found!
+12.10:18.21.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:295 - java.util.NoSuchElementException: No value present
+12.10:18.21.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:296 - Object with id: 0 not found!
+12.10:18.21.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:245 - Teacher with id: 0 not exist!
+12.10:18.21.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:246 - Creating process error
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.21.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:162 - Student with id: 12 was found!
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:257 - true
+12.10:18.21.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:264 -  CourseActivity : { 
+id: 82465311
+name: asd
+description: asd
+owner: 0
+students: null
+}
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.27.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:286 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:295 - Teacher with id: 0 was found!
+12.10:18.27.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:298 - java.util.NoSuchElementException: No value present
+12.10:18.27.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:299 - Object with id: 0 not found!
+12.10:18.27.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:245 - Teacher with id: 0 not exist!
+12.10:18.27.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:246 - Creating process error
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.27.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:162 - Student with id: 12 was found!
+12.10:18.27.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:267 -  CourseActivity : { 
+id: 253607816
+name: asd
+description: asd
+owner: 0
+students: null
+}
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.27.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:286 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:295 - Teacher with id: 0 was found!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:298 - java.util.NoSuchElementException: No value present
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:299 - Object with id: 0 not found!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:245 - Teacher with id: 0 not exist!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:246 - Creating process error
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:18.27.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:153 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:18.27.37  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:162 - Student with id: 0 was found!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:165 - java.util.NoSuchElementException: No value present
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - Object with id: 0 not found!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:257 - One of students not exist!
+12.10:18.27.37 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:258 - Creating process error
+12.10:19.47.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test insertSectionFailSuccess
+12.10:19.47.05  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:19.47.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.47.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.47.05  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:77 - File: ./src/main/resources/data/csv/course.csv is not exist!
+12.10:19.47.05  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:81 - File: ./src/main/resources/data/csv/course.csv was created
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test insertSectionFailSuccess
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.52.00  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.52.00 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:175 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.53.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.53.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.53.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:176 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.55.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:19.55.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:19.55.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 205422779 was found!
+12.10:20.01.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:153 - On test insertSectionFailSuccess
+12.10:20.01.27  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.01.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.01.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.01.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.01.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.01.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.01.28  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.01.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:176 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.02.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.02.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.02.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.04.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.04.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.04.45  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 33691820 was found!
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.08.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.08.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.08.47  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 55150726 was found!
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.10.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.10.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.10.55  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 33805396 was found!
+12.10:20.13.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.13.34  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.13.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.13.34  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.13.34 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.13.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 21399793 was found!
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.13.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.13.35  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 21399794 was found!
+12.10:20.16.31  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:154 - On test insertSectionFailSuccess
+12.10:20.16.31  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.16.31  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.16.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:176 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.10:20.16.53  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:154 - On test insertSectionFailSuccess
+12.10:20.16.53  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.16.53  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.16.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.18.39  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:154 - On test insertSectionFailSuccess
+12.10:20.18.39  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.18.39  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.18.39 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.18.39  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 44796652 was found!
+12.10:20.19.40  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:154 - On test insertSectionFailSuccess
+12.10:20.19.40  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.19.40  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.19.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.19.40  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: 32643365 was found!
+12.10:20.20.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:154 - On test insertSectionFailSuccess
+12.10:20.20.49  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:98 - ./src/main/resources/data/csv/course.csv
+12.10:20.20.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:107 - Bean to CSV Creating process success
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.20.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: -10 was found!
+12.10:20.20.49 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - java.util.NoSuchElementException: No value present
+12.10:20.20.49 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:229 - Object with id: -10 not found!
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:63 - createPath files extension: .csv
+12.10:20.20.49 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:216 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.20.49  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:225 - Section with id: -10 was found!
+12.10:20.20.49 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - java.util.NoSuchElementException: No value present
+12.10:20.20.49 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:229 - Object with id: -10 not found!
+12.10:20.39.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.39.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.39.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 12 not found!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:242 - Teacher with id: 12 not exist!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:243 - Creating process error
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.39.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 12 not found!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:242 - Teacher with id: 12 not exist!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:243 - Creating process error
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:110 - Bean to CSV Creating process error
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.39.13  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 27154493 was found!
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.39.13 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 27154493 not found!
+12.10:20.39.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.39.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.39.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 12 not found!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:242 - Teacher with id: 12 not exist!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:243 - Creating process error
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.39.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 12 not found!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:242 - Teacher with id: 12 not exist!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:243 - Creating process error
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:110 - Bean to CSV Creating process error
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.39.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.39.50  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 77443189 was found!
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.39.50 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 77443189 not found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:90 - On test testInsertStudentSuccess
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 4 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 4 not found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:30 - On test TeacherInsertSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:150 - On test insertSectionFailSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: -10 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: -10 not found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: -10 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: -10 not found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:108 - On test getTeacherByIdSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:120 - On test getTeacherByIdFail
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: -2 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: -2 not found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:172 - On test createSectionFail
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/section.csv
+12.10:20.42.21  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:76 - File: ./src/main/resources/data/csv/section.csv is not exist!
+12.10:20.42.21  WARN	ru.sfedu.my_pckg.api.DataProviderCsv:80 - File: ./src/main/resources/data/csv/section.csv was created
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:175 - Path to csv file: ./src/main/resources/data/csv/section.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:184 - Section with id: 26205092 was found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:258 - Course with id: 41551682was create!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:259 - Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 13 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 14 was found!
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:258 - Course with id: 41551683was create!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:259 - Creating process success
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:110 - Bean to CSV Creating process error
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 41551682 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 41551682 not found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:72 - On test testInsertStudentSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:51 - On test TeacherInsertSuccess
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.42.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.42.21  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 4 was found!
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:293 - java.util.NoSuchElementException: No value present
+12.10:20.42.21 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Object with id: 4 not found!
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:258 - Course with id: 348328686was create!
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:259 - Creating process success
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:281 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:290 - Teacher with id: 12 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 13 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 14 was found!
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:258 - Course with id: 348328687was create!
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:259 - Creating process success
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.44.44 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.44.44  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 348328686 was found!
+12.10:20.44.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:20.44.44 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 348328686 not found!
+12.10:20.53.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.53.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.53.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.53.07  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:20.53.07  INFO	ru.sfedu.my_pckg.ProjectAppClient:38 - 3
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:262 - Course with id: 136895003was create!
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:263 - Creating process success
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 13 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 14 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:262 - Course with id: 136895004was create!
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:263 - Creating process success
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 136895003 was found!
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.55.27 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.55.27  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 136895004 was found!
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:133 - On test createCourseSuccess
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:262 - Course with id: 23040352was create!
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:263 - Creating process success
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 12 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 13 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 14 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:97 - ./src/main/resources/data/csv/course.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:106 - Bean to CSV Creating process success
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:262 - Course with id: 23040353was create!
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:263 - Creating process success
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 23040352 was found!
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:20.59.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 23040353 was found!
+12.10:20.59.57  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:145 - Test passed
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsvTest:150 - On test createCourseFail
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:251 - Some students not exist!Check student's id
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:252 - Creating process error
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:135 - List was successful returned
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:285 - Path to csv file: ./src/main/resources/data/csv/teacher.csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:294 - Teacher with id: 12 was found!
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:154 - Path to csv file: ./src/main/resources/data/csv/student.csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:163 - Student with id: 100 was found!
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:166 - java.util.NoSuchElementException: No value present
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:167 - Object with id: 100 not found!
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:251 - Some students not exist!Check student's id
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:252 - Creating process error
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 38936376 was found!
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 38936376 not found!
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:61 - createPath path to csv files: ./src/main/resources/data/csv/
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:62 - createPath files extension: .csv
+12.10:21.03.25 DEBUG	ru.sfedu.my_pckg.api.DataProviderCsv:215 - Path to csv file: ./src/main/resources/data/csv/course.csv
+12.10:21.03.25  INFO	ru.sfedu.my_pckg.api.DataProviderCsv:224 - Section with id: 38936377 was found!
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:227 - java.util.NoSuchElementException: No value present
+12.10:21.03.25 ERROR	ru.sfedu.my_pckg.api.DataProviderCsv:228 - Object with id: 38936377 not found!

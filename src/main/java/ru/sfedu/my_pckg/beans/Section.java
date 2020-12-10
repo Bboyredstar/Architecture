@@ -1,22 +1,35 @@
 
 package ru.sfedu.my_pckg.beans;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvCustomBindByName;
+import ru.sfedu.my_pckg.utils.helpers.Helper;
+import ru.sfedu.my_pckg.utils.csvConverters.UrlTransformer;
+
+import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * Class Section
  */
-public class Section extends Course {
+public class Section implements Serializable{
 
   //
   // Fields
   //
-
+  @CsvBindByName
   private long id;
-  private long courseId;
+  @CsvBindByName
+  private long course;
+  @CsvBindByName
   private String name;
+  @CsvBindByName
   private String description;
+  @CsvCustomBindByName(column = "materials", converter = UrlTransformer.class)
   private List<String> materials;
+  @CsvCustomBindByName(column = "videos", converter = UrlTransformer.class)
   private List<String> videos;
   
   //
@@ -51,10 +64,10 @@ public class Section extends Course {
 
   /**
    * Set the value of course
-   * @param courseId the new value of course
+   * @param  Id the new value of course
    */
-  public void setCourse (long courseId) {
-    this.courseId = courseId;
+  public void setCourse (long Id) {
+    this.course = Id;
   }
 
   /**
@@ -62,7 +75,7 @@ public class Section extends Course {
    * @return the value of course
    */
   public long getCourse () {
-    return courseId;
+    return course;
   }
 
   /**
@@ -133,4 +146,38 @@ public class Section extends Course {
   // Other methods
   //
 
+
+  @Override
+  public String toString(){
+    return " Section : { "+
+            "\nid: " + getId() +
+            "\ncourseId: " + getCourse() +
+            "\nname: " + getName() +
+            "\ndescription: " + getDescription() +
+            "\nvideos: " + getVideos().stream().map(Objects::toString).collect(Collectors.joining(" ,"))+
+            "\nmaterials: " + getMaterials().stream().map(Objects::toString).collect(Collectors.joining(" ,")) +
+
+            "\n}";
+  }
+  @Override
+  public int hashCode(){
+    return Objects.hash(getId(),getCourse(),
+            getCourse(),getName(),getDescription(),
+            getVideos().stream().map(Objects::toString).collect(Collectors.joining(" ,")),
+            getMaterials().stream().map(Objects::toString).collect(Collectors.joining(" ,")));
+  }
+
+  @Override
+  public boolean equals(Object Obj){
+    if (this == Obj) return true;
+    if (Obj == null || getClass() != Obj.getClass()) return false;
+    Section section = (Section) Obj;
+    if (getId() != section.getId()) return false;
+    if (getCourse() != section.getCourse()) return false;
+    if (!getName().equals(section.getName())) return false;
+    if (!getDescription().equals(section.getDescription())) return false;
+    if (!Helper.ListStringToString(getMaterials()).equals(Helper.ListStringToString(section.getMaterials()))) return false;
+    if (!Helper.ListStringToString(getVideos()).equals(Helper.ListStringToString(section.getVideos()))) return false;
+    return true;
+  }
 }
