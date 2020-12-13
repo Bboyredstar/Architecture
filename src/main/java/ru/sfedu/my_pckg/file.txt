@@ -1,4 +1,25 @@
 TODO:
-1. Прописать основыне generics;
-2. Прописать основные методы API;
-3. Разобраться с enum;
+1. Прописать основыне generics;-
+2. Прописать основные методы API;-
+3. Разобраться с enum; +
+
+API:
+Update course {create section,delete section, update section}
+
+View course {get course rating, get course comments}
+
+Create course
+
+Delete course
+
+Check students question {answer the question}
+
+Choose course {join course, check reviews}
+
+get students courses {
+get course materials
+unsubscribe from a course
+check Q&A{ask a question}
+leave review about course
+}
+

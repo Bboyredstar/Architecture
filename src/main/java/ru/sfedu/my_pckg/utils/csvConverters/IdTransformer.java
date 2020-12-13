@@ -19,6 +19,9 @@ public class IdTransformer extends AbstractBeanField {
     public String delimiter = " ,";
     @Override
     protected String convertToWrite(Object value) throws CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+        if (value==null){
+            return "null";
+        }
         return Helper.ListToString((List<Long>)value);
     }
 

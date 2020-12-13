@@ -5,5 +5,7 @@ public enum ExtendMethods {
     COMMENTS,
     UPDATE,
     DELETE,
-    CREATE
+    CREATE,
+    JOIN,
+    REVIEW
 }

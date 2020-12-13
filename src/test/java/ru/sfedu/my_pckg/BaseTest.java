@@ -5,8 +5,6 @@ import ru.sfedu.my_pckg.beans.Section;
 import ru.sfedu.my_pckg.beans.Student;
 import ru.sfedu.my_pckg.beans.Teacher;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class BaseTest {
@@ -48,17 +46,19 @@ public class BaseTest {
       return course;
   }
 
-  public static Section createSection(long id,long Id,String name, String description,
-                                      ArrayList<String> materials,ArrayList<String> videos){
+  public static Section createSection(long id,String name, String description,long course,
+                                      List<String> materials,List<String> videos){
       Section section = new Section();
       section.setId(id);
-      section.setCourse(Id);
+      section.setCourse(course);
       section.setName(name);
       section.setDescription(description);
       section.setMaterials(materials);
       section.setVideos(videos);
       return section;
   }
+
+
 
 
 

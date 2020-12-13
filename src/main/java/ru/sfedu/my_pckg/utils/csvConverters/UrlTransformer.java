@@ -5,7 +5,6 @@ import com.opencsv.exceptions.CsvConstraintViolationException;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,12 +13,14 @@ public class UrlTransformer extends AbstractBeanField {
 
     @Override
     protected String convertToWrite(Object value) throws CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
-        List<String> urls = (ArrayList<String>)value;
+        List<String> urls = (List<String>)value;
         return String.join(elementDelimiter,urls);
     }
 
     @Override
     protected Object convert(String value) throws CsvDataTypeMismatchException, CsvConstraintViolationException {
-        return Arrays.asList(value.split(elementDelimiter));
+        List<String> urls =  Arrays.asList(value.split(elementDelimiter));
+        return urls;
+
     }
 }

@@ -33,6 +33,5 @@ public class ProjectAppClient {
     public static void main(String[] args) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         DataProviderCsv provider = new DataProviderCsv();
 
-
     }
 };

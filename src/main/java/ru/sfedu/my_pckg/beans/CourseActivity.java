@@ -4,11 +4,11 @@ package ru.sfedu.my_pckg.beans;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvCustomBindByName;
 import ru.sfedu.my_pckg.utils.csvConverters.IdTransformer;
+import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 
 /**
@@ -22,9 +22,9 @@ public class CourseActivity implements Serializable{
   @CsvBindByName
   private long id;
   @CsvBindByName
-  private long courseId;
+  private long course;
   @CsvCustomBindByName(column = "questions", converter = IdTransformer.class)
-  private ArrayList<Long> questionsId;
+  private List<Long> questions;
   @CsvBindByName
   private long review;
   @CsvBindByName
@@ -62,10 +62,10 @@ public class CourseActivity implements Serializable{
 
   /**
    * Set the value of course
-   * @param courseId the new value of course
+   * @param course the new value of course
    */
-  public void setCourse (long courseId) {
-    this.courseId = courseId;
+  public void setCourse (long course) {
+    this.course = course;
   }
 
   /**
@@ -73,23 +73,23 @@ public class CourseActivity implements Serializable{
    * @return the value of course
    */
   public long getCourse () {
-    return courseId;
+    return course;
   }
 
   /**
    * Set the value of question
    * @param questions the new value of question
    */
-  public void setQuestion (ArrayList <Long> questions) {
-    this.questionsId = questions;
+  public void setQuestions (List <Long> questions) {
+    this.questions = questions;
   }
 
   /**
    * Get the value of question
    * @return the value of question
    */
-  public ArrayList <Long> getQuestion () {
-    return questionsId;
+  public List <Long> getQuestions () {
+    return questions;
   }
 
   /**
@@ -132,7 +132,7 @@ public class CourseActivity implements Serializable{
     return " CourseActivity : { "+
             "\nid: " + getId() +
             "\ncourseId: " + getCourse() +
-            "\nquestions: " + questionsId.stream().map(Objects::toString).collect(Collectors.joining(" ,"))+
+            "\nquestions: " + Helper.ListToString(questions)+
             "\nreview: " + getReview() +
             "\nstudent: " + getStudent() +
             "\n}";
@@ -140,7 +140,7 @@ public class CourseActivity implements Serializable{
   @Override
   public int hashCode(){
     return Objects.hash(getId(),getCourse(),
-            questionsId.stream().map(Objects::toString).collect(Collectors.joining(" ,")),
+            Helper.ListToString(questions),
             getReview(),getStudent());
   }
 
@@ -151,7 +151,7 @@ public class CourseActivity implements Serializable{
     CourseActivity course = (CourseActivity) Obj;
     if (getId() != course.getId()) return false;
     if (getCourse() != course.getCourse()) return false;
-    if (!getQuestion().equals(course.getQuestion())) return false;
+    if (!Helper.ListToString(getQuestions()).equals(Helper.ListToString(course.getQuestions()))) return false;
     if (getReview() != course.getReview()) return false;
     return getStudent() == course.getStudent();
   }
