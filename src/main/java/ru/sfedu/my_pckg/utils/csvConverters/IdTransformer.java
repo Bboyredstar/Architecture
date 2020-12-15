@@ -27,7 +27,7 @@ public class IdTransformer extends AbstractBeanField {
 
     @Override
     protected Object convert(String value) throws CsvDataTypeMismatchException, CsvConstraintViolationException {
-        if (value.toLowerCase().equals("null")){
+        if (value.toLowerCase().equals("null")||value.toLowerCase().equals("")){
             return null;
         }
       return  Arrays.asList(value.split(delimiter)).stream().map(Long::parseLong).collect(Collectors.toList());

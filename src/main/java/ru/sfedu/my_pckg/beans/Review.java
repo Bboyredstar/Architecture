@@ -86,8 +86,8 @@ public class Review implements Serializable {
   public String toString(){
     return " Review : { "+
             "\nid: " + getId() +
-            "\nrating " + getRating() +
-            "\ncomment " + getComment() +
+            "\nrating: " + getRating() +
+            "\ncomment: " + getComment() +
             "\n}";
   }
   @Override

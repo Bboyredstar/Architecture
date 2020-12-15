@@ -9,7 +9,9 @@ import java.util.*;
 
 /**
  * Class Answer
- **/ class Answer implements Serializable {
+ **/
+
+public class Answer implements Serializable {
 
   //
   // Fields
@@ -19,7 +21,7 @@ import java.util.*;
   @CsvBindByName
   private String answer;
   @CsvBindByName
-  private long questionId;
+  private long question;
   
   //
   // Constructors
@@ -71,8 +73,8 @@ import java.util.*;
    * Set the value of question
    * @param questionId the new value of question
    */
-  public void setQuestion (long questionId) {
-    this.questionId = questionId;
+  public void setQuestion (long question) {
+    this.question = question;
   }
 
   /**
@@ -80,7 +82,7 @@ import java.util.*;
    * @return the value of question
    */
   public long getQuestion () {
-    return questionId;
+    return question;
   }
 
   //
@@ -92,7 +94,7 @@ import java.util.*;
     return " Answer : { "+
             "\nid: " + getId() +
             "\nanswer: " + getAnswer() +
-            "\nquestion id: " + questionId +
+            "\nquestion id: " + question +
             "\n}";
   }
   @Override
