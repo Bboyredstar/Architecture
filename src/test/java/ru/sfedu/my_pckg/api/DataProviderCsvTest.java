@@ -42,8 +42,6 @@ class DataProviderCsvTest extends BaseTest {
     DataProviderCsvTest() throws IOException {
     }
 
-
-
     @Test
     public void testInsertTeacherSuccess() throws Exception {
         log.debug("On test TeacherInsertSuccess");

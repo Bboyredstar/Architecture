@@ -4,9 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.my_pckg.api.AbstractDataProvider;
 import ru.sfedu.my_pckg.api.DataProviderCsv;
+import ru.sfedu.my_pckg.api.DataProviderJDBC;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 public class ProjectAppClient {
@@ -29,16 +29,17 @@ public class ProjectAppClient {
         return null;
     }
 
-    public static void main(String[] args) {
-        List<String> arguments = Arrays.asList(args);
-        log.debug(arguments.toString());
+    public static void main(String[] args) throws IOException {
+//        List<String> arguments = Arrays.asList(args);
+//        log.debug(arguments.toString());
+//
+//        AbstractDataProvider dataProvider = resolveDataProvider(arguments);
+//        if (dataProvider == null) {
+//            log.error(Constants.BAD_ARGS_FORMAT);
+//            return;
+//        }
 
-        AbstractDataProvider dataProvider = resolveDataProvider(arguments);
-        if (dataProvider == null) {
-            log.error(Constants.BAD_ARGS_FORMAT);
-            return;
-        }
-
-
+        DataProviderJDBC provider = new DataProviderJDBC();
+        provider.initDataSource();
     }
 }

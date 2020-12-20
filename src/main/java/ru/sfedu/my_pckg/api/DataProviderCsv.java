@@ -10,7 +10,6 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
 import ru.sfedu.my_pckg.Constants;
 import ru.sfedu.my_pckg.beans.*;
 import ru.sfedu.my_pckg.enums.ExtendMethods;
@@ -46,6 +45,7 @@ public class DataProviderCsv implements AbstractDataProvider{
     private final String PATH = ConfigurationUtil.getConfigurationEntry("PATH_TO_CSV");
     private final String DEFAULT_PATH = "./src/main/resources/data/xml/";
     private final String DEFAULT_EXTENSION = ".xml";
+
 
     /**
      * Instantiates a new Data provider csv.
@@ -94,7 +94,7 @@ public class DataProviderCsv implements AbstractDataProvider{
      * @throws IOException      the io exception
      * @throws RuntimeException the runtime exception
      */
-    public  <T> List<T> getRecords(@NotNull Class classname) throws IOException, RuntimeException {
+    public  <T> List<T> getRecords(Class classname) throws IOException, RuntimeException {
         try {
             String path = createPath(classname.getSimpleName());
             DSInit(path);

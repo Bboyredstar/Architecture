@@ -1384,3 +1384,2898 @@ students: 13 ,14
 12.20:15.39.06 DEBUG	ru.sfedu.my_pckg.ProjectAppClient:36 - []
 12.20:15.40.44 DEBUG	ru.sfedu.my_pckg.ProjectAppClient:36 - []
 12.20:15.41.11 DEBUG	ru.sfedu.my_pckg.ProjectAppClient:36 - []
+12.20:16.40.20  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.40.34  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.40.34 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:16.40.34 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:./DB/testdb.db
+12.20:16.41.08  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.41.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:16.41.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:./DB/testdb.db
+12.20:16.50.17  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.50.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:16.50.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:./DB/testdb.mv.db
+12.20:16.55.08  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.55.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:16.55.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:./test
+12.20:16.56.48  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:16.56.48 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:16.56.48 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.07.56  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.07.56 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:17.07.56 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.09.33  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.09.33 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:17.09.33 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.10.04  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.10.04 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:45 - Connection error! 
+12.20:17.10.04 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:46 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.10.40  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.10.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.10.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/test
+12.20:17.10.40 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.10.40 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.11.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.11.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.11.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/test
+12.20:17.11.07 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.11.07 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/test
+12.20:17.11.53  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.11.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.11.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/test.mv.db
+12.20:17.11.53 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.11.53 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/test.mv.db
+12.20:17.12.05  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.12.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.12.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/testdb.mv.db
+12.20:17.12.05 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.12.05 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/testdb.mv.db
+12.20:17.13.11  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.13.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.13.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/testdb.mv.db
+12.20:17.13.11 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.13.11 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/testdb.mv.db
+12.20:17.18.24  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.18.24 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.18.24 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/testdb.mv.db
+12.20:17.18.24 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.18.24 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/testdb.mv.db
+12.20:17.20.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.20.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.20.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:~/testdb.mv.db
+12.20:17.20.50 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.20.50 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:~/testdb.mv.db
+12.20:17.22.56  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.22.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.22.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:./testdb
+12.20:17.22.56 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:47 - Connection error! 
+12.20:17.22.56 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - java.sql.SQLException: No suitable driver found for jdbc:./testdb
+12.20:17.27.59  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.27.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.27.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:h2:~/test
+12.20:17.30.13  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.30.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.30.13 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:h2:.src/resources/test
+12.20:17.30.13 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:48 - Connection error! 
+12.20:17.30.13 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:49 - org.h2.jdbc.JdbcSQLException: Путь неявно является относительным для текущего рабочего каталога и не допустим в URL базы данных "jdbc:h2:.src/resources/test". Используйте абсолютный путь, ~/name, ./name, или настройку baseDir.
+A file path that is implicitly relative to the current working directory is not allowed in the database URL "jdbc:h2:.src/resources/test". Use an absolute path, ~/name, ./name, or the baseDir setting instead. [90011-197]
+12.20:17.30.45  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.30.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.30.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:h2:./src/resources/test
+12.20:17.31.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.31.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:33 - org.h2.Driver
+12.20:17.31.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - jdbc:h2:./src/resources/test
+12.20:17.34.40  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:17.34.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:17.34.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.05.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.05.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.05.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.05.07 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.05.07 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXIST[*] TEACHERS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME(50) VARCHAR NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) DEFAULT """",
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY(80) VARCHAR DEFAULT """",
+    PREFERENCES(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    ID BIGINT PRIMARY KEY,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    FOREIGN KEY OWNER REFERENCES TEACHER(ID),
+    STUDENTS BIGINT ARRAY,
+)
+
+CREATE TABLE IF NOT EXIST SECTION (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) DEFAULT """",
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY
+)
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT DEFAULT -1,
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+)
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255) DEFAULT """",
+)
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+)
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID)
+    ANSWER VARCHAR(255) NOT NULL,
+)
+ "; ожидалось "EXISTS"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXIST[*] TEACHERS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME(50) VARCHAR NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) DEFAULT """",
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY(80) VARCHAR DEFAULT """",
+    PREFERENCES(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    ID BIGINT PRIMARY KEY,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    FOREIGN KEY OWNER REFERENCES TEACHER(ID),
+    STUDENTS BIGINT ARRAY,
+)
+
+CREATE TABLE IF NOT EXIST SECTION (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) DEFAULT """",
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY
+)
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT DEFAULT -1,
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+)
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255) DEFAULT """",
+)
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+)
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID)
+    ANSWER VARCHAR(255) NOT NULL,
+)
+ "; expected "EXISTS"; SQL statement:
+CREATE TABLE IF NOT EXIST TEACHERS (
+    id BIGINT primary key,
+    firstName(50) VARCHAR NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+)
+
+CREATE TABLE IF NOT EXIST SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+)
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+)
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+)
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+)
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+)
+ [42001-197]
+12.20:19.05.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.05.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.05.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.05.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.05.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXIST[*] TEACHERS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME(50) VARCHAR NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) DEFAULT """",
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY(80) VARCHAR DEFAULT """",
+    PREFERENCES(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    ID BIGINT PRIMARY KEY,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    FOREIGN KEY OWNER REFERENCES TEACHER(ID),
+    STUDENTS BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXIST SECTION (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) DEFAULT """",
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT DEFAULT -1,
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255) DEFAULT """",
+);
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID)
+    ANSWER VARCHAR(255) NOT NULL,
+);
+ "; ожидалось "EXISTS"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXIST[*] TEACHERS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME(50) VARCHAR NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) DEFAULT """",
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY(80) VARCHAR DEFAULT """",
+    PREFERENCES(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    ID BIGINT PRIMARY KEY,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    FOREIGN KEY OWNER REFERENCES TEACHER(ID),
+    STUDENTS BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXIST SECTION (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) DEFAULT """",
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT DEFAULT -1,
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255) DEFAULT """",
+);
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    ID BIGINT PRIMARY KEY,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID)
+    ANSWER VARCHAR(255) NOT NULL,
+);
+ "; expected "EXISTS"; SQL statement:
+CREATE TABLE IF NOT EXIST TEACHERS (
+    id BIGINT primary key,
+    firstName(50) VARCHAR NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXIST SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXIST COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXIST REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXIST QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXIST ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42001-197]
+12.20:19.06.40  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.06.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.06.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.06.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.06.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName(50) VARCHAR NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [50004-197]
+12.20:19.07.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.07.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.07.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.07.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.07.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.07.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.07.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.07.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.07.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.07.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.08.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.08.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.08.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.08.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.08.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.11.20  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.11.20 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.11.20 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/resources/test
+12.20:19.11.20 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.11.20 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - java.nio.file.NoSuchFileException: .\src\main\db\create_tables.sql
+12.20:19.12.45  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.12.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.12.45 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.12.45 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.12.45 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.13.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.13.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.13.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.13.28 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.13.28 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSES (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHERS(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTIONS (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSES(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) DEFAULT "",
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITYS (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSES(id),
+    questions BIGINT ARRAY,
+    review INT DEFAULT -1,
+    FOREIGN KEY student REFERENCES STUDENTS(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEWS (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255) DEFAULT "",
+);
+
+CREATE TABLE IF NOT EXISTS QUESTIONS (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWERS (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTIONS(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.13.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.13.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.13.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.13.55 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.13.55 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSES (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHERS(id),
+    students BIGINT ARRAY,
+);
+
+ [42122-197]
+12.20:19.14.53  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.14.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.14.53 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.14.53 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.14.53 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHERS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+ [42122-197]
+12.20:19.15.51  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.15.51 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.15.51 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.15.51 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.15.51 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR,
+    preferences(255) VARCHAR NOT NULL,
+);
+
+ [50004-197]
+12.20:19.16.20  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.16.20 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.16.20 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.16.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.16.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80),
+    preferences(255) VARCHAR NOT NULL,
+);
+
+ [50004-197]
+12.20:19.19.57  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.19.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.19.57 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.19.57 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.19.57 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENTS (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80),
+    preferences(255) VARCHAR NOT NULL,
+);
+
+ [50004-197]
+12.20:19.20.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.20.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.20.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.20.38 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.20.38 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHER (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+ [42122-197]
+12.20:19.21.21  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.21.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.21.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.21.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.21.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+CREATE TABLE TEACHER (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+ [42122-197]
+12.20:19.21.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.21.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.21.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.22.35  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.22.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.22.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.22.35 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.22.35 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Таблица "TEACHER" уже существует
+Table "TEACHER" already exists; SQL statement:
+CREATE TABLE TEACHER (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) ,
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+);
+
+CREATE TABLE STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [42101-197]
+12.20:19.23.19  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.23.19 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.23.19 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.23.19 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.23.19 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences(255) VARCHAR NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [50004-197]
+12.20:19.23.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.23.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.23.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.23.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.23.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    FOREIGN KEY owner REFERENCES TEACHER(id),
+    students BIGINT ARRAY,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    FOREIGN KEY question REFERENCES QUESTION(id)
+    answer VARCHAR(255) NOT NULL,
+);
+ [50004-197]
+12.20:19.27.08  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.27.08 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.27.08 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.27.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.27.08 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+ [50004-197]
+12.20:19.28.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.28.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.28.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.28.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.28.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country(80) VARCHAR DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+
+);
+ [50004-197]
+12.20:19.28.47  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.28.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.28.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.28.47 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.28.47 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+ [42122-197]
+12.20:19.29.17  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.29.17 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.29.17 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.29.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.29.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER.id,
+);
+
+ [42122-197]
+12.20:19.29.46  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.29.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.29.46 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.29.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.29.46 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Столбец  не найден
+Column  not found; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) DEFAULT "",
+    preferences VARCHAR(255) NOT NULL,
+);
+ [42122-197]
+12.20:19.30.00  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.30.00 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.30.00 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.30.00 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.30.00 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER.id,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+ [42001-197]
+12.20:19.31.21  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.31.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.31.21 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.31.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.31.21 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY owner REFERENCES TEACHER.id,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY course REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY question REFERENCES QUESTION(id),
+);
+ [42001-197]
+12.20:19.31.58  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.31.58 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.31.58 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.31.58 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.31.58 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY owner REFERENCES TEACHER.id,
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY course REFERENCES COURSE(id),
+);
+
+ [42001-197]
+12.20:19.32.34  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.32.34 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.32.34 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.32.34 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.32.34 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY OWNER REFERENCES TEACHER.ID,
+);
+
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY owner REFERENCES TEACHER.id,
+);
+
+ [42001-197]
+12.20:19.33.07  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.33.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.33.07 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.33.41  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.33.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.33.41 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.33.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.33.41 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY COURSE REFERENCES COURSE(ID),
+    FOREIGN KEY STUDENT REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY QUESTION REFERENCES QUESTION(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY course REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY course REFERENCES COURSE(id),
+    FOREIGN KEY student REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY question REFERENCES QUESTION(id),
+);
+ [42001-197]
+12.20:19.34.54  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.34.54 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.34.54 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.34.54 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.34.54 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+    FOREIGN KEY (student) REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+ [42001-197]
+12.20:19.35.36  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.35.36 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.35.36 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.35.36 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.35.36 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255),
+    MATERIALS VARCHAR(255) ARRAY,
+    VIDEOS VARCHAR(255) ARRAY,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS BIGINT ARRAY,
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT primary key,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+
+CREATE TABLE IF NOT EXISTS SECTION (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255),
+    materials VARCHAR(255) ARRAY,
+    videos VARCHAR(255) ARRAY,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+);
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT primary key,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions BIGINT ARRAY,
+    review INT,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+    FOREIGN KEY (student) REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT primary key,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT primary key,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT primary key,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+ [42001-197]
+12.20:19.38.40  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.38.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.38.40 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.38.40 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.38.40 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT PRIMARY KEY,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+ [42001-197]
+12.20:19.39.02  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.39.02 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.39.02 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.39.02 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.39.02 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE IF NOT EXISTS TEACHER (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) ,
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+)
+
+CREATE[*] TABLE IF NOT EXISTS STUDENT (
+    ID BIGINT PRIMARY KEY,
+    FISTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80),
+    PREFERENCES VARCHAR(255) NOT NULL,
+)
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY,
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+)
+
+ "
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TEACHER (
+    ID BIGINT PRIMARY KEY,
+    FIRSTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80) ,
+    COMPETENCE VARCHAR(255) NOT NULL,
+    EXPERIENCE INT NOT NULL,
+)
+
+CREATE[*] TABLE IF NOT EXISTS STUDENT (
+    ID BIGINT PRIMARY KEY,
+    FISTNAME VARCHAR(50) NOT NULL,
+    SECONDNAME VARCHAR(50) NOT NULL,
+    EMAIL VARCHAR(50) NOT NULL,
+    AGE INT NOT NULL,
+    COUNTRY VARCHAR(80),
+    PREFERENCES VARCHAR(255) NOT NULL,
+)
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY,
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+)
+
+ "; SQL statement:
+CREATE TABLE IF NOT EXISTS TEACHER (
+    id BIGINT primary key,
+    firstName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80) ,
+    competence VARCHAR(255) NOT NULL,
+    experience INT NOT NULL,
+)
+
+CREATE TABLE IF NOT EXISTS STUDENT (
+    id BIGINT PRIMARY KEY,
+    fistName VARCHAR(50) NOT NULL,
+    secondName VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+    country VARCHAR(80),
+    preferences VARCHAR(255) NOT NULL,
+)
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT PRIMARY KEY,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+)
+
+ [42000-197]
+12.20:19.39.47  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.39.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.39.47 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.40.02  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.40.02 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.40.02 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.40.02 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.40.02 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+    FOREIGN KEY (OWNER) REFERENCES TEACHER(ID),
+);
+
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT PRIMARY KEY,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+
+ [42001-197]
+12.20:19.40.32  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.40.32 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.40.32 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.40.32 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.40.32 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+
+);
+
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    ID BIGINT PRIMARY KEY,
+    OWNER BIGINT NOT NULL,
+    NAME VARCHAR(150) NOT NULL,
+    DESCRIPTION VARCHAR(255) NOT NULL,
+    STUDENTS BIGINT ARRAY[*],
+
+);
+
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT PRIMARY KEY,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students BIGINT ARRAY,
+
+);
+
+ [42001-197]
+12.20:19.40.50  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.40.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.40.50 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.41.03  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.41.03 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.41.03 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.41.17  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.41.17 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.41.17 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.41.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.41.17 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "("
+Unknown data type: "("; SQL statement:
+
+
+
+CREATE TABLE IF NOT EXISTS COURSE (
+    id BIGINT PRIMARY KEY,
+    owner BIGINT NOT NULL,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    students (BIGINT) ARRAY,
+    FOREIGN KEY (owner) REFERENCES TEACHER(id),
+);
+
+ [50004-197]
+12.20:19.41.32  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.41.32 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.41.32 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.42.10  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.42.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.42.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:19.42.11 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - Connection error! 
+12.20:19.42.11 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:53 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS ARRAY VARCHAR[*](255),
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+
+ "; ожидалось "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    ID BIGINT PRIMARY KEY,
+    COURSE BIGINT NOT NULL,
+    STUDENT BIGINT NOT NULL,
+    QUESTIONS ARRAY VARCHAR[*](255),
+    REVIEW INT,
+    FOREIGN KEY (COURSE) REFERENCES COURSE(ID),
+    FOREIGN KEY (STUDENT) REFERENCES STUDENT(ID),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    ID BIGINT PRIMARY KEY,
+    RATING INT NOT NULL,
+    COMMENT VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    ID BIGINT PRIMARY KEY,
+    QUESTION VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    ID BIGINT PRIMARY KEY,
+    QUESTION BIGINT NOT NULL,
+    ANSWER VARCHAR(255) NOT NULL,
+    FOREIGN KEY (QUESTION) REFERENCES QUESTION(ID),
+);
+
+ "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+CREATE TABLE IF NOT EXISTS COURSEACTIVITY (
+    id BIGINT PRIMARY KEY,
+    course BIGINT NOT NULL,
+    student BIGINT NOT NULL,
+    questions ARRAY VARCHAR(255),
+    review INT,
+    FOREIGN KEY (course) REFERENCES COURSE(id),
+    FOREIGN KEY (student) REFERENCES STUDENT(id),
+);
+
+CREATE TABLE IF NOT EXISTS REVIEW (
+    id BIGINT PRIMARY KEY,
+    rating INT NOT NULL,
+    comment VARCHAR(255),
+);
+
+CREATE TABLE IF NOT EXISTS QUESTION (
+    id BIGINT PRIMARY KEY,
+    question VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS ANSWER (
+    id BIGINT PRIMARY KEY,
+    question BIGINT NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+    FOREIGN KEY (question) REFERENCES QUESTION(id),
+);
+
+ [42001-197]
+12.20:19.42.23  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:19.42.23 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:19.42.23 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:20.00.26  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:20.00.26 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:34 - org.h2.Driver
+12.20:20.00.26 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:35 - jdbc:h2:./src/main/resources/db/test
+12.20:20.00.26 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:37 - Connecting to DB ! 
+12.20:20.00.26 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:59 - Connecting to DB ! 
+12.20:21.32.28  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.32.28 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:46 - On test TeacherInsertSuccess
+12.20:21.37.35  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.37.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.37.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.37.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.37.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.37.35 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.37.35 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:172 - org.h2.jdbc.JdbcSQLException: Столбец "NAME" не найден
+Column "NAME" not found; SQL statement:
+INSERT INTO TEACHER(id,name,firstName,secondName,email,age,country,competence,experience) VALUES (?, ?, ?, ?, ?, ? ,? ,? ,?) [42122-197]
+12.20:21.37.35 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:173 - Creating process error! 
+12.20:21.38.37  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.38.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.38.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.38.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.38.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.38.37 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.38.37 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:172 - org.h2.jdbc.JdbcSQLException: Недопустимое значение "0" для параметра "parameterIndex"
+Invalid value "0" for parameter "parameterIndex" [90008-197]
+12.20:21.38.37 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:173 - Creating process error! 
+12.20:21.39.22  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.39.22 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.39.22 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.39.22 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.39.22 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.39.23 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.39.23  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:168 - Creating process success! 
+12.20:21.41.31  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.41.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.41.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.41.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.41.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.41.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.41.31 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:172 - org.h2.jdbc.JdbcSQLException: Нарушение уникального индекса или первичного ключа: "PRIMARY KEY ON PUBLIC.TEACHER(ID)"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.TEACHER(ID)"; SQL statement:
+INSERT INTO TEACHER(id,firstName,secondName,email,age,country,competence,experience) VALUES (?, ?, ?, ?, ? ,? ,? ,?) [23505-197]
+12.20:21.41.31 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:173 - Creating process error! 
+12.20:21.48.59  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.48.59  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:168 - Creating process success! 
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.48.59 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.48.59 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:79 - Getting list error! 
+12.20:21.48.59 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:80 - org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT * FROMTEACHER[*]"
+Syntax error in SQL statement "SELECT * FROMTEACHER[*]"; SQL statement:
+SELECT * FROMTEACHER [42000-197]
+12.20:21.49.18  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.49.18  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:168 - Creating process success! 
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.49.18 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.49.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:79 - Getting list error! 
+12.20:21.49.18 FATAL	ru.sfedu.my_pckg.api.DataProviderJDBC:80 - org.h2.jdbc.JdbcSQLException: Недопустимое значение "0" для параметра "columnIndex"
+Invalid value "0" for parameter "columnIndex" [90008-197]
+12.20:21.51.16  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:48 - On test TeacherInsertSuccess
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.51.16  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:168 - Creating process success! 
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.51.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.56.30  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:21.56.30 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test TeacherInsertSuccess
+12.20:21.56.30 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.56.30 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.56.30 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.56.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.56.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:21.56.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:21.56.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:21.56.31 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:21.56.31  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:168 - Creating process success! 
+12.20:22.02.09  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.02.09 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.02.09 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:196 - org.h2.jdbc.JdbcSQLException: Столбец "PREFERENCES" не найден
+Column "PREFERENCES" not found; SQL statement:
+INSERT INTO TEACHER(id,firstName,secondName,email,age,country,competence,preferences) VALUES (?, ?, ?, ? ,? ,? ,?) [42122-197]
+12.20:22.02.09 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:197 - Creating process error! 
+12.20:22.03.16  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.03.16 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.03.16 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:196 - org.h2.jdbc.JdbcSQLException: Столбец "PREFERENCES" не найден
+Column "PREFERENCES" not found; SQL statement:
+INSERT INTO TEACHER(id,firstName,secondName,email,age,country,preferences) VALUES (?, ?, ?, ? ,? ,?) [42122-197]
+12.20:22.03.16 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:197 - Creating process error! 
+12.20:22.03.52  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.03.52 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.03.53 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:196 - org.h2.jdbc.JdbcSQLException: Столбец "PREFERENCES" не найден
+Column "PREFERENCES" not found; SQL statement:
+INSERT INTO TEACHER(id,firstName,secondName,email,age,country,preferences) VALUES (?, ?, ?, ? ,? ,?, ?) [42122-197]
+12.20:22.03.53 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:197 - Creating process error! 
+12.20:22.06.05  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.06.05 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.06.05 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:197 - org.h2.jdbc.JdbcSQLException: Столбец "PREFERENCES" не найден
+Column "PREFERENCES" not found; SQL statement:
+INSERT INTO TEACHER(id,firstName,secondName,email,age,country,preferences) VALUES (?, ?, ?, ? ,? ,? ,?) [42122-197]
+12.20:22.06.05 ERROR	ru.sfedu.my_pckg.api.DataProviderJDBC:198 - Creating process error! 
+12.20:22.07.10  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.07.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.07.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.07.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.07.10 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.07.11 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:184 - 
+Student : { 
+id: 12
+firstName: John
+secondName: Beach
+email: asdasd@mail.ru
+age: 40
+country: Romania
+preferences Machine Learning
+}
+12.20:22.07.11  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:193 - Creating process success! 
+12.20:22.07.55  INFO	ru.sfedu.my_pckg.utils.ConfigurationUtil:45 - Config path: .\src\main\resources\enviroment.properties
+12.20:22.07.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBCTest:56 - On test testInsertStudentSuccess
+12.20:22.07.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.07.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.07.55 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:184 - 
+Student : { 
+id: 12
+firstName: John
+secondName: Beach
+email: asdasd@mail.ru
+age: 40
+country: Romania
+preferences Machine Learning
+}
+12.20:22.07.56  INFO	ru.sfedu.my_pckg.api.DataProviderJDBC:193 - Creating process success! 
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:51 - org.h2.Driver
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:52 - jdbc:h2:./src/main/resources/db/test
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:60 - Connecting to DB...
+12.20:22.07.56 DEBUG	ru.sfedu.my_pckg.api.DataProviderJDBC:62 - Successfully connected! 

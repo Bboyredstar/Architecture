@@ -34,11 +34,21 @@ public class Constants {
   public static final String REVIEW_ALREADY_EXIST = "Student already leaved a review about course! ";
   public static final String USER_ALREADY_JOINED = "Student already join this course! ";
   public static final String BAD_ARGS_FORMAT = "Bad args format! Args must be like: [DataProvider] [Method] {args}";
-
+  public static final String DRIVER_ERROR = "DB driver error! ";
+  public static final String CONNECTION_ERROR = "Connection error! ";
+  public static final String INITIALIZING_CONNECTION = "Connecting to DB...";
+  public static final String SUCCESSFUL_CONNECTION = "Successfully connected! ";
   //Commands
 
   public static final String CSV_COMMAND = "csv";
   public static final String XML_COMMAND = "xml";
   public static final String JDBC_COMMAND = "jdbc";
+  public static final String INIT = "./src/main/resources/create_tables.sql";
 
+  //SQL
+  public static final String SELECT_ALL = "SELECT * FROM ";
+  public static final String TEACHER_INSERT = "INSERT INTO TEACHER(id,firstName,secondName,email,age,country,competence,experience) VALUES (?, ?, ?, ?, ? ,? ,? ,?)";
+  public static final String STUDENT_INSERT = "INSERT INTO STUDENT(id,firstName,secondName,email,age,country,preferences) VALUES (?, ?, ?, ? ,? ,? ,?)";
+  public static final String DElETE = "DELETE FROM ";
+  public static final String WHERE_ID = " WHERE id== ? ";
 }
