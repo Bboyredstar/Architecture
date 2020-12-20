@@ -1,9 +1,7 @@
 package ru.sfedu.my_pckg;
 
-import ru.sfedu.my_pckg.beans.Course;
-import ru.sfedu.my_pckg.beans.Section;
-import ru.sfedu.my_pckg.beans.Student;
-import ru.sfedu.my_pckg.beans.Teacher;
+import ru.sfedu.my_pckg.beans.*;
+import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import java.util.List;
 
@@ -56,6 +54,13 @@ public class BaseTest {
       section.setMaterials(materials);
       section.setVideos(videos);
       return section;
+  }
+
+  public static Question createQuestion(){
+      Question question = new Question();
+      question.setId(Helper.createId());
+      question.setQuestion("Test question");
+      return question;
   }
 
 

@@ -1,7 +1,9 @@
 package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
-
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -9,16 +11,20 @@ import java.util.Objects;
 /**
  * Class Review
  */
+@Root
 public class Review implements Serializable {
 
   //
   // Fields
   //
   @CsvBindByName
+  @Attribute(name="id")
   private long id;
   @CsvBindByName
+  @Element(name="rating")
   private int rating;
   @CsvBindByName
+  @Element(name="comment")
   private String comment;
   
   //
@@ -84,7 +90,7 @@ public class Review implements Serializable {
   //
   @Override
   public String toString(){
-    return " Review : { "+
+    return " \nReview : { "+
             "\nid: " + getId() +
             "\nrating: " + getRating() +
             "\ncomment: " + getComment() +

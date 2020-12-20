@@ -3,6 +3,7 @@ package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvCustomBindByName;
+import org.simpleframework.xml.*;
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 import ru.sfedu.my_pckg.utils.csvConverters.UrlTransformer;
 
@@ -14,21 +15,28 @@ import java.util.stream.Collectors;
 /**
  * Class Section
  */
+@Root
 public class Section implements Serializable{
 
   //
   // Fields
   //
   @CsvBindByName
+  @Attribute(name="id")
   private long id;
   @CsvBindByName
+  @Element(name="course")
   private long course;
   @CsvBindByName
+  @Element(name="name")
   private String name;
   @CsvBindByName
+  @Element(name="description")
   private String description;
+  @ElementList(inline = true, entry = "material")
   @CsvCustomBindByName(column = "materials", converter = UrlTransformer.class)
   private List<String> materials;
+  @ElementList(inline = true, entry = "video")
   @CsvCustomBindByName(column = "videos", converter = UrlTransformer.class)
   private List<String> videos;
   
@@ -149,7 +157,7 @@ public class Section implements Serializable{
 
   @Override
   public String toString(){
-    return " Section : { "+
+    return " \nSection : { "+
             "\nid: " + getId() +
             "\ncourseId: " + getCourse() +
             "\nname: " + getName() +

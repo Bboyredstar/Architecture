@@ -1,30 +1,42 @@
 
 package ru.sfedu.my_pckg.beans;
+
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvCustomBindByName;
-import ru.sfedu.my_pckg.utils.helpers.Helper;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
 import ru.sfedu.my_pckg.utils.csvConverters.IdTransformer;
+import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.List;
+import java.util.Objects;
 
 
 /**
  * Class Course
  */
+@Root
 public class Course implements Serializable{
 
   //
   // Fields
   //
   @CsvBindByName
+  @Attribute(name="id")
   private long id;
   @CsvBindByName
+  @Element(name="name")
   private String name;
   @CsvBindByName
+  @Element(name="description")
   private String description;
   @CsvBindByName
+  @Element(name="owner")
   private long owner;
+  @ElementList(inline = true, entry="student")
   @CsvCustomBindByName(column = "students", converter = IdTransformer.class)
   private List<Long> students;
 
@@ -120,7 +132,7 @@ public class Course implements Serializable{
   //
   @Override
   public String toString(){
-    return " Course : { "+
+    return " \nCourse : { "+
             "\nid: " + getId() +
             "\nname: " + getName() +
             "\ndescription: " + getDescription() +

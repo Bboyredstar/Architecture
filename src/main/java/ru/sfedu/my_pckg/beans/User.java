@@ -1,6 +1,8 @@
 package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
 import ru.sfedu.my_pckg.enums.UserType;
 
 
@@ -11,16 +13,22 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
     @CsvBindByName
+    @Attribute(name="id")
     private long id;
+    @Element(name="firstName")
     @CsvBindByName
     private String firstName;
+    @Element(name="secondName")
     @CsvBindByName
     private String secondName;
+    @Element(name="email")
     @CsvBindByName
     private String email;
+    @Element(name="age")
     @CsvBindByName
     private int age;
     @CsvBindByName
+    @Element(name="country")
     private String country;
     private UserType type;
 

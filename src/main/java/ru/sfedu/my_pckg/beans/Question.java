@@ -1,23 +1,28 @@
 package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
-
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.Objects;
 
 
 /**
  * Class Question
  */
+@Root
 public class Question implements Serializable {
 
   //
   // Fields
   //
   @CsvBindByName
+  @Attribute(name="id")
   private long id;
   @CsvBindByName
+  @Element(name="question")
   private String question;
   
   //
@@ -71,7 +76,7 @@ public class Question implements Serializable {
   //
   @Override
   public String toString(){
-    return " Question : { "+
+    return " \nQuestion : { "+
             "\nid: " + getId() +
             "\nquestion: " + getQuestion() +
             "\n}";

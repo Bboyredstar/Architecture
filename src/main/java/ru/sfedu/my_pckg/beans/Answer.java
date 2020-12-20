@@ -1,6 +1,9 @@
 package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 
 import java.io.Serializable;
@@ -10,16 +13,19 @@ import java.util.*;
 /**
  * Class Answer
  **/
-
+@Root
 public class Answer implements Serializable {
 
   //
   // Fields
   //
+  @Attribute(name="id")
   @CsvBindByName
   private long id;
+  @Element(name="answer")
   @CsvBindByName
   private String answer;
+  @Element(name="question")
   @CsvBindByName
   private long question;
   
@@ -71,7 +77,7 @@ public class Answer implements Serializable {
 
   /**
    * Set the value of question
-   * @param questionId the new value of question
+   * @param question the new value of question
    */
   public void setQuestion (long question) {
     this.question = question;

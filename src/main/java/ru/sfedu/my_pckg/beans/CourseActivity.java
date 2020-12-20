@@ -3,6 +3,10 @@ package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvCustomBindByName;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
 import ru.sfedu.my_pckg.utils.csvConverters.IdTransformer;
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 
@@ -14,20 +18,26 @@ import java.util.Objects;
 /**
  * Class CourseActivity
  */
+@Root(name="CourseActivity")
 public class CourseActivity implements Serializable{
 
   //
   // Fields
   //
   @CsvBindByName
+  @Attribute(name="id")
   private long id;
   @CsvBindByName
+  @Element(name="course")
   private long course;
+  @ElementList(inline = true,required = false)
   @CsvCustomBindByName(column = "questions", converter = IdTransformer.class)
   private List<Long> questions;
   @CsvBindByName
+  @Element(name="review")
   private long review;
   @CsvBindByName
+  @Element(name="student")
   private long student;
 
   //
@@ -129,7 +139,7 @@ public class CourseActivity implements Serializable{
   //
   @Override
   public String toString(){
-    return " CourseActivity : { "+
+    return " \nCourseActivity : { "+
             "\nid: " + getId() +
             "\ncourseId: " + getCourse() +
             "\nquestions: " + Helper.ListToString(questions)+

@@ -1,17 +1,21 @@
 package ru.sfedu.my_pckg.beans;
 
 import com.opencsv.bean.CsvBindByName;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 import ru.sfedu.my_pckg.enums.UserType;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 /**
  * The type Teacher.
  */
+@Root
 public class Teacher extends User  {
     @CsvBindByName
+    @Element(name="competence")
     private String competence;
+    @Element(name="experience")
     @CsvBindByName
     private int experience;
 
@@ -56,7 +60,7 @@ public class Teacher extends User  {
 
     @Override
     public String toString(){
-        return " Teacher : { "+
+        return " \nTeacher : { "+
                 "\nid: " + getId() +
                 "\nfirstName: " + getFirstName() +
                 "\nsecondName: " + getSecondName() +

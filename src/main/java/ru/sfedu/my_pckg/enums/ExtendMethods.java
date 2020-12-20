@@ -7,5 +7,8 @@ public enum ExtendMethods {
     DELETE,
     CREATE,
     JOIN,
-    REVIEW
+    REVIEW,
+    MATERIAl,
+    UNSUBSCRIBE,
+    QA,
 }

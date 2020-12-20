@@ -1,11 +1,12 @@
 package ru.sfedu.my_pckg.api;
 
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
+import org.simpleframework.xml.Serializer;
+import org.simpleframework.xml.core.Persister;
 import ru.sfedu.my_pckg.BaseTest;
+import ru.sfedu.my_pckg.Constants;
 import ru.sfedu.my_pckg.beans.*;
 import ru.sfedu.my_pckg.enums.Status;
 
@@ -17,10 +18,11 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-
-class DataProviderCsvTest extends BaseTest {
-    public static Logger log = LogManager.getLogger(DataProviderCsvTest.class);
-    public DataProviderCsv provider = new DataProviderCsv();
+class DataProviderXMLTest extends BaseTest {
+    public static Logger log = LogManager.getLogger(DataProviderXMLTest.class);
+    public DataProviderXML provider = new DataProviderXML();
+    Serializer serializer = new Persister();
+    DataProviderXMLTest() throws IOException {}
     Teacher teacher_1 = createTeacher(12L, "John", "Beach", 40,
             "asdasd@mail.ru", "Romania", "Machine Learning",
             10);
@@ -39,9 +41,23 @@ class DataProviderCsvTest extends BaseTest {
     List<Long> studentsIds = Arrays.asList(12L, 13L, 14L);
     Course course_1 = createCourse(1234, "Test", "Test course", 12L, studentsIds);
     Section section_1 = createSection(1234, "Test", "Test section", 1234, videos, materials);
-    DataProviderCsvTest() throws IOException {
+    Section section_update = createSection(1234,"New Name", "New description",1234,videos_Upd,materials_Upd);
+
+    @Test
+    public void testInsertStudentSuccess() throws Exception {
+        log.debug("On test TeacherInsertSuccess");
+        provider.flushFile(Student.class.getSimpleName());
+        assertEquals(Status.SUCCESSFUL,provider.dataInsert(Collections.singletonList(student_1)));
+        assertEquals(student_1,provider.getStudentById(12L));
     }
 
+    @Test
+    public void testInsertStudentFail() throws Exception {
+        log.debug("On test testInsertStudentFail");
+        provider.flushFile(Student.class.getSimpleName());
+        assertEquals(Status.FAIL,provider.dataInsert(Collections.emptyList()));
+        assertEquals(Collections.emptyList(),provider.getRecords(Student.class));
+    }
 
 
     @Test
@@ -55,38 +71,24 @@ class DataProviderCsvTest extends BaseTest {
     @Test
     public void testInsertTeacherFail() throws Exception {
         log.debug("On test testInsertTeacherFail");
-        provider.flushFile(Teacher.class.getSimpleName());
-        assertEquals(Status.FAIL,provider.<Teacher>dataInsert(Collections.emptyList()));
+        provider.flushFile(Student.class.getSimpleName());
+        assertEquals(Status.FAIL,provider.dataInsert(Collections.emptyList()));
+        assertEquals(Collections.emptyList(),provider.getRecords(Student.class));
+        provider.getRecords(Review.class);
     }
 
     @Test
-    public void testInsertStudentSuccess() throws Exception {
-        log.debug("On test testInsertStudentSuccess");
-        provider.flushFile(Student.class.getSimpleName());
-        assertEquals(Status.SUCCESSFUL,provider.dataInsert(Collections.singletonList(student_1)));
-    }
-
-    @Test
-    public void testInsertStudentFail() throws Exception {
-        log.debug("On test testInsertStudentSuccess");
-        provider.flushFile(Student.class.getSimpleName());
-        assertEquals(Status.FAIL,provider.<Student>dataInsert(Collections.emptyList()));
-    }
-
-    @Test
-    public void createCourseSuccess() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
-        log.debug("On test createCourseSuccess");
-        provider.flushFile(Student.class.getSimpleName());
-        provider.flushFile(Teacher.class.getSimpleName());
-        provider.flushFile(Course.class.getSimpleName());
-        provider.<Teacher>dataInsert(Collections.singletonList(teacher_1));
-        provider.<Student>dataInsert(Arrays.asList(student_1, student_2, student_3));
+    public void createCourseSuccess() throws Exception {
+        provider.flushFile(Constants.STUDENT);
+        provider.flushFile(Constants.TEACHER);
+        provider.dataInsert(Collections.singletonList(teacher_1));
+        provider.dataInsert(Arrays.asList(student_1, student_2, student_3));
         assertEquals(Status.SUCCESSFUL,provider.createCourse(1234, "Test", "Test course", 12L, studentsIds));
-        assertEquals(course_1,provider.getCourseById(1234));
+        assertEquals(course_1,provider.<Course>getCourseById(1234));
     }
 
     @Test
-    public void createCourseFail() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public void createCourseFail() throws Exception {
         log.debug("On test createCourseFail");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -97,7 +99,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void createSectionSuccess() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public void createSectionSuccess() throws Exception {
         log.debug("On test createSectionSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -111,7 +113,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void createSectionFail() throws CsvRequiredFieldEmptyException, IOException, CsvDataTypeMismatchException {
+    public void createSectionFail() throws Exception {
         log.debug("On test createSectionFail");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -122,82 +124,67 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void deleteSectionSuccess() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    public void deleteSectionSuccess() throws Exception {
         log.debug("On test deleteSectionSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
         provider.flushFile(Course.class.getSimpleName());
         provider.flushFile(Section.class.getSimpleName());
-        provider.dataInsert(Arrays.asList(student_1, student_2, student_3));
-        provider.dataInsert(Collections.singletonList(teacher_1));
+        provider.<Teacher>dataInsert(Collections.singletonList(teacher_1));
+        provider.<Student>dataInsert(Arrays.asList(student_1, student_2, student_3));
         provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
-        provider.createSection(1234, "Test", "Test section", 1234, videos, materials);
+        provider.createSection(1234,"Test","Test section",1234,videos,materials);
         assertEquals(Status.SUCCESSFUL,provider.deleteSection(1234));
         assertEquals(Collections.emptyList(),provider.getRecords(Section.class));
     }
 
     @Test
-    public void deleteSectionFail() throws IOException {
-        log.debug("On test deleteSectionFail");
+    public void deleteSectionFail() throws Exception {
+        log.debug("On test deleteSectionSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
         provider.flushFile(Course.class.getSimpleName());
         provider.flushFile(Section.class.getSimpleName());
-        assertEquals(Status.FAIL,provider.deleteSection(1234));
-    }
-
-    @Test
-    public void updateSectionSuccess() throws IOException{
-        log.debug("On test updateSection");
-        provider.flushFile(Student.class.getSimpleName());
-        provider.flushFile(Teacher.class.getSimpleName());
-        provider.flushFile(Course.class.getSimpleName());
-        provider.flushFile(Section.class.getSimpleName());
-        provider.dataInsert(Arrays.asList(student_1, student_2, student_3));
-        provider.dataInsert(Collections.singletonList(teacher_1));
+        provider.<Teacher>dataInsert(Collections.singletonList(teacher_1));
+        provider.<Student>dataInsert(Arrays.asList(student_1, student_2, student_3));
         provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
-        provider.createSection(1234, "Test", "Test section", 1234, videos, materials);
-        assertEquals(Status.SUCCESSFUL,provider.updateSection(1234,"New name","",videos_Upd,materials_Upd));
-        assertEquals("New name",provider.getSectionById(1234).getName());
+        provider.createSection(1234,"Test","Test section",1234,videos,materials);
+        assertEquals(Status.SUCCESSFUL,provider.deleteSection(1234));
+        assertEquals(Collections.emptyList(),provider.getRecords(Section.class));
     }
 
     @Test
-    public void updateSectionFail() throws IOException{
+    public void updateSectionSuccess() throws Exception {
+        log.debug("On test updateSectionSuccess");
+        provider.flushFile(Student.class.getSimpleName());
+        provider.flushFile(Teacher.class.getSimpleName());
+        provider.flushFile(Course.class.getSimpleName());
+        provider.flushFile(Section.class.getSimpleName());
+        provider.<Teacher>dataInsert(Collections.singletonList(teacher_1));
+        provider.<Student>dataInsert(Arrays.asList(student_1, student_2, student_3));
+        provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
+        provider.createSection(1234,"Test","Test section",1234,videos,materials);
+        assertEquals(Status.SUCCESSFUL,provider.<Section>updateSection(1234,"New Name", "New description",videos_Upd,materials_Upd));
+        assertEquals(section_update,provider.<Section>getSectionById(1234));
+    }
+
+    @Test
+    public void updateSectionFail() throws Exception {
         log.debug("On test updateSectionFail");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
         provider.flushFile(Course.class.getSimpleName());
         provider.flushFile(Section.class.getSimpleName());
-        assertEquals(Status.FAIL,provider.updateSection(1234,"New name","",videos_Upd,materials_Upd));
-    }
-
-    @Test
-    public void chooseCourseSuccess() throws IOException {
-        log.debug("On test chooseCourseSuccess");
-        provider.flushFile(Student.class.getSimpleName());
-        provider.flushFile(Teacher.class.getSimpleName());
-        provider.flushFile(Course.class.getSimpleName());
-        provider.flushFile(Section.class.getSimpleName());
-        provider.dataInsert(Arrays.asList(student_1, student_2, student_3));
-        provider.dataInsert(Collections.singletonList(teacher_1));
+        provider.<Teacher>dataInsert(Collections.singletonList(teacher_1));
+        provider.<Student>dataInsert(Arrays.asList(student_1, student_2, student_3));
         provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
-        provider.createSection(1234, "Test", "Test section", 1234, videos, materials);
-        assertEquals(provider.chooseCourse(-1,1,""),provider.getRecords(Course.class).toString());
+        provider.createSection(1234,"Test","Test section",1234,videos,materials);
+        assertEquals(Status.FAIL,provider.<Section>updateSection(1235,"New Name", "New description",videos_Upd,materials_Upd));
+        assertEquals(section_1,provider.<Section>getSectionById(1234));
     }
 
     @Test
-    public void chooseCourseFail() throws IOException {
-        log.debug("On test chooseCourseFail");
-        provider.flushFile(Student.class.getSimpleName());
-        provider.flushFile(Teacher.class.getSimpleName());
-        provider.flushFile(Course.class.getSimpleName());
-        provider.flushFile(Section.class.getSimpleName());
-        assertEquals(provider.getRecords(Course.class).toString(),provider.chooseCourse(-1,1, ""));
-    }
-
-
-    @Test
-    public void joinCourseSuccess() throws IOException {
+    public void joinCourseSuccess() throws Exception {
         log.debug("On test joinCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -211,7 +198,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void joinCourseFail() throws IOException {
+    public void joinCourseFail() throws Exception {
         log.debug("On test joinCourseFail");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -224,9 +211,8 @@ class DataProviderCsvTest extends BaseTest {
         assertEquals(studentsIds,provider.getCourseById(1234).getStudents());
     }
 
-
     @Test
-    public void leaveAReviewAboutCourseSuccess() throws IOException {
+    public void leaveAReviewAboutCourseSuccess() throws Exception {
         log.debug("On test leaveAReviewAboutCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -244,9 +230,8 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void leaveAReviewAboutCourseFail() throws IOException {
+    public void leaveAReviewAboutCourseFail() throws Exception {
         log.debug("On test leaveAReviewAboutCourseFail");
-        DataProviderCsv provider = new DataProviderCsv();
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
         provider.flushFile(Course.class.getSimpleName());
@@ -257,7 +242,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void deleteCourseSuccess() throws IOException {
+    public void deleteCourseSuccess() throws Exception {
         log.debug("On test deleteCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -316,7 +301,7 @@ class DataProviderCsvTest extends BaseTest {
 
 
     @Test
-    public void checkCourseReviewsSuccess() throws IOException {
+    public void checkCourseReviewsSuccess() throws Exception {
         log.debug("On test checkCourseReviewsSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -443,7 +428,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void checkQuestionsSuccess() throws IOException {
+    public void checkQuestionsSuccess() throws Exception {
         log.debug("On test checkQuestionsSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -475,7 +460,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void answerQuestionSuccess() throws IOException {
+    public void answerQuestionSuccess() throws Exception {
         log.debug("On test answerQuestionSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -538,7 +523,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void checkQASuccess() throws IOException {
+    public void checkQASuccess() throws Exception {
         log.debug("On test checkQASuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -573,7 +558,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void viewCourseSuccess() throws IOException {
+    public void viewCourseSuccess() throws Exception {
         log.debug("On test viewCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -602,7 +587,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void updateCourseSuccess() throws IOException {
+    public void updateCourseSuccess() throws Exception {
         log.debug("On test updateCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -634,7 +619,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void getStudentsCoursesSuccess() throws IOException {
+    public void getStudentsCoursesSuccess() throws Exception {
         log.debug("On test updateCourseSuccess");
         provider.flushFile(Student.class.getSimpleName());
         provider.flushFile(Teacher.class.getSimpleName());
@@ -666,5 +651,6 @@ class DataProviderCsvTest extends BaseTest {
         provider.createCourse(1235, "Test_2 ", "Test course_2", 12L, Arrays.asList(13L,14L));
         assertEquals(Collections.emptyList(),provider.getStudentsCourses(15L,1234,3,"","","",false));
     }
+
 
 }

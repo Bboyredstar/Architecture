@@ -1,0 +1,11 @@
+<wrapperXML>
+   <object class="ru.sfedu.my_pckg.beans.Teacher" id="12">
+      <firstName>John</firstName>
+      <secondName>Beach</secondName>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <competence>Machine Learning</competence>
+      <experience>10</experience>
+   </object>
+</wrapperXML>

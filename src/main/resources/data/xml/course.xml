@@ -1,0 +1,17 @@
+<wrapperXML>
+   <object class="ru.sfedu.my_pckg.beans.Course" id="1234">
+      <name>Test</name>
+      <description>Test course</description>
+      <owner>12</owner>
+      <student>12</student>
+      <student>13</student>
+      <student>14</student>
+   </object>
+   <object class="ru.sfedu.my_pckg.beans.Course" id="1235">
+      <name>Test_2 </name>
+      <description>Test course_2</description>
+      <owner>12</owner>
+      <student>13</student>
+      <student>14</student>
+   </object>
+</wrapperXML>
