@@ -56,11 +56,27 @@ public class BaseTest {
       return section;
   }
 
-  public static Question createQuestion(){
-      Question question = new Question();
-      question.setId(Helper.createId());
-      question.setQuestion("Test question");
-      return question;
+  public static Question createQuestion(long id,String question){
+      Question questionObj = new Question();
+      questionObj.setId(id);
+      questionObj.setQuestion(question);
+      return questionObj;
+  }
+
+  public static Answer createAnswer(long question,String answer ){
+      Answer answerObj = new Answer();
+      answerObj.setId(Helper.createId());
+      answerObj.setQuestion(question);
+      answerObj.setAnswer(answer);
+        return answerObj;
+  }
+
+  public static Review createReview(int rating, String comment){
+      Review review = new Review();
+      review.setId(Helper.createId());
+      review.setRating(rating);
+      review.setComment(comment);
+      return review;
   }
 
 

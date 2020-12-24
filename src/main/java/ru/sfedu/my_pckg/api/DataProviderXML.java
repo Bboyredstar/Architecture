@@ -12,14 +12,15 @@ import ru.sfedu.my_pckg.enums.Status;
 import ru.sfedu.my_pckg.utils.ConfigurationUtil;
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -55,6 +56,46 @@ public class DataProviderXML implements AbstractDataProvider {
     }
 
 
+    public Status dataInitialization(){
+        try{
+            Teacher teacher_1 = Helper.createTeacher(1111,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            Teacher teacher_2 = Helper.createTeacher(1222,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            Teacher teacher_3 = Helper.createTeacher(1333,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            if (getRecords(Teacher.class)==null||getRecords(Teacher.class).isEmpty()){
+                dataInsert(Arrays.asList(teacher_1,teacher_2,teacher_3));
+            }
+            Student student_1 = Helper.createStudent(2112,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            Student student_2 = Helper.createStudent(2113,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            Student student_3 = Helper.createStudent(2114,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            if (getRecords(Student.class)==null||getRecords(Student.class).isEmpty()){
+                dataInsert(Arrays.asList(student_1,student_2,student_3));
+            }
+            if (getRecords(Course.class)==null || getRecords(Course.class).isEmpty()){
+                createCourse(3111,"Backend Development","Back end development refers to the server side of an application and everything that communicates between the database and the browser. Back end Development refers to the server side of development where you are primarily focused on how the site works.",
+                        1111L,Arrays.asList(2112L,2114L));
+                createCourse(3112,"Frontend Development","Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.",
+                        1222L,Arrays.asList(2112L,2113L));
+            }
+            if (getRecords(Section.class)==null || getRecords(Section.class).isEmpty()) {
+                createSection(4111, "Introduction", "Starting of course", 3111, Helper.randomURLs(3), Helper.randomURLs(4));
+                createSection(4222, "Base Skills", "Learning of base skill that need to all developers", 3111, Helper.randomURLs(4), Helper.randomURLs(2));
+                createSection(5111, "Introduction", "Small intro in web development", 3112, Helper.randomURLs(2), Helper.randomURLs(6));
+                createSection(5222, "What is Frontend", "Basic conceptions of frontend", 3112, Helper.randomURLs(3), Helper.randomURLs(5));
+            }
+            return Status.SUCCESSFUL;
+        }
+        catch(Exception e){
+            log.error(e);
+            return Status.FAIL;
+        }
+    }
+
     public <T> List<T> getRecords(Class cl) throws Exception {
         String path = createPath(cl.getSimpleName());
         DSInit(path);
@@ -68,19 +109,12 @@ public class DataProviderXML implements AbstractDataProvider {
         return xml.getList();
         }
         catch (Exception e){
+            log.debug(cl.getSimpleName());
             log.error(e);
             return new ArrayList<T>();
         }
     }
 
-    /**
-     * Merge lists list.
-     *
-     * @param <T>      the type parameter
-     * @param oldLists the old lists
-     * @param newList  the new list
-     * @return the list
-     */
     public <T> List<T> mergeLists(List<T> oldLists, List<T> newList) {
         List<T> mergeList;
         mergeList = (oldLists == null || oldLists.isEmpty()) ? newList : Stream
@@ -89,15 +123,7 @@ public class DataProviderXML implements AbstractDataProvider {
         return mergeList;
     }
 
-    /**
-     * Gets student by id.
-     *
-     * @param id the id
-     * @return the student by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
-//  CRUD
+    //  CRUD
     public Student getStudentById(long id) throws Exception {
         List<Student> students = this.<Student>getRecords(Student.class);
         Student student = students.stream().filter(el->el.getId()==id).findFirst().get();
@@ -151,8 +177,17 @@ public class DataProviderXML implements AbstractDataProvider {
     public Status createCourse(long id, String name, String description, Long ownerId, List<Long> students){
         try{
             isExist(ownerId, Constants.TEACHER);
+            if (!checkName(name)){
+                log.error(Constants.CREATING_ERROR);
+                return Status.FAIL;
+            }
+            students = (students==null)?Collections.emptyList():students;
             if (!checkStudentsId(students)){
                 log.error(Constants.IDS_ERROR);
+                return Status.FAIL;
+            }
+            if(!checkDuplicate(students)){
+                log.error(Constants.HAS_DUPLICATE);
                 return Status.FAIL;
             }
             Course course = new Course();
@@ -178,6 +213,10 @@ public class DataProviderXML implements AbstractDataProvider {
         try {
             Section section = new Section();
             getCourseById(course);
+            if (!checkName(name)){
+                log.error(Constants.CREATING_ERROR);
+                return Status.FAIL;
+            }
             section.setId(id);
             section.setName(name);
             section.setDescription(description);
@@ -339,7 +378,10 @@ public class DataProviderXML implements AbstractDataProvider {
     }
 
     @Override
-    public Status updateCourse(long courseId, String courseName, String courseDescription, List<Long> students, long sectionId, String sectionName, String sectionDescription, List<String> sectionMaterials, List<String> sectionVideos, String extendMethod) {
+    public Status updateCourse(long courseId, String courseName, String courseDescription,
+                               long sectionId, String sectionName, String sectionDescription,
+                               List<String> sectionMaterials, List<String> sectionVideos,
+                               String extendMethod) {
         try{
             Course course = getCourseById(courseId);
 
@@ -349,23 +391,17 @@ public class DataProviderXML implements AbstractDataProvider {
             if (!courseDescription.trim().equals("")){
                 course.setDescription(courseDescription);
             }
-            if (students!=null){
-                if (!checkStudentsId(students)) {
-                    log.error(Constants.IDS_ERROR);
-                    log.error(Constants.UPDATING_ERROR);
-                    return Status.FAIL;
-                }
-                course.setStudents(students);
-            }
+
             List <Course> oldCourses = this.<Course>getRecords(Course.class);
             oldCourses.removeIf(el->(el.getId()==courseId));
             dataInsert(mergeLists(oldCourses,Collections.singletonList(course)));
             if (extendMethod.trim().equals("")){
+                log.debug(course.toString());
+                log.info(Constants.UPDATING_SUCCESS);
                 return Status.SUCCESSFUL;
             }
             switch(ExtendMethods.valueOf(extendMethod.trim().toUpperCase())){
                 case CREATE:
-                    log.info("Create");
                     long id = Helper.createId();
                     return createSection(id,sectionName,sectionDescription,
                             courseId,sectionMaterials,sectionVideos);
@@ -375,6 +411,7 @@ public class DataProviderXML implements AbstractDataProvider {
                     return deleteSection(sectionId);
             }
             log.debug(course);
+            log.info(Constants.UPDATING_SUCCESS);
             return Status.SUCCESSFUL;
 
         } catch (Exception e) {
@@ -384,21 +421,10 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    @Override
-    public List<Question> checkQuestions(long courseId, long questionId, String answer) {
+    public String checkQuestions(long courseId, long questionId, String answer) {
         try{
             isExist(courseId,Constants.COURSE);
-            List<CourseActivity> activities = this.<CourseActivity>getRecords(CourseActivity.class)
-                    .stream()
-                    .filter(el->el.getCourse()==courseId)
-                    .collect(Collectors.toList());
-            if (activities.isEmpty()){
-                log.warn(Constants.LIST_EMPTY);
-                return Collections.emptyList();
-            }
-
-            List<Long> questionsIds = new ArrayList<>();
-            activities.forEach(e-> questionsIds.addAll(e.getQuestions()));
+            List<Long> questionsIds = getQuestions(courseId);
             List<Question> allQuestions = questionsIds.stream().map(el-> {
                 try {
                     return getQuestionById(el);
@@ -407,13 +433,13 @@ public class DataProviderXML implements AbstractDataProvider {
                 }
             }).collect(Collectors.toList());
 
-            if(questionId!=-1||!answer.trim().equals("")){
-                Status status = answerQuestion(questionId,answer);
-                log.info(status.toString());
-                return Collections.emptyList();
-
+            if(questionId!=-1&&!answer.trim().equals("")){
+                return answerQuestion(questionId,answer).toString();
             }
-            return allQuestions;
+            String questions = allQuestions.stream().map(Question::toString)
+                    .collect(Collectors.joining(" , "));
+            log.debug(questions);
+            return questions;
         } catch (Exception e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
@@ -421,10 +447,13 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    @Override
     public Status answerQuestion(long questionId, String answer) {
         try{
             isExist(questionId,Constants.QUESTION);
+            if(answer.trim().isEmpty()){
+                log.error(Constants.BAD_ANSWER);
+                return Status.FAIL;
+            }
             List<Answer> answers = this.<Answer>getRecords(Answer.class);
             Answer answerObj = new Answer();
             answerObj.setId(Helper.createId());
@@ -446,8 +475,6 @@ public class DataProviderXML implements AbstractDataProvider {
         List<Course> courses;
         try {
             courses = this.<Course>getRecords(Course.class);
-            log.info(courses.toString());
-
             if(courseId==-1 || studentId==-1 || extendMethod.trim().isEmpty()){
                 return courses.toString();
             }
@@ -457,6 +484,7 @@ public class DataProviderXML implements AbstractDataProvider {
                 case REVIEW:
                     return checkCourseReviews(courseId).toString();
             }
+            log.info(courses.toString());
             return courses.toString();
         } catch (Exception e) {
             log.error(e);
@@ -539,6 +567,7 @@ public class DataProviderXML implements AbstractDataProvider {
             List<Long> reviewsId = courseActivities.stream().map(CourseActivity::getReview).collect(Collectors.toList());
             List<Review> reviews = this.<Review>getRecords(Review.class);
             reviews.stream().filter(el->reviewsId.contains(el.getId())).collect(Collectors.toList());
+            log.debug(reviews);
             return reviews;
 
         } catch (Exception e) {
@@ -549,30 +578,28 @@ public class DataProviderXML implements AbstractDataProvider {
     }
 
     @Override
-    public List<Course> getStudentsCourses(long studentId, long courseId, int rating, String comment, String question, String ExtendMethod, boolean needQuestion) {
+    public String getStudentsCourses(long studentId, long courseId, int rating, String comment, String question, String ExtendMethod, boolean needQuestion) {
         try{
             isExist(studentId,Constants.STUDENT);
-            List<Course> courses = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents().contains(studentId)).collect(Collectors.toList());
+            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents().contains(studentId)).collect(Collectors.toList());
+            String courses = coursesObj.stream().map(Course::toString)
+                    .collect(Collectors.joining(" , "));
             if(ExtendMethod.trim().equals("")){
-                log.info(courses.toString());
+                log.info(courses);
                 return courses;
             }
 
             switch(ExtendMethods.valueOf(ExtendMethod.trim().toUpperCase())){
                 case MATERIAl:
-                    getCourseMaterials(courseId);
-                    break;
+                    return getCourseMaterials(courseId).toString();
                 case UNSUBSCRIBE:
-                    unsubscribeFromACourse(courseId,studentId);
-                    break;
+                    return unsubscribeFromACourse(courseId,studentId).toString();
                 case REVIEW:
-                    leaveAReviewAboutCourse(courseId,studentId,rating,comment);
-                    break;
+                    return leaveAReviewAboutCourse(courseId,studentId,rating,comment).toString();
                 case QA:
-                    checkQA(courseId,studentId,question,needQuestion);
-                    break;
+                    return checkQA(courseId,studentId,question,needQuestion);
             }
-            log.info(courses.toString());
+            log.info(courses);
             return courses;
         }
         catch (Exception e){
@@ -650,15 +677,15 @@ public class DataProviderXML implements AbstractDataProvider {
                 return Status.FAIL;
             }
 
-            long reviewId = createReview(rating,comment);
+            Review review = createReview(rating,comment);
 
-            if (reviewId == -1){
+            if (review == null){
                 log.error(Constants.CREATING_ERROR);
                 return Status.FAIL;
             }
 
-            updateCourseActivity(activity.getId(),reviewId,null);
-            log.info(Constants.CREATING_SUCCESS + reviewId);
+            updateCourseActivity(activity.getId(),review.getId(),null);
+            log.info(Constants.CREATING_SUCCESS + review);
             return Status.SUCCESSFUL;
 
         } catch (Exception e) {
@@ -669,22 +696,23 @@ public class DataProviderXML implements AbstractDataProvider {
     }
 
     @Override
-    public List<String> checkQA(long courseId, long studentId, String question, boolean needQuestion) {
+    public String checkQA(long courseId, long studentId, String question, boolean needQuestion) {
         try{
             isExist(courseId,Constants.COURSE);
-            List<Question> questions = checkQuestions(courseId,-1,"");
-            List<Long> questionsIds = questions.stream().map(Question::getId).collect(Collectors.toList());
-            List<Answer> answers = this.<Answer>getRecords(Answer.class).stream()
-                    .filter(el->questionsIds.contains(el.getQuestion()))
+            List<Long> questions = getQuestions(courseId);
+            List<Answer> answersObj = this.<Answer>getRecords(Answer.class).stream()
+                    .filter(el->questions.contains(el.getQuestion()))
                     .collect(Collectors.toList());
-            List <String> allQuestionsAnswers = new ArrayList<>();
-            allQuestionsAnswers.addAll(questions.stream().map(Question::toString).collect(Collectors.toList()));
-            allQuestionsAnswers.addAll(answers.stream().map(Answer::toString).collect(Collectors.toList()));
-            if(needQuestion){
-                Status status = askAQuestion(courseId,studentId,question);
-                return Collections.singletonList(status.toString());
+            String answers = "";
+            if (!answersObj.isEmpty()){
+                answers = answersObj.stream().map(Answer::toString)
+                        .collect(Collectors.joining(" , "));
             }
-            log.info(allQuestionsAnswers.toString());
+            String allQuestionsAnswers = checkQuestions(courseId,1,"") + answers;
+            if(needQuestion){
+                return askAQuestion(courseId,studentId,question).toString();
+            }
+            log.debug(allQuestionsAnswers);
             return allQuestionsAnswers;
         } catch (Exception e) {
             log.error(e);
@@ -750,6 +778,9 @@ public class DataProviderXML implements AbstractDataProvider {
         }
 
     public boolean checkStudentsId(List<Long> students) {
+        if(students.isEmpty()){
+            return true;
+        }
         if (students.size() > 0) {
             return students.stream().allMatch(el -> {
                 try {
@@ -796,16 +827,8 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    /**
-     * Append student boolean.
-     *
-     * @param course the course
-     * @param id     the id
-     * @return the boolean
-     * @throws IOException the io exception
-     */
     public boolean appendStudent(Course course,long id) throws Exception {
-        List<Long> ids = course.getStudents();
+        List<Long> ids = (course.getStudents()==null)?new ArrayList<>():course.getStudents();
         if (ids.contains(id)) {
             return false;
         }
@@ -817,13 +840,6 @@ public class DataProviderXML implements AbstractDataProvider {
         return this.<Course>dataInsert(courses) == Status.SUCCESSFUL;
     }
 
-    /**
-     * Delete student from course boolean.
-     *
-     * @param course the course
-     * @param id     the id
-     * @return the boolean
-     */
     public boolean deleteStudentFromCourse(Course course,long id){
         try{
             List <Long> ids = course.getStudents();
@@ -842,27 +858,12 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    /**
-     * Find activity boolean.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the boolean
-     * @throws IOException the io exception
-     */
     public boolean findActivity(long courseId,long studentId) throws Exception {
         List<CourseActivity> activities = this.<CourseActivity>getRecords(CourseActivity.class);
         return activities.stream().anyMatch(el -> el.getStudent() == studentId && el.getCourse() == courseId);
     }
 
-    /**
-     * Create review long.
-     *
-     * @param rating  the rating
-     * @param comment the comment
-     * @return the long
-     */
-    public long createReview(int rating,String comment)  {
+    public Review createReview(int rating,String comment)  {
         try {
             Review review = new Review();
             long id = Helper.createId();
@@ -881,23 +882,15 @@ public class DataProviderXML implements AbstractDataProvider {
             dataInsert(allReviews);
             log.debug(review);
             log.debug(Constants.CREATING_SUCCESS);
-            return id;
+            return review;
         } catch (Exception e) {
             log.error(e);
             log.error(Constants.CREATING_ERROR);
-            return -1;
+            return null;
         }
     }
 
 
-    /**
-     * Update course activity status.
-     *
-     * @param id        the id
-     * @param reviewId  the review id
-     * @param questions the questions
-     * @return the status
-     */
     public Status updateCourseActivity(long id, long reviewId, List<Long> questions){
         try {
             CourseActivity activity = getCourseActivityById(id);
@@ -906,7 +899,7 @@ public class DataProviderXML implements AbstractDataProvider {
                 activity.setReview(reviewId);
             }
 
-            if(questions!=null) {
+            if(questions!=null && checkDuplicate(questions)) {
                 activity.setQuestions(questions);
             }
 
@@ -923,13 +916,6 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    /**
-     * Check user assign to course boolean.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the boolean
-     */
     public boolean checkUserAssignToCourse(long courseId,long studentId){
         try{
             Course course = getCourseById(courseId);
@@ -939,13 +925,6 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    /**
-     * Create course activity course activity.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the course activity
-     */
     public CourseActivity createCourseActivity(long courseId,long studentId) {
         if (!checkUserAssignToCourse(courseId,studentId)){
             return null;
@@ -964,18 +943,15 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    /**
-     * Create question question.
-     *
-     * @param question the question
-     * @return the question
-     */
     public Question createQuestion(String question) {
         Question questionObj = new Question();
+        if(question.trim().isEmpty()){
+            log.error(Constants.BAD_QUESTION);
+            return null;
+        }
         try {
             questionObj.setId(Helper.createId());
             questionObj.setQuestion(question);
-
             this.<Question>dataInsert(mergeLists(this.<Question>getRecords(Question.class),Collections.singletonList(questionObj)));
             return questionObj;
         } catch (Exception e) {
@@ -983,4 +959,46 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
+    public boolean checkDuplicate(List<Long> ids){
+        if(ids.isEmpty()){
+            return true;
+        }
+        return ids.stream().collect(Collectors.groupingBy(Function.identity()))
+                .entrySet()
+                .stream()
+                .filter(e -> e.getValue().size() > 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList()).isEmpty();
+    }
+
+
+    public boolean checkName(String name){
+        if(name.trim().isEmpty()){
+            log.error(Constants.BAD_NAME);
+            return false;
+        }
+        if (name.length()<4){
+            log.error(Constants.BAD_NAME);
+            return false;
+        }
+        return true;
+    }
+
+    public List<Long> getQuestions(long courseId) throws Exception {
+        List<CourseActivity> activities = this.<CourseActivity>getRecords(CourseActivity.class)
+                .stream()
+                .filter(el->el.getCourse()==courseId)
+                .collect(Collectors.toList());
+        if (activities.isEmpty()){
+            return Collections.emptyList();
+        }
+        List<Long> questionsIds = new ArrayList<>();
+        try{
+            activities.forEach(e-> questionsIds.addAll(e.getQuestions()));
+        }
+        catch (NullPointerException e){
+            return Collections.emptyList();
+        }
+        return  questionsIds;
+    }
 }

@@ -24,22 +24,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
-/**
- * The type Data provider csv.
- */
 public class DataProviderCsv implements AbstractDataProvider{
 
-    /**
-     * The constant log.
-     */
     public static Logger log = LogManager.getLogger(DataProviderCsv.class);
     private final String FILE_EXTENSION = ConfigurationUtil.getConfigurationEntry("CSV_FILE_EXTENSION");
     private final String PATH = ConfigurationUtil.getConfigurationEntry("PATH_TO_CSV");
@@ -47,24 +39,50 @@ public class DataProviderCsv implements AbstractDataProvider{
     private final String DEFAULT_EXTENSION = ".xml";
 
 
-    /**
-     * Instantiates a new Data provider csv.
-     *
-     * @throws IOException the io exception
-     */
     public DataProviderCsv() throws IOException {
     }
 
-
+    public Status dataInitialization(){
+        try{
+            Teacher teacher_1 = Helper.createTeacher(1111,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            Teacher teacher_2 = Helper.createTeacher(1222,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            Teacher teacher_3 = Helper.createTeacher(1333,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences(),Helper.randomNumber(2,10));
+            if (getRecords(Teacher.class)==null||getRecords(Teacher.class).isEmpty()){
+                dataInsert(Arrays.asList(teacher_1,teacher_2,teacher_3));
+            }
+            Student student_1 = Helper.createStudent(2112,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            Student student_2 = Helper.createStudent(2113,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            Student student_3 = Helper.createStudent(2114,Helper.generateUserFName(),Helper.generateUserLName(),
+                    Helper.randomNumber(28,65), Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
+            if (getRecords(Student.class)==null||getRecords(Student.class).isEmpty()){
+                dataInsert(Arrays.asList(student_1,student_2,student_3));
+            }
+            if (getRecords(Course.class)==null||getRecords(Course.class).isEmpty()){
+                createCourse(3111,"Backend Development","Back end development refers to the server side of an application and everything that communicates between the database and the browser. Back end Development refers to the server side of development where you are primarily focused on how the site works.",
+                        1111L,Arrays.asList(2112L,2114L));
+                createCourse(3112,"Frontend Development","Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.",
+                        1222L,Arrays.asList(2112L,2113L));
+            }
+            if (getRecords(Section.class)==null||getRecords(Section.class).isEmpty()) {
+                createSection(4111, "Introduction", "Starting of course", 3111, Helper.randomURLs(3), Helper.randomURLs(4));
+                createSection(4222, "Base Skills", "Learning of base skill that need to all developers", 3111, Helper.randomURLs(4), Helper.randomURLs(2));
+                createSection(5111, "Introduction", "Small intro in web development", 3112, Helper.randomURLs(2), Helper.randomURLs(6));
+                createSection(5222, "What is Frontend", "Basic conceptions of frontend", 3112, Helper.randomURLs(3), Helper.randomURLs(5));
+            }
+            return Status.SUCCESSFUL;
+        }
+        catch(Exception e){
+            log.error(e);
+            return Status.FAIL;
+        }
+    }
     //Generics methods
 
-    /**
-     * Data insert status.
-     *
-     * @param <T>        the type parameter
-     * @param listRecord the list record
-     * @return the status
-     */
     public <T> Status dataInsert(List<T> listRecord) {
         try {
             String path = createPath(listRecord.get(0).getClass().getSimpleName());
@@ -85,15 +103,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Gets records.
-     *
-     * @param <T>       the type parameter
-     * @param classname the classname
-     * @return the records
-     * @throws IOException      the io exception
-     * @throws RuntimeException the runtime exception
-     */
     public  <T> List<T> getRecords(Class classname) throws IOException, RuntimeException {
         try {
             String path = createPath(classname.getSimpleName());
@@ -116,14 +125,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Merge lists list.
-     *
-     * @param <T>      the type parameter
-     * @param oldLists the old lists
-     * @param newList  the new list
-     * @return the list
-     */
     public <T> List<T> mergeLists(List<T> oldLists, List<T> newList) {
         List<T> mergeList;
         mergeList = (oldLists == null || oldLists.isEmpty()) ? newList : Stream
@@ -132,15 +133,7 @@ public class DataProviderCsv implements AbstractDataProvider{
         return mergeList;
     }
 
-    /**
-     * Gets student by id.
-     *
-     * @param id the id
-     * @return the student by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
-//  CRUD
+    //  CRUD
     public Student getStudentById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.STUDENT);
         FileReader fileReader = new FileReader(path);
@@ -153,14 +146,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return students.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets section by id.
-     *
-     * @param id the id
-     * @return the section by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Section getSectionById(long id) throws NoSuchElementException, IOException{
         String path = createPath(Constants.SECTION);
         FileReader fileReader = new FileReader(path);
@@ -173,14 +158,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return sections.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets course by id.
-     *
-     * @param id the id
-     * @return the course by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Course getCourseById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.COURSE);
         FileReader fileReader = new FileReader(path);
@@ -193,14 +170,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return courses.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets teacher by id.
-     *
-     * @param id the id
-     * @return the teacher by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Teacher getTeacherById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.TEACHER);
         DSInit(path);
@@ -215,14 +184,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return teachers.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets review by id.
-     *
-     * @param id the id
-     * @return the review by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Review getReviewById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.REVIEW);
         DSInit(path);
@@ -236,14 +197,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return reviews.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets question by id.
-     *
-     * @param id the id
-     * @return the question by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Question getQuestionById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.QUESTION);
         DSInit(path);
@@ -258,14 +211,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return questions.stream().filter(el -> el.getId() == id).findFirst().get();
     }
 
-    /**
-     * Gets answer by id.
-     *
-     * @param id the id
-     * @return the answer by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public Answer getAnswerById(long id) throws NoSuchElementException, IOException{
         String path = createPath(Constants.ANSWER);
         DSInit(path);
@@ -280,14 +225,6 @@ public class DataProviderCsv implements AbstractDataProvider{
 
     }
 
-    /**
-     * Gets course activity by id.
-     *
-     * @param id the id
-     * @return the course activity by id
-     * @throws NoSuchElementException the no such element exception
-     * @throws IOException            the io exception
-     */
     public CourseActivity getCourseActivityById(long id) throws NoSuchElementException, IOException {
         String path = createPath(Constants.COURSE_ACTIVITY);
         DSInit(path);
@@ -305,8 +242,17 @@ public class DataProviderCsv implements AbstractDataProvider{
     public Status createCourse(long id, String name, String description, Long ownerId, List<Long> students){
             try{
                 isExist(ownerId, Constants.TEACHER);
+                if (!checkName(name)){
+                    log.error(Constants.CREATING_ERROR);
+                    return Status.FAIL;
+                }
+                students = (students==null)?Collections.emptyList():students;
                 if (!checkStudentsId(students)){
                     log.error(Constants.IDS_ERROR);
+                    return Status.FAIL;
+                }
+                if(!checkDuplicate(students)){
+                    log.error(Constants.HAS_DUPLICATE);
                     return Status.FAIL;
                 }
                 Course course = new Course();
@@ -332,6 +278,10 @@ public class DataProviderCsv implements AbstractDataProvider{
         try {
             Section section = new Section();
             isExist(course,Constants.COURSE);
+            if (!checkName(name)){
+                log.error(Constants.CREATING_ERROR);
+                return Status.FAIL;
+            }
             section.setId(id);
             section.setName(name);
             section.setDescription(description);
@@ -349,7 +299,6 @@ public class DataProviderCsv implements AbstractDataProvider{
             return Status.FAIL;
         }
     }
-
 
     public String viewCourse(long id, String extendMethod) {
            try {
@@ -373,9 +322,9 @@ public class DataProviderCsv implements AbstractDataProvider{
                }
                return course;
            }
-           catch(NoSuchElementException | IOException e){
+           catch(NoSuchElementException | IllegalArgumentException| IOException e){
                log.error(e);
-               log.error(Constants.GETTING_BY_ID_FAIL+id);
+               log.error(Constants.GETTING_ERROR);
                return null;
            }
     }
@@ -400,12 +349,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Delete course activity status.
-     *
-     * @param id the id
-     * @return the status
-     */
     public Status deleteCourseActivity(long id){
         try {
             CourseActivity activity = getCourseActivityById(id);
@@ -427,17 +370,7 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Update section status.
-     *
-     * @param id          the id
-     * @param name        the name
-     * @param description the description
-     * @param videos      the videos
-     * @param materials   the materials
-     * @return the status
-     */
-//
+
     public Status updateSection(long id, String name,
                               String description,  List<String> videos, List<String> materials) {
         try {
@@ -472,36 +405,29 @@ public class DataProviderCsv implements AbstractDataProvider{
     }
 
     public Status updateCourse(long courseId, String courseName,
-                             String courseDescription, List<Long> students,
+                             String courseDescription,
                              long sectionId, String sectionName, String sectionDescription,
                              List<String> sectionMaterials, List<String> sectionVideos,
                              String extendMethod){
         try{
             Course course = getCourseById(courseId);
-
             if (!courseName.trim().equals("")){
                 course.setName(courseName);
             }
             if (!courseDescription.trim().equals("")){
                 course.setDescription(courseDescription);
             }
-            if (students!=null){
-                if (!checkStudentsId(students)) {
-                    log.error(Constants.IDS_ERROR);
-                    log.error(Constants.UPDATING_ERROR);
-                    return Status.FAIL;
-                }
-                course.setStudents(students);
-            }
+
             List <Course> oldCourses = this.<Course>getRecords(Course.class);
             oldCourses.removeIf(el->(el.getId()==courseId));
             dataInsert(mergeLists(oldCourses,Collections.singletonList(course)));
             if (extendMethod.trim().equals("")){
+                log.debug(course.toString());
+                log.info(Constants.UPDATING_SUCCESS);
                 return Status.SUCCESSFUL;
             }
             switch(ExtendMethods.valueOf(extendMethod.trim().toUpperCase())){
                 case CREATE:
-                    log.info("Create");
                     long id = Helper.createId();
                     return createSection(id,sectionName,sectionDescription,
                                 courseId,sectionMaterials,sectionVideos);
@@ -510,9 +436,9 @@ public class DataProviderCsv implements AbstractDataProvider{
                 case DELETE:
                     return deleteSection(sectionId);
             }
-            log.debug(course);
+            log.debug(course.toString());
+            log.info(Constants.UPDATING_SUCCESS);
             return Status.SUCCESSFUL;
-
         } catch (IOException | NoSuchElementException |IllegalArgumentException e) {
             log.error(e);
             log.error(Constants.UPDATING_ERROR);
@@ -571,15 +497,15 @@ public class DataProviderCsv implements AbstractDataProvider{
                 return Status.FAIL;
             }
 
-            long reviewId = createReview(rating,comment);
+            Review review = createReview(rating,comment);
 
-            if (reviewId == -1){
+            if (review == null){
                 log.error(Constants.CREATING_ERROR);
                 return Status.FAIL;
             }
 
-            updateCourseActivity(activity.getId(),reviewId,null);
-            log.info(Constants.CREATING_SUCCESS + reviewId);
+            updateCourseActivity(activity.getId(),review.getId(),null);
+            log.info(Constants.CREATING_SUCCESS + review);
             return Status.SUCCESSFUL;
 
         } catch (IOException | NoSuchElementException e) {
@@ -601,9 +527,10 @@ public class DataProviderCsv implements AbstractDataProvider{
             List<Long> reviewsId = courseActivities.stream().map(CourseActivity::getReview).collect(Collectors.toList());
             List<Review> reviews = this.<Review>getRecords(Review.class);
             reviews.stream().filter(el->reviewsId.contains(el.getId())).collect(Collectors.toList());
+            log.debug(reviews);
             return reviews;
 
-        } catch (IOException | NoSuchElementException e) {
+        } catch (IOException| NullPointerException | NoSuchElementException e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
             return null;
@@ -614,8 +541,6 @@ public class DataProviderCsv implements AbstractDataProvider{
             List<Course> courses;
         try {
             courses = this.<Course>getRecords(Course.class);
-            log.info(courses.toString());
-
             if(courseId==-1 || studentId==-1 || extendMethod.trim().isEmpty()){
                 return courses.toString();
             }
@@ -625,13 +550,13 @@ public class DataProviderCsv implements AbstractDataProvider{
                 case REVIEW:
                       return checkCourseReviews(courseId).toString();
             }
+            log.info(courses.toString());
             return courses.toString();
-        } catch (IOException | NoSuchElementException e) {
+        } catch (IOException | IllegalArgumentException | NullPointerException | NoSuchElementException e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
             return null;
         }
-
     }
 
     public Status deleteCourse(long id){
@@ -731,20 +656,11 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    public List<Question>  checkQuestions(long courseId,long questionId,String answer){
+    public String checkQuestions(long courseId,long questionId,String answer){
         try{
-            isExist(courseId,Constants.COURSE);
-            List<CourseActivity> activities = this.<CourseActivity>getRecords(CourseActivity.class)
-                                        .stream()
-                                        .filter(el->el.getCourse()==courseId)
-                                        .collect(Collectors.toList());
-            if (activities.isEmpty()){
-                log.warn(Constants.LIST_EMPTY);
-                return Collections.emptyList();
-            }
 
-            List<Long> questionsIds = new ArrayList<>();
-            activities.forEach(e-> questionsIds.addAll(e.getQuestions()));
+            isExist(courseId,Constants.COURSE);
+            List<Long> questionsIds = getQuestions(courseId);
             List<Question> allQuestions = questionsIds.stream().map(el-> {
                 try {
                     return getQuestionById(el);
@@ -753,13 +669,13 @@ public class DataProviderCsv implements AbstractDataProvider{
                 }
             }).collect(Collectors.toList());
 
-            if(questionId!=-1||!answer.trim().equals("")){
-                Status status = answerQuestion(questionId,answer);
-                log.info(status.toString());
-                return Collections.emptyList();
-
+            if(questionId!=-1&&!answer.trim().equals("")){
+                return answerQuestion(questionId,answer).toString();
             }
-            return allQuestions;
+            String questions = allQuestions.stream().map(Question::toString)
+                    .collect(Collectors.joining(" , "));
+            log.debug(questions);
+            return questions;
         } catch (IOException | NoSuchElementException e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
@@ -782,22 +698,23 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    public List<String> checkQA(long courseId,long studentId, String question, boolean needQuestion ){
+    public String checkQA(long courseId,long studentId, String question, boolean needQuestion ){
         try{
             isExist(courseId,Constants.COURSE);
-            List<Question> questions = checkQuestions(courseId,-1,"");
-            List<Long> questionsIds = questions.stream().map(Question::getId).collect(Collectors.toList());
-            List<Answer> answers = this.<Answer>getRecords(Answer.class).stream()
-                                                                        .filter(el->questionsIds.contains(el.getQuestion()))
+            List<Long> questions = getQuestions(courseId);
+            List<Answer> answersObj = this.<Answer>getRecords(Answer.class).stream()
+                                                                        .filter(el->questions.contains(el.getQuestion()))
                                                                         .collect(Collectors.toList());
-            List <String> allQuestionsAnswers = new ArrayList<>();
-            allQuestionsAnswers.addAll(questions.stream().map(Question::toString).collect(Collectors.toList()));
-            allQuestionsAnswers.addAll(answers.stream().map(Answer::toString).collect(Collectors.toList()));
-            if(needQuestion){
-                Status status = askAQuestion(courseId,studentId,question);
-                return Collections.singletonList(status.toString());
+            String answers = "";
+            if (!answersObj.isEmpty()){
+                answers = answersObj.stream().map(Answer::toString)
+                        .collect(Collectors.joining(" , "));
             }
-            log.info(allQuestionsAnswers.toString());
+            String allQuestionsAnswers = checkQuestions(courseId,1,"") + answers;
+            if(needQuestion){
+                return askAQuestion(courseId,studentId,question).toString();
+            }
+            log.debug(allQuestionsAnswers);
             return allQuestionsAnswers;
         } catch (IOException | NoSuchElementException e) {
             log.error(e);
@@ -841,6 +758,10 @@ public class DataProviderCsv implements AbstractDataProvider{
     public Status answerQuestion(long questionId,String answer){
         try{
             isExist(questionId,Constants.QUESTION);
+            if(answer.trim().isEmpty()){
+                log.error(Constants.BAD_ANSWER);
+                return Status.FAIL;
+            }
             List<Answer> answers = this.<Answer>getRecords(Answer.class);
             Answer answerObj = new Answer();
             answerObj.setId(Helper.createId());
@@ -858,33 +779,29 @@ public class DataProviderCsv implements AbstractDataProvider{
     }
 
 
-    public List<Course> getStudentsCourses(long studentId,long courseId,int rating,String comment,String question,String ExtendMethod, boolean needQuestion ){
+    public String getStudentsCourses(long studentId,long courseId,int rating,String comment,String question,String ExtendMethod, boolean needQuestion ){
         try{
             isExist(studentId,Constants.STUDENT);
-            List<Course> courses = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents().contains(studentId)).collect(Collectors.toList());
+            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->(el.getStudents().contains(studentId))).collect(Collectors.toList());
+            String courses = coursesObj.stream().map(Course::toString)
+                    .collect(Collectors.joining(" , "));
             if(ExtendMethod.trim().equals("")){
-                log.info(courses.toString());
+                log.info(courses);
                 return courses;
             }
-
             switch(ExtendMethods.valueOf(ExtendMethod.trim().toUpperCase())){
                 case MATERIAl:
-                    getCourseMaterials(courseId);
-                    break;
+                    return getCourseMaterials(courseId).toString();
                 case UNSUBSCRIBE:
-                    unsubscribeFromACourse(courseId,studentId);
-                    break;
+                    return unsubscribeFromACourse(courseId,studentId).toString();
                 case REVIEW:
-                    leaveAReviewAboutCourse(courseId,studentId,rating,comment);
-                    break;
+                    return leaveAReviewAboutCourse(courseId,studentId,rating,comment).toString();
                 case QA:
-                    checkQA(courseId,studentId,question,needQuestion);
-                    break;
+                    return checkQA(courseId,studentId,question,needQuestion);
             }
-            log.info(courses.toString());
             return courses;
         }
-        catch (IOException | NoSuchElementException e){
+        catch (IOException | IllegalArgumentException |NoSuchElementException e){
             log.error(e);
             log.error(Constants.GETTING_ERROR);
             return null;
@@ -893,25 +810,12 @@ public class DataProviderCsv implements AbstractDataProvider{
 
 //Helper function not from api
 
-    /**
-     * Create path string.
-     *
-     * @param Class the class
-     * @return the string
-     * @throws IOException the io exception
-     */
     public String createPath(String Class) throws IOException {
         String currentPath = (PATH == null) ? DEFAULT_PATH : PATH;
         String currentExtension = (FILE_EXTENSION == null) ? DEFAULT_EXTENSION : FILE_EXTENSION;
         return currentPath + Class.toLowerCase() + currentExtension;
     }
 
-    /**
-     * DsInit.
-     *
-     * @param filePath the file path
-     * @throws IOException the io exception
-     */
     public void DSInit(String filePath) throws IOException {
         String currentPath = (PATH == null) ? DEFAULT_PATH : PATH;
         File file = new File(filePath);
@@ -924,24 +828,15 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Flush file.
-     *
-     * @param Class the class
-     * @throws IOException the io exception
-     */
     public void flushFile(String Class) throws IOException {
         FileWriter file = new FileWriter(createPath(Class));
         file.flush();
     }
 
-    /**
-     * Check students id boolean.
-     *
-     * @param students the students
-     * @return the boolean
-     */
     public boolean checkStudentsId(List<Long> students) {
+        if(students.isEmpty()){
+            return true;
+        }
         if (students.size() > 0) {
             return students.stream().allMatch(el -> {
                 try {
@@ -954,15 +849,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         return false;
     }
 
-    /**
-     * Is exist boolean.
-     *
-     * @param id        the id
-     * @param classname the classname
-     * @return the boolean
-     * @throws IOException            the io exception
-     * @throws NoSuchElementException the no such element exception
-     */
     public boolean isExist (long id,String classname) throws IOException,NoSuchElementException{
         switch (classname) {
             case Constants.TEACHER: {
@@ -997,16 +883,8 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Append student boolean.
-     *
-     * @param course the course
-     * @param id     the id
-     * @return the boolean
-     * @throws IOException the io exception
-     */
     public boolean appendStudent(Course course,long id) throws IOException {
-            List<Long> ids = course.getStudents();
+            List<Long> ids = (course.getStudents()==null)?new ArrayList<>():course.getStudents();
             if (ids.contains(id)) {
                 return false;
             }
@@ -1018,13 +896,6 @@ public class DataProviderCsv implements AbstractDataProvider{
             return this.<Course>dataInsert(courses) == Status.SUCCESSFUL;
     }
 
-    /**
-     * Delete student from course boolean.
-     *
-     * @param course the course
-     * @param id     the id
-     * @return the boolean
-     */
     public boolean deleteStudentFromCourse(Course course,long id){
         try{
             List <Long> ids = course.getStudents();
@@ -1043,27 +914,12 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Find activity boolean.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the boolean
-     * @throws IOException the io exception
-     */
     public boolean findActivity(long courseId,long studentId) throws IOException {
             List<CourseActivity> activities = getRecords(CourseActivity.class);
             return activities.stream().anyMatch(el -> el.getStudent() == studentId && el.getCourse() == courseId);
     }
 
-    /**
-     * Create review long.
-     *
-     * @param rating  the rating
-     * @param comment the comment
-     * @return the long
-     */
-    public long createReview(int rating,String comment)  {
+    public Review createReview(int rating,String comment)  {
         try {
             Review review = new Review();
             long id = Helper.createId();
@@ -1082,22 +938,14 @@ public class DataProviderCsv implements AbstractDataProvider{
             dataInsert(allReviews);
             log.debug(review);
             log.debug(Constants.CREATING_SUCCESS);
-            return id;
+            return review;
         } catch (IOException e) {
             log.error(e);
             log.error(Constants.CREATING_ERROR);
-            return -1;
+            return null;
         }
     }
 
-    /**
-     * Update course activity status.
-     *
-     * @param id        the id
-     * @param reviewId  the review id
-     * @param questions the questions
-     * @return the status
-     */
     public Status updateCourseActivity(long id, long reviewId, List<Long> questions){
         try {
             CourseActivity activity = getCourseActivityById(id);
@@ -1106,7 +954,7 @@ public class DataProviderCsv implements AbstractDataProvider{
                 activity.setReview(reviewId);
             }
 
-            if(questions!=null) {
+            if(questions!=null && checkDuplicate(questions)) {
                 activity.setQuestions(questions);
             }
 
@@ -1123,13 +971,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Check user assign to course boolean.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the boolean
-     */
     public boolean checkUserAssignToCourse(long courseId,long studentId){
         try{
             Course course = getCourseById(courseId);
@@ -1139,13 +980,6 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Create course activity course activity.
-     *
-     * @param courseId  the course id
-     * @param studentId the student id
-     * @return the course activity
-     */
     public CourseActivity createCourseActivity(long courseId,long studentId) {
         if (!checkUserAssignToCourse(courseId,studentId)){
             return null;
@@ -1156,7 +990,7 @@ public class DataProviderCsv implements AbstractDataProvider{
         courseActivity.setStudent(studentId);
         courseActivity.setCourse(courseId);
         courseActivity.setReview(-1);
-        courseActivity.setQuestions(Collections.emptyList());
+        courseActivity.setQuestions(new ArrayList<>());
         dataInsert(mergeLists(getRecords(CourseActivity.class),Collections.singletonList(courseActivity)));
         return courseActivity;
         } catch (IOException e) {
@@ -1164,23 +998,62 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    /**
-     * Create question question.
-     *
-     * @param question the question
-     * @return the question
-     */
     public Question createQuestion(String question) {
         Question questionObj = new Question();
+        if(question.trim().isEmpty()){
+            log.error(Constants.BAD_QUESTION);
+            return null;
+        }
         try {
             questionObj.setId(Helper.createId());
             questionObj.setQuestion(question);
-
             this.<Question>dataInsert(mergeLists(getRecords(Question.class),Collections.singletonList(questionObj)));
         return questionObj;
         } catch (IOException e) {
             return null;
         }
+    }
+
+    public boolean checkDuplicate(List<Long> ids){
+        if(ids.isEmpty()){
+            return true;
+        }
+       return ids.stream().collect(Collectors.groupingBy(Function.identity()))
+                .entrySet()
+                .stream()
+                .filter(e -> e.getValue().size() > 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList()).isEmpty();
+    }
+
+    public boolean checkName(String name){
+        if(name.trim().isEmpty()){
+            log.error(Constants.BAD_NAME);
+            return false;
+        }
+        if (name.length()<4){
+            log.error(Constants.BAD_NAME);
+            return false;
+        }
+        return true;
+    }
+
+    public List<Long> getQuestions(long courseId) throws IOException {
+        List<CourseActivity> activities = this.<CourseActivity>getRecords(CourseActivity.class)
+                .stream()
+                .filter(el->el.getCourse()==courseId)
+                .collect(Collectors.toList());
+        if (activities.isEmpty()){
+            return Collections.emptyList();
+        }
+        List<Long> questionsIds = new ArrayList<>();
+        try{
+        activities.forEach(e-> questionsIds.addAll(e.getQuestions()));
+        }
+        catch (NullPointerException e){
+            return Collections.emptyList();
+        }
+        return  questionsIds;
     }
 }
 

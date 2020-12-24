@@ -36,7 +36,7 @@ public class Course implements Serializable{
   @CsvBindByName
   @Element(name="owner")
   private long owner;
-  @ElementList(inline = true, entry="student")
+  @ElementList(inline = true,required = false,entry="student")
   @CsvCustomBindByName(column = "students", converter = IdTransformer.class)
   private List<Long> students;
 

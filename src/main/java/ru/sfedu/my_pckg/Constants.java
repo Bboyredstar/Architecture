@@ -36,8 +36,11 @@ public class Constants {
   public static final String BAD_ARGS_FORMAT = "Bad args format! Args must be like: [DataProvider] [Method] {args}";
   public static final String DRIVER_ERROR = "DB driver error! ";
   public static final String CONNECTION_ERROR = "Connection error! ";
-  public static final String INITIALIZING_CONNECTION = "Connecting to DB...";
-  public static final String SUCCESSFUL_CONNECTION = "Successfully connected! ";
+  public static final String HAS_DUPLICATE = "List of ids has repeat id! ";
+  public static final String BAD_NAME = "Name cannot be empty!";
+  public static final String BAD_QUESTION = "Question cannot be empty!";
+  public static final String BAD_ANSWER = "Answer cannot be empty!";
+  public static final String ERROR_METHOD_SIGNATURE = "Bad method arguments! ";
   //Commands
 
   public static final String CSV_COMMAND = "csv";
@@ -49,6 +52,22 @@ public class Constants {
   public static final String SELECT_ALL = "SELECT * FROM ";
   public static final String TEACHER_INSERT = "INSERT INTO TEACHER(id,firstName,secondName,email,age,country,competence,experience) VALUES (?, ?, ?, ?, ? ,? ,? ,?)";
   public static final String STUDENT_INSERT = "INSERT INTO STUDENT(id,firstName,secondName,email,age,country,preferences) VALUES (?, ?, ?, ? ,? ,? ,?)";
+  public static final String COURSE_INSERT = "INSERT INTO COURSE(id,owner,name,description,students) VALUES (?, ?, ?, ? ,? )";
+  public static final String COURSE_ACTIVITY_INSERT = "INSERT INTO COURSEACTIVITY(id,course,student,questions,review) VALUES (?, ?, ?, ? ,? )";
+  public static final String SECTION_INSERT = "INSERT INTO SECTION(id,course,name,description,materials,videos) VALUES (?, ?, ?, ? ,? ,? )";
+  public static final String REVIEW_INSERT = "INSERT INTO REVIEW(id,rating,comment) VALUES (?, ?, ?)";
+  public static final String QUESTION_INSERT = "INSERT INTO QUESTION(id,question) VALUES (?, ?)";
+  public static final String ANSWER_INSERT = "INSERT INTO ANSWER(id,question,answer) VALUES (?, ?, ?)";
+  public static final String SECTION_UPDATE = "UPDATE SECTION SET name = ?, description = ?, videos = ?, materials = ? WHERE id = ";
+  public static final String COURSE_UPDATE = "UPDATE COURSE SET name = ?, description = ? WHERE id = ";
+  public static final String JOIN_UPDATE = "UPDATE COURSE SET students = ? WHERE id = ";
+  public static final String REVIEW_UPDATE = "UPDATE COURSEACTIVITY SET review = ? WHERE id = ?";
+  public static final String QUESTIONS_UPDATE = "UPDATE COURSEACTIVITY SET questions = ? WHERE id = ?";
+  public static final String DELETE_COURSE_ACTIVITY = "DELETE FROM COURSEACTIVITY WHERE course = ? AND student = ?";
   public static final String DElETE = "DELETE FROM ";
-  public static final String WHERE_ID = " WHERE id== ? ";
+  public static final String WHERE_ID = " WHERE id =  ";
+  public static final String SELECT_IDS = " SELECT id FROM ";
+  public static final String BIGINT = "BIGINT";
+  public static final String VARCHAR = "VARCHAR";
+
 }
