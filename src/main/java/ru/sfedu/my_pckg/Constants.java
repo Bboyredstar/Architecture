@@ -41,12 +41,21 @@ public class Constants {
   public static final String BAD_QUESTION = "Question cannot be empty!";
   public static final String BAD_ANSWER = "Answer cannot be empty!";
   public static final String ERROR_METHOD_SIGNATURE = "Bad method arguments! ";
+  public static final String PROBLEM_INIT_DATA = "Problem with initialization data!";
   //Commands
 
   public static final String CSV_COMMAND = "csv";
   public static final String XML_COMMAND = "xml";
   public static final String JDBC_COMMAND = "jdbc";
   public static final String INIT = "./src/main/resources/create_tables.sql";
+  public static final String CREATE_COURSE = "CREATECOURSE";
+  public static final String UPDATE_COURSE = "UPDATECOURSE";
+  public static final String DELETE_COURSE = "DELETECOURSE";
+  public static final String VIEW_COURSE = "VIEWCOURSE";
+  public static final String CHOOSE_COURSE = "CHOOSECOURSE";
+  public static final String GET_STUDENTS_COURSES = "GETSTUDENTSCOURSES";
+  public static final String CHECK_STUDENTS_QUESTIONS = "CHECKSTUDENTSQUESTIONS";
+
 
   //SQL
   public static final String SELECT_ALL = "SELECT * FROM ";

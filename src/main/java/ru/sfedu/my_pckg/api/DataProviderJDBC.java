@@ -372,6 +372,8 @@ public class DataProviderJDBC implements AbstractDataProvider {
             }
             pst.setArray(1,connection.createArrayOf(Constants.BIGINT,students.toArray()));
             pst.execute();
+            connection.close();
+            pst.close();
             log.debug(students);
             log.info(Constants.JOINING_SUCCESS);
             return Status.SUCCESSFUL;
@@ -550,7 +552,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                     return checkCourseReviews(courseId).toString();
             }
             return courses.toString();
-        } catch ( NoSuchElementException e) {
+        } catch ( NoSuchElementException | IllegalArgumentException e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
             return null;
@@ -588,7 +590,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 }
             return course;
         }
-        catch(NoSuchElementException | IndexOutOfBoundsException |SQLException e){
+        catch(NoSuchElementException | IndexOutOfBoundsException | IllegalArgumentException |SQLException e){
             log.error(e);
             log.error(Constants.GETTING_BY_ID_FAIL+id);
             return null;
@@ -682,6 +684,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 log.error(Constants.IDS_ERROR);
                 return null;
             }
+            connection.close();
             List<Review> reviews = checkCourseReviews(courseId);
             List<String> comments = reviews.stream().map(Review::getComment).collect(Collectors.toList());
             log.debug(comments.toString());
@@ -788,6 +791,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 log.error(Constants.IDS_ERROR);
                 return Status.FAIL;
             }
+            connection.close();
             List<Answer> answers = this.<Answer>getRecords(Answer.class);
             Answer answerObj = new Answer();
             answerObj.setId(Helper.createId());
@@ -806,7 +810,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
         }
     }
 
-    public String checkQuestions(long courseId,long questionId,String answer){
+    public String checkStudentsQuestions(long courseId,long questionId,String answer){
         try{
             Connection connection = initConnection();
             if(!isExistRecord(Course.class,courseId,connection)){
@@ -854,7 +858,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 answers = answersObj.stream().map(Answer::toString)
                         .collect(Collectors.joining(" , "));
             }
-            String allQuestionsAnswers = checkQuestions(courseId,1,"") + answers;
+            String allQuestionsAnswers = checkStudentsQuestions(courseId,1,"") + answers;
             if(needQuestion){
                 return askAQuestion(courseId,studentId,question).toString();
             }
@@ -984,7 +988,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
         try{
             Connection connection = initConnection();
             Statement st = connection.createStatement();
-            st.execute(Constants.DElETE+cl.getSimpleName().toUpperCase());
+            log.debug(st.execute(Constants.DElETE+cl.getSimpleName().toUpperCase()));
             connection.close();
             st.close();
             log.debug(Constants.DELETING_SUCCESS);

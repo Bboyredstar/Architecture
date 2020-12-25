@@ -25,7 +25,7 @@ public interface AbstractDataProvider {
                         long sectionId, String sectionName, String sectionDescription,
                         List<String> sectionMaterials, List<String> sectionVideos,
                         String extendMethod);
-    String checkQuestions(long courseId, long questionId, String answer);
+    String checkStudentsQuestions(long courseId, long questionId, String answer);
     Status answerQuestion(long questionId,String answer);
     String chooseCourse(long courseId, long studentId, String extendMethod);
     Status joinCourse(long courseId, long studentId);

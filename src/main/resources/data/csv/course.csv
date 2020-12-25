@@ -1,5 +1,2 @@
 DESCRIPTION,ID,NAME,OWNER,STUDENTS
-Back end development refers to the server side of an application and everything that communicates between the database and the browser. Back end Development refers to the server side of development where you are primarily focused on how the site works.,3111,Backend Development,1111,"2112 ,2114"
-"Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.",3112,Frontend Development,1222,"2112 ,2113"
-New description,54076931,New Course,1333,null
-New description,28743289,New Course,1111,"2112 ,2113"
+Test course,1234,Test,12,"12 ,13 ,14"

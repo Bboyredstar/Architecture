@@ -284,20 +284,20 @@ class DataProviderXMLTest extends BaseTest {
         provider.askAQuestion(1234,13L,"Test Question_2");
         provider.askAQuestion(1234,14L,"Test Question_3");
         long questionId = provider.<Question>getRecords(Question.class).get(0).getId();
-        String questions = provider.checkQuestions(1234,-1,"");
+        String questions = provider.checkStudentsQuestions(1234,-1,"");
         String expected = provider.<Question>getRecords(Question.class).stream().map(Question::toString)
                 .collect(Collectors.joining(" , "));
         assertEquals(expected,questions);
-        assertEquals(Status.SUCCESSFUL.toString(),provider.checkQuestions(1234,questionId,"Test Answer"));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.checkStudentsQuestions(1234,questionId,"Test Answer"));
         assertFalse(provider.getRecords(Answer.class).isEmpty());
     }
 
     @Test
     public void checkQuestionsFail() throws Exception {
         log.debug("On test checkQuestionsFail");
-        String questions = provider.checkQuestions(1234,1,"");
+        String questions = provider.checkStudentsQuestions(1234,1,"");
         assertEquals("",questions);
-        assertEquals(Status.FAIL.toString(),provider.checkQuestions(1234,1,"Test answer"));
+        assertEquals(Status.FAIL.toString(),provider.checkStudentsQuestions(1234,1,"Test answer"));
     }
 
     @Test

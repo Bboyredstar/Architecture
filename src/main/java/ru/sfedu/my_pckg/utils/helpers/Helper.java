@@ -48,6 +48,17 @@ public class Helper {
         }
     }
 
+    public static List<String> stringToListString(String urls){
+        try {
+            return Stream.of(urls.split(","))
+                    .map(String::trim)
+                    .collect(Collectors.toList());
+        }
+        catch (Exception e){
+            return new ArrayList<>();
+        }
+    }
+
 
     /**
      * Generate first name string.

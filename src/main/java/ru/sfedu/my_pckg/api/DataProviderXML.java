@@ -421,7 +421,7 @@ public class DataProviderXML implements AbstractDataProvider {
         }
     }
 
-    public String checkQuestions(long courseId, long questionId, String answer) {
+    public String checkStudentsQuestions(long courseId, long questionId, String answer) {
         try{
             isExist(courseId,Constants.COURSE);
             List<Long> questionsIds = getQuestions(courseId);
@@ -708,7 +708,7 @@ public class DataProviderXML implements AbstractDataProvider {
                 answers = answersObj.stream().map(Answer::toString)
                         .collect(Collectors.joining(" , "));
             }
-            String allQuestionsAnswers = checkQuestions(courseId,1,"") + answers;
+            String allQuestionsAnswers = checkStudentsQuestions(courseId,1,"") + answers;
             if(needQuestion){
                 return askAQuestion(courseId,studentId,question).toString();
             }
