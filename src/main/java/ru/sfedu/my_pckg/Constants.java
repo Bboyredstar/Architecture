@@ -40,6 +40,7 @@ public class Constants {
   public static final String BAD_NAME = "Name cannot be empty!";
   public static final String BAD_QUESTION = "Question cannot be empty!";
   public static final String BAD_ANSWER = "Answer cannot be empty!";
+  public static final String BAD_NAME_LENGTH = "Name must contain minimum 2 symbols ";
   public static final String ERROR_METHOD_SIGNATURE = "Bad method arguments! ";
   public static final String PROBLEM_INIT_DATA = "Problem with initialization data!";
   //Commands

@@ -384,10 +384,10 @@ public class DataProviderCsv implements AbstractDataProvider{
                 section.setDescription(description);
             }
 
-            if (!(videos == null)) {
+            if (!(videos.isEmpty())) {
                 section.setVideos(videos);
             }
-            if (!(materials == null)) {
+            if (!(materials.isEmpty())) {
                 section.setMaterials(materials);
             }
             deleteSection(id);
@@ -417,7 +417,6 @@ public class DataProviderCsv implements AbstractDataProvider{
             if (!courseDescription.trim().equals("")){
                 course.setDescription(courseDescription);
             }
-
             List <Course> oldCourses = this.<Course>getRecords(Course.class);
             oldCourses.removeIf(el->(el.getId()==courseId));
             dataInsert(mergeLists(oldCourses,Collections.singletonList(course)));
@@ -633,6 +632,9 @@ public class DataProviderCsv implements AbstractDataProvider{
         try{
             isExist(courseId,Constants.COURSE);
             List<Review> reviews = checkCourseReviews(courseId);
+            if (reviews.isEmpty()){
+                return 0.0;
+            }
             List<Integer> ratings = reviews.stream().map(Review::getRating).collect(Collectors.toList());
             double avgCourseRating = ratings.stream().mapToDouble(el->el).sum()/ratings.size();
             return avgCourseRating;
@@ -656,7 +658,7 @@ public class DataProviderCsv implements AbstractDataProvider{
         }
     }
 
-    public String checkStudentsQuestions(long courseId,long questionId,String answer){
+        public String checkStudentsQuestions(long courseId,long questionId,String answer){
         try{
 
             isExist(courseId,Constants.COURSE);
@@ -669,7 +671,7 @@ public class DataProviderCsv implements AbstractDataProvider{
                 }
             }).collect(Collectors.toList());
 
-            if(questionId!=-1&&!answer.trim().equals("")){
+            if(questionId>0&&!answer.trim().equals("")){
                 return answerQuestion(questionId,answer).toString();
             }
             String questions = allQuestions.stream().map(Question::toString)
@@ -782,15 +784,15 @@ public class DataProviderCsv implements AbstractDataProvider{
     public String getStudentsCourses(long studentId,long courseId,int rating,String comment,String question,String ExtendMethod, boolean needQuestion ){
         try{
             isExist(studentId,Constants.STUDENT);
-            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->(el.getStudents().contains(studentId))).collect(Collectors.toList());
+            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents()!=null).filter(el -> el.getStudents().contains(studentId)).collect(Collectors.toList());
             String courses = coursesObj.stream().map(Course::toString)
                     .collect(Collectors.joining(" , "));
-            if(ExtendMethod.trim().equals("")){
+            if(ExtendMethod.trim().isEmpty()){
                 log.info(courses);
                 return courses;
             }
             switch(ExtendMethods.valueOf(ExtendMethod.trim().toUpperCase())){
-                case MATERIAl:
+                case MATERIAL:
                     return getCourseMaterials(courseId).toString();
                 case UNSUBSCRIBE:
                     return unsubscribeFromACourse(courseId,studentId).toString();
@@ -829,6 +831,7 @@ public class DataProviderCsv implements AbstractDataProvider{
     }
 
     public void flushFile(String Class) throws IOException {
+        DSInit(createPath(Class));
         FileWriter file = new FileWriter(createPath(Class));
         file.flush();
     }
@@ -1031,8 +1034,8 @@ public class DataProviderCsv implements AbstractDataProvider{
             log.error(Constants.BAD_NAME);
             return false;
         }
-        if (name.length()<4){
-            log.error(Constants.BAD_NAME);
+        if (name.length()<2){
+            log.error(Constants.BAD_NAME_LENGTH);
             return false;
         }
         return true;

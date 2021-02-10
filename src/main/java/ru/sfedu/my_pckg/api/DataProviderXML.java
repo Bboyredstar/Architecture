@@ -353,6 +353,9 @@ public class DataProviderXML implements AbstractDataProvider {
         try{
             isExist(courseId,Constants.COURSE);
             List<Review> reviews = checkCourseReviews(courseId);
+            if (reviews.isEmpty()){
+                return 0.0;
+            }
             List<Integer> ratings = reviews.stream().map(Review::getRating).collect(Collectors.toList());
             double avgCourseRating = ratings.stream().mapToDouble(el->el).sum()/ratings.size();
             return avgCourseRating;
@@ -433,7 +436,7 @@ public class DataProviderXML implements AbstractDataProvider {
                 }
             }).collect(Collectors.toList());
 
-            if(questionId!=-1&&!answer.trim().equals("")){
+            if(questionId>0&&!answer.trim().equals("")){
                 return answerQuestion(questionId,answer).toString();
             }
             String questions = allQuestions.stream().map(Question::toString)
@@ -506,10 +509,10 @@ public class DataProviderXML implements AbstractDataProvider {
                 section.setDescription(description);
             }
 
-            if (!(videos == null)) {
+            if (!(videos.isEmpty())) {
                 section.setVideos(videos);
             }
-            if (!(materials == null)) {
+            if (!(materials.isEmpty())) {
                 section.setMaterials(materials);
             }
             deleteSection(id);
@@ -581,16 +584,16 @@ public class DataProviderXML implements AbstractDataProvider {
     public String getStudentsCourses(long studentId, long courseId, int rating, String comment, String question, String ExtendMethod, boolean needQuestion) {
         try{
             isExist(studentId,Constants.STUDENT);
-            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents().contains(studentId)).collect(Collectors.toList());
+            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents()!=null).filter(el -> el.getStudents().contains(studentId)).collect(Collectors.toList());
             String courses = coursesObj.stream().map(Course::toString)
                     .collect(Collectors.joining(" , "));
-            if(ExtendMethod.trim().equals("")){
+
+            if(ExtendMethod.trim().isEmpty()){
                 log.info(courses);
                 return courses;
             }
-
             switch(ExtendMethods.valueOf(ExtendMethod.trim().toUpperCase())){
-                case MATERIAl:
+                case MATERIAL:
                     return getCourseMaterials(courseId).toString();
                 case UNSUBSCRIBE:
                     return unsubscribeFromACourse(courseId,studentId).toString();
@@ -599,8 +602,7 @@ public class DataProviderXML implements AbstractDataProvider {
                 case QA:
                     return checkQA(courseId,studentId,question,needQuestion);
             }
-            log.info(courses);
-            return courses;
+            return null;
         }
         catch (Exception e){
             log.error(e);
@@ -977,8 +979,8 @@ public class DataProviderXML implements AbstractDataProvider {
             log.error(Constants.BAD_NAME);
             return false;
         }
-        if (name.length()<4){
-            log.error(Constants.BAD_NAME);
+        if (name.length()<2){
+            log.error(Constants.BAD_NAME_LENGTH);
             return false;
         }
         return true;

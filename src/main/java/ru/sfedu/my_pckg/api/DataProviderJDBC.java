@@ -36,8 +36,8 @@ public class DataProviderJDBC implements AbstractDataProvider {
             String createDb = new String(Files.readAllBytes(Paths.get(Constants.INIT)));
             Statement st = connection.createStatement();
             st.executeUpdate(createDb);
-            st.close();
             connection.close();
+            st.close();
         } catch (SQLException | IOException e) {
             log.fatal(Constants.CONNECTION_ERROR);
             log.fatal(e);
@@ -217,14 +217,12 @@ public class DataProviderJDBC implements AbstractDataProvider {
                     for(Object obj : idsArray) {
                         questions.add(((Long) obj));
                     }
-                    log.debug(questions);
                     courseActivity.setQuestions(questions);
                 }
                 catch (Exception e){
                     log.error(e);
                     courseActivity.setQuestions(new ArrayList<>());
                 }
-                log.debug(rs.getLong(5));
                 courseActivity.setReview(rs.getLong(5));
                 return courseActivity;
             case Constants.REVIEW:
@@ -473,13 +471,13 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 log.error(Constants.IDS_ERROR);
                 return null;
             }
+            connection.close();
             List<CourseActivity> courseActivities = this.<CourseActivity>getRecords(CourseActivity.class)
                     .stream().filter(el->el.getCourse()==courseId).collect(Collectors.toList());
             if(courseActivities.isEmpty()){
                 log.warn(Constants.LIST_EMPTY);
                 return new ArrayList<>();
             }
-            connection.close();
             List<Long> reviewsId = courseActivities.stream().map(CourseActivity::getReview).collect(Collectors.toList());
             List<Review> reviews = this.<Review>getRecords(Review.class);
             reviews.stream().filter(el->reviewsId.contains(el.getId())).collect(Collectors.toList());
@@ -552,7 +550,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                     return checkCourseReviews(courseId).toString();
             }
             return courses.toString();
-        } catch ( NoSuchElementException | IllegalArgumentException e) {
+        } catch ( NoSuchElementException | NullPointerException | IllegalArgumentException e) {
             log.error(e);
             log.error(Constants.GETTING_ERROR);
             return null;
@@ -607,8 +605,8 @@ public class DataProviderJDBC implements AbstractDataProvider {
             Section section = (Section) getByID(Section.class,id);
             name = (name.trim().equals(""))?section.getName():name;
             description = (description.trim().equals(""))?section.getDescription():description;
-            videos = (videos == null)? section.getVideos(): videos;
-            materials = (materials == null)? section.getMaterials():materials;
+            videos = (videos.isEmpty())? section.getVideos(): videos;
+            materials = (materials.isEmpty())? section.getMaterials():materials;
             pst.setString(1,name);
             pst.setString(2,description);
             pst.setArray(3,connection.createArrayOf(Constants.VARCHAR,materials.toArray()));
@@ -621,8 +619,8 @@ public class DataProviderJDBC implements AbstractDataProvider {
         } catch (SQLException | IndexOutOfBoundsException e) {
             log.error(e);
             log.error(Constants.UPDATING_ERROR);
+            return Status.FAIL;
         }
-        return Status.SUCCESSFUL;
     }
 
     public Status unsubscribeFromACourse(long courseId,long studentId){
@@ -668,6 +666,9 @@ public class DataProviderJDBC implements AbstractDataProvider {
             }
             connection.close();
             List<Review> reviews = checkCourseReviews(courseId);
+            if (reviews.isEmpty()){
+                return 0.0;
+            }
             List<Integer> ratings = reviews.stream().map(Review::getRating).collect(Collectors.toList());
             double avgCourseRating = ratings.stream().mapToDouble(el->el).sum()/ratings.size();
             return avgCourseRating;
@@ -826,8 +827,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
                     return null;
                 }
             }).collect(Collectors.toList());
-            if(questionId!=-1 || !answer.trim().equals("")){
-
+            if(questionId>0 && !answer.trim().equals("")){
                 return answerQuestion(questionId,answer).toString();
             }
             String questions = allQuestions.stream().map(Question::toString)
@@ -879,15 +879,14 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 return null;
             }
             connection.close();
-            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents().contains(studentId)).collect(Collectors.toList());
+            List<Course> coursesObj = this.<Course>getRecords(Course.class).stream().filter(el->el.getStudents()!=null).filter(el -> el.getStudents().contains(studentId)).collect(Collectors.toList());
             String courses = coursesObj.stream().map(Course::toString)
                     .collect(Collectors.joining(" , "));
-            if(ExtendMethod.trim().equals("")){
-                log.info(courses);
+            if(ExtendMethod.trim().isEmpty()){
                 return courses;
             }
             switch(ExtendMethods.valueOf(ExtendMethod.trim().toUpperCase())){
-                case MATERIAl:
+                case MATERIAL:
                     return getCourseMaterials(courseId).toString();
                 case UNSUBSCRIBE:
                     return unsubscribeFromACourse(courseId,studentId).toString();
@@ -939,7 +938,6 @@ public class DataProviderJDBC implements AbstractDataProvider {
                 pst.setLong(2,answer.getQuestion());
                 pst.setString(3,answer.getAnswer());
                 pst.execute();
-                log.debug(answer);
             }
             connection.close();
             pst.close();
@@ -988,12 +986,11 @@ public class DataProviderJDBC implements AbstractDataProvider {
         try{
             Connection connection = initConnection();
             Statement st = connection.createStatement();
-            log.debug(st.execute(Constants.DElETE+cl.getSimpleName().toUpperCase()));
+            st.executeUpdate(Constants.DElETE+cl.getSimpleName().toUpperCase());
             connection.close();
             st.close();
-            log.debug(Constants.DELETING_SUCCESS);
             return Status.SUCCESSFUL;
-        } catch (SQLException e) {
+        } catch ( Exception e) {
             log.error(e);
             log.error(Constants.DELETING_ERROR);
             return Status.FAIL;
@@ -1083,7 +1080,7 @@ public class DataProviderJDBC implements AbstractDataProvider {
         Review review = new Review();
         long id = Helper.createId();
         review.setId(id);
-        if(rating>10){
+        if(rating>5){
             review.setRating(5);
         }
         if(rating<=0){
@@ -1119,8 +1116,8 @@ public class DataProviderJDBC implements AbstractDataProvider {
             log.error(Constants.BAD_NAME);
             return false;
         }
-        if (name.length()<4){
-            log.error(Constants.BAD_NAME);
+        if (name.length()<2){
+            log.error(Constants.BAD_NAME_LENGTH);
             return false;
         }
         return true;

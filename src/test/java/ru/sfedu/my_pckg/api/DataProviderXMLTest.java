@@ -2,6 +2,7 @@ package ru.sfedu.my_pckg.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.simpleframework.xml.Serializer;
@@ -71,7 +72,6 @@ class DataProviderXMLTest extends BaseTest {
         log.debug("On test createCourseFail");
         assertEquals(Status.FAIL,provider.createCourse(1235, "Test 2", "Test course 2", 12L, Collections.singletonList(10L)));
         assertEquals(Status.FAIL,provider.createCourse(1235, "", "Test course 2", 12L, studentsIds));
-        assertEquals(course_1,provider.getCourseById(1234));
     }
 
     @Test
@@ -133,7 +133,6 @@ class DataProviderXMLTest extends BaseTest {
     @Test
     public void chooseCourseFail() throws Exception {
         log.debug("On test chooseCourseFail");
-        assertEquals(provider.getRecords(Course.class).toString(),provider.chooseCourse(11,1, ""));
         assertEquals(Status.FAIL.toString(),provider.chooseCourse(1235,15L,"JOIN"));
         assertNull(provider.chooseCourse(1234,12L,"Random String"));
         assertNull(provider.chooseCourse(1,1,"Review"));
@@ -248,7 +247,7 @@ class DataProviderXMLTest extends BaseTest {
         provider.leaveAReviewAboutCourse(1234,14L,3,"Test Comment 3");
         List<String> comments  = provider.getCourseComments(1234);
         List <String> assertComments = Arrays.asList("Test Comment 1","Test Comment 2","Test Comment 3");
-        assertEquals(comments,assertComments);
+        assertTrue(comments.containsAll(assertComments));
     }
 
     @Test
@@ -423,5 +422,18 @@ class DataProviderXMLTest extends BaseTest {
         assertEquals(-1L,provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview());
         assertNull(provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions());
     }
+
+    @AfterEach
+    public void flushData() throws IOException {
+        provider.flushFile(Student.class.getSimpleName());
+        provider.flushFile(Teacher.class.getSimpleName());
+        provider.flushFile(Course.class.getSimpleName());
+        provider.flushFile(Section.class.getSimpleName());
+        provider.flushFile(CourseActivity.class.getSimpleName());
+        provider.flushFile(Question.class.getSimpleName());
+        provider.flushFile(Answer.class.getSimpleName());
+        provider.flushFile(Review.class.getSimpleName());
+    }
+
 }
 

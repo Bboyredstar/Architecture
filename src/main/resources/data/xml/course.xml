@@ -1,30 +1,10 @@
 <wrapperXML>
-   <object class="ru.sfedu.my_pckg.beans.Course" id="3111">
-      <name>Backend Development</name>
-      <description>Back end development refers to the server side of an application and everything that communicates between the database and the browser. Back end Development refers to the server side of development where you are primarily focused on how the site works.</description>
-      <owner>1111</owner>
-      <student>2112</student>
-      <student>2114</student>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Course" id="3112">
-      <name>Frontend Development</name>
-      <description>Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.</description>
-      <owner>1222</owner>
-      <student>2112</student>
-      <student>2113</student>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Course" id="185788606">
-      <name>New Course</name>
-      <description>New description</description>
-      <owner>1111</owner>
-      <student>2112</student>
-      <student>2113</student>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Course" id="24844244">
-      <name>New Course</name>
-      <description>New description</description>
-      <owner>1111</owner>
-      <student>2112</student>
-      <student>2113</student>
+   <object class="ru.sfedu.my_pckg.beans.Course" id="1234">
+      <name>Test</name>
+      <description>Test course</description>
+      <owner>12</owner>
+      <student>12</student>
+      <student>13</student>
+      <student>14</student>
    </object>
 </wrapperXML>

@@ -1,29 +1,11 @@
 <wrapperXML>
-   <object class="ru.sfedu.my_pckg.beans.Teacher" id="1111">
+   <object class="ru.sfedu.my_pckg.beans.Teacher" id="12">
       <firstName>John</firstName>
-      <secondName>Richards</secondName>
-      <email>wfeAX@mail.ru</email>
-      <age>61</age>
-      <country>USA</country>
-      <competence>Frontend</competence>
-      <experience>2</experience>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Teacher" id="1222">
-      <firstName>Scott</firstName>
-      <secondName>Richards</secondName>
-      <email>oYzhC@icloud.su</email>
-      <age>51</age>
-      <country>USA</country>
-      <competence>Open CV</competence>
-      <experience>9</experience>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Teacher" id="1333">
-      <firstName>Jacob</firstName>
-      <secondName>Tump</secondName>
-      <email>ixKsx@yandex.com</email>
-      <age>61</age>
-      <country>Germany</country>
-      <competence>Backend</competence>
-      <experience>3</experience>
+      <secondName>Beach</secondName>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <competence>Machine Learning</competence>
+      <experience>10</experience>
    </object>
 </wrapperXML>

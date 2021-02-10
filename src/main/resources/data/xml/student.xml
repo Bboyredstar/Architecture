@@ -1,26 +1,34 @@
 <wrapperXML>
-   <object class="ru.sfedu.my_pckg.beans.Student" id="2112">
-      <firstName>Jacob</firstName>
-      <secondName>Granter</secondName>
-      <email>Hqlfm@icloud.com</email>
-      <age>48</age>
-      <country>Poland</country>
-      <preferences>Fullstack</preferences>
-   </object>
-   <object class="ru.sfedu.my_pckg.beans.Student" id="2113">
-      <firstName>Tyler</firstName>
+   <object class="ru.sfedu.my_pckg.beans.Student" id="12">
+      <firstName>John</firstName>
       <secondName>Beach</secondName>
-      <email>IvfDu@mail.su</email>
-      <age>53</age>
-      <country>Russia</country>
-      <preferences>Frontend</preferences>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <preferences>Machine Learning</preferences>
    </object>
-   <object class="ru.sfedu.my_pckg.beans.Student" id="2114">
-      <firstName>Stan</firstName>
-      <secondName>Morgan</secondName>
-      <email>cdhBj@mail.su</email>
-      <age>43</age>
-      <country>Russia</country>
-      <preferences>Backend</preferences>
+   <object class="ru.sfedu.my_pckg.beans.Student" id="13">
+      <firstName>John</firstName>
+      <secondName>Beach</secondName>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <preferences>Machine Learning</preferences>
+   </object>
+   <object class="ru.sfedu.my_pckg.beans.Student" id="14">
+      <firstName>John</firstName>
+      <secondName>Beach</secondName>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <preferences>Machine Learning</preferences>
+   </object>
+   <object class="ru.sfedu.my_pckg.beans.Student" id="15">
+      <firstName>John</firstName>
+      <secondName>Beach</secondName>
+      <email>asdasd@mail.ru</email>
+      <age>40</age>
+      <country>Romania</country>
+      <preferences>Machine Learning</preferences>
    </object>
 </wrapperXML>

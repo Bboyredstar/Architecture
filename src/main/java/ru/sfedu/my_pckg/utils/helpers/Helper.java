@@ -50,6 +50,9 @@ public class Helper {
 
     public static List<String> stringToListString(String urls){
         try {
+            if (urls.trim().toLowerCase().equals("null")) {
+                return new ArrayList<>();
+            }
             return Stream.of(urls.split(","))
                     .map(String::trim)
                     .collect(Collectors.toList());

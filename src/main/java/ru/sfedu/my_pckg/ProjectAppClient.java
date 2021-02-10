@@ -70,46 +70,46 @@ public class ProjectAppClient {
                     return provider.createCourse(id,name,description,ownerId,students).toString();
                 }
                 case Constants.UPDATE_COURSE:{
-                    long id = Long.parseLong(arguments.get(1));
-                    String courseName = arguments.get(2);
-                    String courseDescription = arguments.get(3);
-                    long sectionId = Long.parseLong(arguments.get(4));
-                    String sectionName = arguments.get(5);
-                    String sectionDescription = arguments.get(6);
-                    List<String> videos = Helper.stringToListString(arguments.get(7));
-                    List<String> materials = Helper.stringToListString(arguments.get(8));
-                    String extendMethod = arguments.get(9);
+                    long id = Long.parseLong(arguments.get(2));
+                    String courseName = arguments.get(3);
+                    String courseDescription = arguments.get(4);
+                    long sectionId = Long.parseLong(arguments.get(5));
+                    String sectionName = arguments.get(6);
+                    String sectionDescription = arguments.get(7);
+                    List<String> videos = Helper.stringToListString(arguments.get(8));
+                    List<String> materials = Helper.stringToListString(arguments.get(9));
+                    String extendMethod = arguments.get(10);
                     return provider.updateCourse(id,courseName,courseDescription,sectionId,sectionName,sectionDescription,materials,videos,extendMethod).toString();
                 }
                 case Constants.DELETE_COURSE:{
-                    long id = Long.parseLong(arguments.get(1));
+                    long id = Long.parseLong(arguments.get(2));
                     return provider.deleteCourse(id).toString();
                 }
                 case Constants.VIEW_COURSE:{
-                    long id = Long.parseLong(arguments.get(1));
-                    String extendMethod = arguments.get(2);
+                    long id = Long.parseLong(arguments.get(2));
+                    String extendMethod = arguments.get(3);
                     return provider.viewCourse(id,extendMethod);
                 }
                 case Constants.CHOOSE_COURSE: {
-                    long course = Long.parseLong(arguments.get(1));
-                    long student = Long.parseLong(arguments.get(2));
-                    String extendMethod = arguments.get(3);
+                    long course = Long.parseLong(arguments.get(2));
+                    long student = Long.parseLong(arguments.get(3));
+                    String extendMethod = arguments.get(4);
                     return provider.chooseCourse(course,student,extendMethod);
                 }
                 case Constants.GET_STUDENTS_COURSES: {
-                    long studentId = Long.parseLong(arguments.get(1));
-                    long courseId = Long.parseLong(arguments.get(2));
-                    int rating = Integer.parseInt(arguments.get(3));
-                    String comment = arguments.get(4);
-                    String question = arguments.get(5);
-                    String extendMethod = arguments.get(6);
-                    boolean needQuestion = Boolean.parseBoolean(arguments.get(7));
+                    long studentId = Long.parseLong(arguments.get(2));
+                    long courseId = Long.parseLong(arguments.get(3));
+                    int rating = Integer.parseInt(arguments.get(4));
+                    String comment = arguments.get(5);
+                    String question = arguments.get(6);
+                    String extendMethod = arguments.get(7);
+                    boolean needQuestion = Boolean.parseBoolean(arguments.get(8));
                     return provider.getStudentsCourses(studentId,courseId,rating,comment,question,extendMethod,needQuestion);
                 }
                 case Constants.CHECK_STUDENTS_QUESTIONS: {
-                    long courseId = Long.parseLong(arguments.get(1));
-                    long questionId = Long.parseLong(arguments.get(2));
-                    String answer =  arguments.get(3);
+                    long courseId = Long.parseLong(arguments.get(2));
+                    long questionId = Long.parseLong(arguments.get(3));
+                    String answer =  arguments.get(4);
                     return provider.checkStudentsQuestions(courseId,questionId,answer);
                 }
                 default:
@@ -117,6 +117,7 @@ public class ProjectAppClient {
             }
         }
         catch(Exception e){
+         log.error(e);
          log.error(Constants.BAD_ARGS_FORMAT);
          log.error(Constants.ERROR_METHOD_SIGNATURE);
          System.exit(1);

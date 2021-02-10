@@ -2,6 +2,7 @@ package ru.sfedu.my_pckg.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.my_pckg.BaseTest;
@@ -58,6 +59,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
 
+
     @Test
     public void createCourseSuccess() throws IOException{
         log.debug("On test createCourseSuccess");
@@ -70,7 +72,6 @@ class DataProviderCsvTest extends BaseTest {
         log.debug("On test createCourseFail");
         assertEquals(Status.FAIL,provider.createCourse(1235, "Test 2", "Test course 2", 12L, Collections.singletonList(10L)));
         assertEquals(Status.FAIL,provider.createCourse(1235, "", "Test course 2", 12L, studentsIds));
-        assertEquals(course_1,provider.getCourseById(1234));
     }
 
     @Test
@@ -91,9 +92,9 @@ class DataProviderCsvTest extends BaseTest {
     @Test
     public void deleteSectionSuccess() throws IOException {
         log.debug("On test deleteSectionSuccess");
-        assertEquals(Status.SUCCESSFUL,provider.createSection(1234, "Test", "Test section", 1234, videos, materials));
+        provider.createSection(1234, "Test", "Test section", 1234, videos, materials);
         assertEquals(Status.SUCCESSFUL,provider.deleteSection(1234));
-        assertEquals(Collections.emptyList(),provider.getRecords(Section.class));
+        assertTrue(provider.getRecords(Section.class).isEmpty());
     }
 
     @Test
@@ -247,7 +248,7 @@ class DataProviderCsvTest extends BaseTest {
         provider.leaveAReviewAboutCourse(1234,14L,3,"Test Comment 3");
         List<String> comments  = provider.getCourseComments(1234);
         List <String> assertComments = Arrays.asList("Test Comment 1","Test Comment 2","Test Comment 3");
-        assertEquals(comments,assertComments);
+        assertTrue(comments.containsAll(assertComments));
     }
 
     @Test
@@ -292,7 +293,7 @@ class DataProviderCsvTest extends BaseTest {
     }
 
     @Test
-    public void checkQuestionsFail() throws IOException {
+        public void checkQuestionsFail() throws IOException {
         log.debug("On test checkQuestionsFail");
         String questions = provider.checkStudentsQuestions(1234,1,"");
         assertEquals("",questions);
@@ -410,7 +411,7 @@ class DataProviderCsvTest extends BaseTest {
 
     @Test
     public void getStudentsCoursesFail() throws IOException {
-        log.debug("On test updateCourseSuccess");
+        log.debug("On test getStudentsCoursesFail");
         provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
         provider.createCourse(1235, "Test_2 ", "Test course_2", 12L, Arrays.asList(13L, 14L));
         assertNull(provider.getStudentsCourses(16L, 1234, 3, "", "", "", false));
@@ -421,5 +422,17 @@ class DataProviderCsvTest extends BaseTest {
         assertTrue(provider.getRecords(Review.class).isEmpty());
         assertEquals(-1L,provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview());
         assertNull(provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions());
+    }
+
+    @AfterEach
+    public void flushData() throws IOException {
+        provider.flushFile(Student.class.getSimpleName());
+        provider.flushFile(Teacher.class.getSimpleName());
+        provider.flushFile(Course.class.getSimpleName());
+        provider.flushFile(Section.class.getSimpleName());
+        provider.flushFile(CourseActivity.class.getSimpleName());
+        provider.flushFile(Question.class.getSimpleName());
+        provider.flushFile(Answer.class.getSimpleName());
+        provider.flushFile(Review.class.getSimpleName());
     }
 }

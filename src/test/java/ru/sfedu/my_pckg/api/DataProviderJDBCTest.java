@@ -2,6 +2,7 @@ package ru.sfedu.my_pckg.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,6 @@ import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,10 +39,12 @@ class DataProviderJDBCTest extends BaseTest {
     List<String> materials_Upd = Arrays.asList("www.test_1.com", "www.test_2.com");
     List<Long> studentsIds = Arrays.asList(12L, 13L, 14L);
     Course course_1 = createCourse(1234, "Test", "Test course", 12L,studentsIds);
+    Course course_new = createCourse(1235, "Test", "Test course", 12L, studentsIds);
     Section section_1 = createSection(1234, "Test", "Test section", 1234, videos, materials);
 
 
     DataProviderJDBCTest() throws SQLException, IOException {}
+
 
     @BeforeEach
     public void initTestData()  {
@@ -65,8 +67,8 @@ class DataProviderJDBCTest extends BaseTest {
     @Test
     public void createCourseSuccess() throws  SQLException {
         log.debug("On test createCourseSuccess");
-
-        assertEquals(course_1,provider.getByID(Course.class,1234));
+        provider.createCourse(1235, "Test", "Test course", 12L, studentsIds);
+        assertEquals(course_new,provider.getByID(Course.class,1235));
     }
 
     @Test
@@ -74,7 +76,6 @@ class DataProviderJDBCTest extends BaseTest {
         log.debug("On test createCourseFail");
         Assertions.assertEquals(Status.FAIL,provider.createCourse(1235, "Test 2", "Test course 2", 12L, Collections.singletonList(10L)));
         Assertions.assertEquals(Status.FAIL,provider.createCourse(1235, "", "Test course 2", 12L, studentsIds));
-        Assertions.assertEquals(course_1,provider.getByID(Course.class,1234));
     }
 
     @Test
@@ -118,7 +119,7 @@ class DataProviderJDBCTest extends BaseTest {
     @Test
     public void updateSectionFail(){
         log.debug("On test updateSectionFail");
-        assertEquals(Status.FAIL,provider.updateSection(1234,"New name","",videos_Upd,materials_Upd));
+        assertEquals(Status.FAIL,provider.updateSection(1235,"New name","",videos_Upd,materials_Upd));
     }
 
     @Test
@@ -136,8 +137,7 @@ class DataProviderJDBCTest extends BaseTest {
     @Test
     public void chooseCourseFail() throws SQLException {
         log.debug("On test chooseCourseFail");
-        Assertions.assertEquals(provider.getRecords(Course.class).toString(),provider.chooseCourse(11,1, ""));
-        Assertions.assertEquals(Status.FAIL.toString(),provider.chooseCourse(1235,15L,"JOIN"));
+        assertEquals(Status.FAIL.toString(),provider.chooseCourse(1235,15L,"JOIN"));
         assertNull(provider.chooseCourse(1234,12L,"Random String"));
         assertNull(provider.chooseCourse(1,1,"Review"));
     }
@@ -162,18 +162,18 @@ class DataProviderJDBCTest extends BaseTest {
     @Test
     public void leaveAReviewAboutCourseSuccess() throws SQLException {
         log.debug("On test leaveAReviewAboutCourseSuccess");
-        Assertions.assertEquals(Status.SUCCESSFUL,provider.leaveAReviewAboutCourse(1234,12L,10,"Test Comment"));
-        Assertions.assertEquals("Test Comment",provider.<Review>getRecords(Review.class).get(0).getComment());
-        Assertions.assertEquals(5,provider.<Review>getRecords(Review.class).get(0).getRating());
-        Assertions.assertEquals(provider.<Review>getRecords(Review.class).get(0).getId(),provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview());
-        Assertions.assertEquals(provider.getRecords(Review.class).toString(),provider.chooseCourse(1234,1,"REVIEW"));
+        assertEquals(Status.SUCCESSFUL,provider.leaveAReviewAboutCourse(1234,12L,10,"Test Comment"));
+        assertEquals("Test Comment",provider.<Review>getRecords(Review.class).get(0).getComment());
+        assertEquals(5,provider.<Review>getRecords(Review.class).get(0).getRating());
+        assertEquals(provider.<Review>getRecords(Review.class).get(0).getId(),provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview());
+        assertEquals(provider.getRecords(Review.class).toString(),provider.chooseCourse(1234,1,"REVIEW"));
     }
 
     @Test
     public void leaveAReviewAboutCourseFail() throws SQLException {
         log.debug("On test leaveAReviewAboutCourseFail");
-        Assertions.assertEquals(Status.FAIL,provider.leaveAReviewAboutCourse(1234,1L,10,"Test Comment"));
-        Assertions.assertEquals(Status.FAIL,provider.leaveAReviewAboutCourse(1233,12L,10,"Test Comment"));
+        assertEquals(Status.FAIL,provider.leaveAReviewAboutCourse(1234,1L,10,"Test Comment"));
+        assertEquals(Status.FAIL,provider.leaveAReviewAboutCourse(1233,12L,10,"Test Comment"));
         assertTrue(provider.getRecords(Review.class).isEmpty());
     }
 
@@ -200,9 +200,9 @@ class DataProviderJDBCTest extends BaseTest {
         log.debug("On test unsubscribeFromACourseSuccess");
         provider.joinCourse(1234,15L);
         provider.leaveAReviewAboutCourse(1234,15L,10,"Test Comment");
-//        assertEquals(Status.SUCCESSFUL,provider.unsubscribeFromACourse(1234,15L));
-//        assertTrue(provider.getRecords(CourseActivity.class).isEmpty());
-//        assertFalse(((Course)provider.getByID(Course.class,1234L)).getStudents().contains(15L));
+        assertEquals(Status.SUCCESSFUL,provider.unsubscribeFromACourse(1234,15L));
+        assertTrue(provider.getRecords(CourseActivity.class).isEmpty());
+        assertFalse(((Course)provider.getByID(Course.class,1234L)).getStudents().contains(15L));
     }
 
     @Test
@@ -250,8 +250,8 @@ class DataProviderJDBCTest extends BaseTest {
         provider.leaveAReviewAboutCourse(1234,13L,2,"Test Comment 2");
         provider.leaveAReviewAboutCourse(1234,14L,3,"Test Comment 3");
         List<String> comments  = provider.getCourseComments(1234);
-        List <String> assertComments = Arrays.asList("Test Comment 1","Test Comment 2","Test Comment 3");
-        Assertions.assertEquals(comments,assertComments);
+        List <String> assertComments = Arrays.asList("Test Comment 1","Test Comment 3","Test Comment 2");
+        assertTrue(comments.containsAll(assertComments));
     }
 
     @Test
@@ -288,10 +288,10 @@ class DataProviderJDBCTest extends BaseTest {
         provider.askAQuestion(1234,14L,"Test Question_3");
         long questionId = provider.<Question>getRecords(Question.class).get(0).getId();
         String questions = provider.checkStudentsQuestions(1234,-1,"");
-        String expected = provider.<Question>getRecords(Question.class).stream().map(Question::toString)
-                .collect(Collectors.joining(" , "));
-        Assertions.assertEquals(expected,questions);
-        Assertions.assertEquals(Status.SUCCESSFUL.toString(),provider.checkStudentsQuestions(1234,questionId,"Test Answer"));
+        List<String> questionsArr = Arrays.asList(questions.split(" , "));
+        List<Question> expected = provider.<Question>getRecords(Question.class);
+        assertTrue(expected.stream().allMatch(el-> questionsArr.contains(el.toString())));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.checkStudentsQuestions(1234,questionId,"Test Answer"));
         assertFalse(provider.getRecords(Answer.class).isEmpty());
     }
 
@@ -327,7 +327,7 @@ class DataProviderJDBCTest extends BaseTest {
         List<Section> courseSections = provider.getCourseMaterials(1234);
         assertTrue(courseSections.contains((Section)provider.getByID(Section.class,1234)));
         assertTrue(courseSections.contains((Section)provider.getByID(Section.class,1235)));
-        Assertions.assertEquals(2, courseSections.size());
+        assertEquals(2, courseSections.size());
     }
 
     @Test
@@ -342,10 +342,10 @@ class DataProviderJDBCTest extends BaseTest {
         log.debug("On test checkQASuccess");
         provider.askAQuestion(1234,12L,"Test Question_1");
         String allQA = provider.checkQA(1234,-1,"",false);
-        Assertions.assertEquals(provider.getRecords(Question.class).get(0).toString(),allQA);
+        assertEquals(provider.getRecords(Question.class).get(0).toString(),allQA);
         provider.answerQuestion(provider.<Question>getRecords(Question.class).get(0).getId(),"Test Answer");
-        Assertions.assertEquals(provider.getRecords(Question.class).get(0).toString()+provider.getRecords(Answer.class).get(0).toString(),provider.checkQA(1234,-1,"",false));
-        Assertions.assertEquals(Status.SUCCESSFUL.toString(),provider.checkQA(1234,12L,"New question student 12L",true));
+        assertEquals(provider.getRecords(Question.class).get(0).toString()+provider.getRecords(Answer.class).get(0).toString(),provider.checkQA(1234,-1,"",false));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.checkQA(1234,12L,"New question student 12L",true));
     }
 
     @Test
@@ -398,16 +398,16 @@ class DataProviderJDBCTest extends BaseTest {
     public void getStudentsCoursesSuccess() throws SQLException {
         log.debug("On test updateCourseSuccess");
         provider.createCourse(1235, "Test_2 ", "Test course_2", 12L, Arrays.asList(13L,14L));
-        Assertions.assertEquals(course_1.toString(),provider.getStudentsCourses(12L,1234,3,"","","",false));
-        Assertions.assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,5,"Nice course","","review",false));
+        assertEquals(course_1.toString(),provider.getStudentsCourses(12L,1234,3,"","","",false));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,5,"Nice course","","review",false));
         assertFalse(provider.getRecords(Review.class).isEmpty());
-        Assertions.assertEquals(provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview(),provider.<Review>getRecords(Review.class).get(0).getId());
-        Assertions.assertEquals(12L,provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getStudent());
-        Assertions.assertEquals("",provider.getStudentsCourses(12L,1234,0,"","","QA",false));
-        Assertions.assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,0,"","Test Question","QA",true));
+        assertEquals(provider.getRecords(CourseActivity.class).get(0).getReview(),provider.getRecords(Review.class).get(0).getId());
+        assertEquals(12L,provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getStudent());
+        assertEquals("",provider.getStudentsCourses(12L,1234,0,"","","QA",false));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,0,"","Test Question","QA",true));
         assertFalse(provider.<Question>getRecords(Question.class).isEmpty());
-        Assertions.assertEquals(provider.<Question>getRecords(Question.class).get(0).getId(),provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions().get(0));
-        Assertions.assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,0,"","","UNSUBSCRIBE",false));
+        assertEquals(provider.<Question>getRecords(Question.class).get(0).getId(),provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions().get(0));
+        assertEquals(Status.SUCCESSFUL.toString(),provider.getStudentsCourses(12L,1234,0,"","","UNSUBSCRIBE",false));
         assertFalse(((Course)provider.getByID(Course.class,1234)).getStudents().contains(12L));
         assertTrue(provider.getRecords(CourseActivity.class).isEmpty());
     }
@@ -418,12 +418,25 @@ class DataProviderJDBCTest extends BaseTest {
         provider.createCourse(1234, "Test", "Test course", 12L, studentsIds);
         provider.createCourse(1235, "Test_2 ", "Test course_2", 12L, Arrays.asList(13L, 14L));
         assertNull(provider.getStudentsCourses(16L, 1234, 3, "", "", "", false));
-        Assertions.assertEquals("", provider.getStudentsCourses(15L, 1234, 3, "", "", "", false));
-        Assertions.assertEquals(Status.FAIL.toString(), provider.getStudentsCourses(12L, 1234, 0, "", "", "QA", true));
+        assertEquals("", provider.getStudentsCourses(15L, 1234, 3, "", "", "", false));
+        assertEquals(Status.FAIL.toString(), provider.getStudentsCourses(12L, 1234, 0, "", "", "QA", true));
         assertTrue(provider.getRecords(Question.class).isEmpty());
-        Assertions.assertEquals(Status.FAIL.toString(),provider.getStudentsCourses(12L, 1235, 3, "Error comment", "", "Review", false));
+        assertEquals(Status.FAIL.toString(),provider.getStudentsCourses(12L, 1235, 3, "Error comment", "", "Review", false));
         assertTrue(provider.getRecords(Review.class).isEmpty());
         assertEquals(-1L,provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getReview());
-        assertNull(provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions());
+        assertEquals(Collections.emptyList(),provider.<CourseActivity>getRecords(CourseActivity.class).get(0).getQuestions());
     }
+
+    @AfterEach
+    public void flushData() throws IOException {
+        provider.deleteRecords(Student.class);
+        provider.deleteRecords(Teacher.class);
+        provider.deleteRecords(Course.class);
+        provider.deleteRecords(Section.class);
+        provider.deleteRecords(CourseActivity.class);
+        provider.deleteRecords(Question.class);
+        provider.deleteRecords(Answer.class);
+        provider.deleteRecords(Review.class);
+    }
+
 }
