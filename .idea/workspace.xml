@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/JDBC" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="065fb522-12d4-473e-930e-169e5174c65b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.bash_history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.h2.server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassesCsvDSLeonov.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectApp (1).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectApp (2).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/enviroment.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mEi3Wib0CRM41x7oAzWkZMAcc7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Application.ProjectAppClient">
+    <configuration name="ProjectAppClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.my_pckg.ProjectAppClient" />
+      <module name="ProjectApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.my_pckg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataProviderCsvTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.my_pckg.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sfedu.my_pckg.api" />
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.my_pckg.api.DataProviderCsvTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataProviderJDBCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.my_pckg.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sfedu.my_pckg.api" />
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.my_pckg.api.DataProviderJDBCTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataProviderJDBCTest.updateSectionFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.my_pckg.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sfedu.my_pckg.api" />
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.my_pckg.api.DataProviderJDBCTest" />
+      <option name="METHOD_NAME" value="updateSectionFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataProviderXMLTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sfedu.my_pckg.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sfedu.my_pckg.api" />
+      <option name="MAIN_CLASS_NAME" value="ru.sfedu.my_pckg.api.DataProviderXMLTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProjectAppClient" />
+        <item itemvalue="JUnit.DataProviderCsvTest" />
+        <item itemvalue="JUnit.DataProviderJDBCTest.updateSectionFail" />
+        <item itemvalue="JUnit.DataProviderJDBCTest" />
+        <item itemvalue="JUnit.DataProviderXMLTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="065fb522-12d4-473e-930e-169e5174c65b" name="Default Changelist" comment="" />
+      <created>1609064951643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609064951643</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/JDBC" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1612970401329">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1360.728@0.0.1360.728" timestamp="1612970401329" />
+    <state width="1317" height="416" key="GridCell.Tab.0.bottom" timestamp="1612970798874">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1237" height="418" key="GridCell.Tab.0.bottom/0.0.1280.728@0.0.1280.728" timestamp="1609066069511" />
+    <state width="1317" height="416" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1612970798874" />
+    <state width="1317" height="416" key="GridCell.Tab.0.center" timestamp="1612970798874">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1237" height="418" key="GridCell.Tab.0.center/0.0.1280.728@0.0.1280.728" timestamp="1609066069511" />
+    <state width="1317" height="416" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1612970798874" />
+    <state width="1317" height="416" key="GridCell.Tab.0.left" timestamp="1612970798874">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1237" height="418" key="GridCell.Tab.0.left/0.0.1280.728@0.0.1280.728" timestamp="1609066069511" />
+    <state width="1317" height="416" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1612970798874" />
+    <state width="1317" height="416" key="GridCell.Tab.0.right" timestamp="1612970798874">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1237" height="418" key="GridCell.Tab.0.right/0.0.1280.728@0.0.1280.728" timestamp="1609066069511" />
+    <state width="1317" height="416" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1612970798874" />
+    <state x="170" y="19" key="Maven.ArtifactSearchDialog" timestamp="1609064997088">
+      <screen x="0" y="0" width="1280" height="728" />
+    </state>
+    <state x="170" y="19" key="Maven.ArtifactSearchDialog/0.0.1280.728@0.0.1280.728" timestamp="1609064997088" />
+  </component>
+</project>
