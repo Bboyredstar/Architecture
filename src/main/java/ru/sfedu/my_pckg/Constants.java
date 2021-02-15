@@ -76,6 +76,10 @@ public class Constants {
   public static final String DELETE_COURSE_ACTIVITY = "DELETE FROM COURSEACTIVITY WHERE course = ? AND student = ?";
   public static final String DElETE = "DELETE FROM ";
   public static final String SQL_ALL_SCHEMAS = "SELECT schema_name FROM information_schema.schemata";
+  public static final String SQL_CATALOG_NAME = "SELECT current_catalog";
+  public static final String SQL_CURRENT_USER = "SELECT current_user";
+  public static final String SQL_SIZE_TABLES ="Select pg_size_pretty(pg_database_size(datname)) from pg_database";
+  public static final String SQL_TABLES_NAME = "SELECT datname FROM pg_database";
   public static final String WHERE_ID = " WHERE id =  ";
   public static final String SELECT_IDS = " SELECT id FROM ";
   public static final String BIGINT = "BIGINT";
