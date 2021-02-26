@@ -8,6 +8,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import ru.sfedu.my_pckg.lab2.model.TestBean;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,21 +16,29 @@ import java.io.IOException;
 public class HibernateUtil {
     private static SessionFactory sessionFactory;
     public static Logger log = LogManager.getLogger(SessionFactory.class);
-
+    private static final String USER_CONFIG_PATH = System.getenv("config");
     public static SessionFactory getSessionFactory() throws IOException {
+
         if (sessionFactory == null) {
             // loads configuration and mappings
-            File file = new File(ConfigurationUtil.getConfigurationEntry("PATH_TO_CFG_XML"));
+            String filepath =  (USER_CONFIG_PATH ==null) ? (ConfigurationUtil.getConfigurationEntry("PATH_TO_CFG_XML")) :(USER_CONFIG_PATH);
+            log.debug(filepath);
+            File file = new File(filepath);
             Configuration configuration = new Configuration().configure(file);
             ServiceRegistry serviceRegistry
                     = new StandardServiceRegistryBuilder()
-                    .configure().build();
+                    .applySettings(configuration.getProperties()).build();
             MetadataSources metadataSources =
                     new MetadataSources(serviceRegistry);
+            addEntities(metadataSources);
             Metadata metadata =  metadataSources.getMetadataBuilder().build();
             sessionFactory =   metadata.getSessionFactoryBuilder().build();
         }
 
         return sessionFactory;
+    }
+
+    private static void addEntities(MetadataSources metadataSources){
+        metadataSources.addAnnotatedClass(TestBean.class);
     }
 }

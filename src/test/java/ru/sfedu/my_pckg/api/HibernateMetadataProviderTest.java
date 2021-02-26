@@ -1,13 +1,18 @@
 package ru.sfedu.my_pckg.api;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
+import ru.sfedu.my_pckg.lab1.HibernateMetadataProvider;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class HibernateMetadataProviderTest {
+    public static Logger log = LogManager.getLogger(HibernateMetadataProviderTest.class);
     HibernateMetadataProvider instance = new HibernateMetadataProvider();
 
     @Test
@@ -40,4 +45,8 @@ class HibernateMetadataProviderTest {
         List result = instance.getTablesSize();
         assertNotNull(result);
     }
+
+
+
+
 }

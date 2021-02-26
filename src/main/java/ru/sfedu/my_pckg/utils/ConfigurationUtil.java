@@ -2,7 +2,7 @@ package ru.sfedu.my_pckg.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.my_pckg.ProjectAppClient;
+
 
 import java.io.File;
 import java.io.FileInputStream;
