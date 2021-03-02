@@ -17,6 +17,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static ru.sfedu.my_pckg.utils.helpers.Helper.*;
 
 
 class DataProviderJDBCTest extends BaseTest {

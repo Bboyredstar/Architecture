@@ -5,20 +5,18 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 import ru.sfedu.my_pckg.enums.UserType;
 
+import javax.persistence.Entity;
 import java.util.Objects;
 
 /**
  * The type Student.
  */
-@Root(name="Student")
+@Entity(name="Student")
 public class Student extends User {
-
-    @CsvBindByName
-    @Element(name="preferences")
     private String preferences;
 
     public Student () {
-        super.setType(UserType.STUDENT);
+
     };
     /**
      * Gets preferences.

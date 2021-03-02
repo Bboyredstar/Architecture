@@ -1,36 +1,27 @@
 package ru.sfedu.my_pckg.lab3.MappedSuperclass.model;
 
 import com.opencsv.bean.CsvBindByName;
+import org.hibernate.annotations.Entity;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import ru.sfedu.my_pckg.enums.UserType;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * The type User.
  */
-public class User implements Serializable {
-    @CsvBindByName
-    @Attribute(name="id")
+@MappedSuperclass
+public class User implements Serializable{
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    @Element(name="firstName")
-    @CsvBindByName
     private String firstName;
-    @Element(name="secondName")
-    @CsvBindByName
     private String secondName;
-    @Element(name="email")
-    @CsvBindByName
     private String email;
-    @Element(name="age")
-    @CsvBindByName
     private int age;
-    @CsvBindByName
-    @Element(name="country")
     private String country;
-    private UserType type;
-
 
 
     /**
@@ -141,11 +132,4 @@ public class User implements Serializable {
         this.country = country;
     }
 
-    public UserType getType() {
-        return type;
-    }
-
-    public void setType(UserType type) {
-        this.type = type;
-    }
 }

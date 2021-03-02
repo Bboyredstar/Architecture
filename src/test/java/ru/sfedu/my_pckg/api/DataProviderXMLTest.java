@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static ru.sfedu.my_pckg.utils.helpers.Helper.*;
 
 class DataProviderXMLTest extends BaseTest {
     public static Logger log = LogManager.getLogger(DataProviderXMLTest.class);

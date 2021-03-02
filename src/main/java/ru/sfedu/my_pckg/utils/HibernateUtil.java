@@ -9,6 +9,9 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import ru.sfedu.my_pckg.lab2.model.TestBean;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Student;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Teacher;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.User;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,5 +43,17 @@ public class HibernateUtil {
 
     private static void addEntities(MetadataSources metadataSources){
         metadataSources.addAnnotatedClass(TestBean.class);
+        metadataSources.addAnnotatedClass(Teacher.class);
+        metadataSources.addAnnotatedClass(Student.class);
+        metadataSources.addAnnotatedClass(User.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.TablePerClass.model.Teacher.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.TablePerClass.model.Student.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.TablePerClass.model.User.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.SingleTable.model.Teacher.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.SingleTable.model.Student.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.SingleTable.model.User.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.JoinedTable.model.Teacher.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.JoinedTable.model.Student.class);
+        metadataSources.addAnnotatedClass(ru.sfedu.my_pckg.lab3.JoinedTable.model.User.class);
     }
 }

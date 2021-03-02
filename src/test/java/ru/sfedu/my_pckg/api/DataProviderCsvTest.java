@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import ru.sfedu.my_pckg.BaseTest;
 import ru.sfedu.my_pckg.beans.*;
 import ru.sfedu.my_pckg.enums.Status;
-
+import ru.sfedu.my_pckg.utils.helpers.Helper;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static ru.sfedu.my_pckg.utils.helpers.Helper.*;
 
 
 class DataProviderCsvTest extends BaseTest {

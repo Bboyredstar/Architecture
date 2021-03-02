@@ -5,22 +5,19 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 import ru.sfedu.my_pckg.enums.UserType;
 
+import javax.persistence.Entity;
 import java.util.Objects;
 
 /**
  * The type Teacher.
  */
-@Root
+@Entity(name="Teacher")
+
 public class Teacher extends User {
-    @CsvBindByName
-    @Element(name="competence")
     private String competence;
-    @Element(name="experience")
-    @CsvBindByName
     private int experience;
 
     public Teacher () {
-        super.setType(UserType.TEACHER);
     };
     /**
      * Gets competence.

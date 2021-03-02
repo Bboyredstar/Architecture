@@ -1,88 +1,62 @@
 package ru.sfedu.my_pckg;
 
-import ru.sfedu.my_pckg.beans.*;
-import ru.sfedu.my_pckg.utils.helpers.Helper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.Test;
+
+
+import ru.sfedu.my_pckg.enums.Status;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.api.HibernateEntityProvider;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.api.ITestEntityDataProvider;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Student;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Teacher;
+import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.User;
+
+import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.List;
 
 public class BaseTest {
-  public static Student createStudent(long id,String fname,String lname, int age,
-                                      String email,String country,String preferences){
-      Student stud = new Student();
-      stud.setId(id);
-      stud.setFirstName(fname);
-      stud.setSecondName(lname);
-      stud.setAge(age);
-      stud.setEmail(email);
-      stud.setCountry(country);
-      stud.setPreferences(preferences);
-      return stud;
-  }
+    public static Logger log = LogManager.getLogger(BaseTest.class);
+    ITestEntityDataProvider provider = new HibernateEntityProvider();
+    public BaseTest(){}
 
-  public static Teacher createTeacher(long id,String fname,String lname, int age,
-                                      String email,String country,String competence,
-                                      int experience){
-      Teacher teacher = new Teacher();
-      teacher.setId(id);
-      teacher.setFirstName(fname);
-      teacher.setSecondName(lname);
-      teacher.setAge(age);
-      teacher.setEmail(email);
-      teacher.setCountry(country);
-      teacher.setCompetence(competence);
-      teacher.setExperience(experience);
-      return teacher;
-  }
+    @Test
+    public void createStudentSuccess(){
+        Long id = provider.createStudent("Lu","Mollo",20,"sasd@mail.com","America","test");
+        assertNotNull(id);
+    }
 
-  public static Course createCourse(long id, String name, String description, long ownerId,List<Long> students){
-      Course course = new Course();
-      course.setId(id);
-      course.setName(name);
-      course.setDescription(description);
-      course.setOwner(ownerId);
-      course.setStudents(students);
-      return course;
-  }
+    @Test
+    public void createTeacherSuccess(){
+        Long id = provider.createTeacher("Geno","Floyd",32,"nnnmail.com","Russia","test",12);
+        assertNotNull(id);
+    }
 
-  public static Section createSection(long id,String name, String description,long course,
-                                      List<String> materials,List<String> videos){
-      Section section = new Section();
-      section.setId(id);
-      section.setCourse(course);
-      section.setName(name);
-      section.setDescription(description);
-      section.setMaterials(materials);
-      section.setVideos(videos);
-      return section;
-  }
+    @Test
+    public void deleteTeacherSuccess(){
+        Long id = provider.createTeacher("Georg","Floyd",32,"nnnmail.com","Russia","test",12);
+        assertEquals(Status.SUCCESSFUL,provider.deleteTeacher(id));
+    }
 
-  public static Question createQuestion(long id,String question){
-      Question questionObj = new Question();
-      questionObj.setId(id);
-      questionObj.setQuestion(question);
-      return questionObj;
-  }
+    @Test
+    public void deleteStudentSuccess(){
+        Long id = provider.createStudent("Luca","Mollo",20,"sasd@mail.com","America","test");
+        assertEquals(Status.SUCCESSFUL,provider.deleteStudent(id));
+    }
 
-  public static Answer createAnswer(long question,String answer ){
-      Answer answerObj = new Answer();
-      answerObj.setId(Helper.createId());
-      answerObj.setQuestion(question);
-      answerObj.setAnswer(answer);
-        return answerObj;
-  }
+    @Test
+    public void updateTeacherSuccess(){
+       Long id = provider.createTeacher("Nick","Floyd",24,"nnnmail.com","Russia","test",12);
+       assertEquals(Status.SUCCESSFUL, provider.updateTeacher(id,"Georgio","Floyd",23,"nnnmail.com","Russia","test",12));
+    }
 
-  public static Review createReview(int rating, String comment){
-      Review review = new Review();
-      review.setId(Helper.createId());
-      review.setRating(rating);
-      review.setComment(comment);
-      return review;
-  }
-
-
-
-
-
-
-
+    @Test
+    public void updateStudentSuccess(){
+        Long id = provider.createStudent("Lucas","Mollo",21,"sasd@mail.com","America","test");
+        assertEquals(Status.SUCCESSFUL,provider.updateStudent(id,"Lucas","Mollo",21,"sasd@mail.com","America","test"));
+    }
 }
