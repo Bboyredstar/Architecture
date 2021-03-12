@@ -2,7 +2,10 @@ package ru.sfedu.my_pckg.lab4.componentCollectionMap.api;
 
 
 import ru.sfedu.my_pckg.enums.Status;
+import ru.sfedu.my_pckg.lab4.componentCollectionMap.model.Section;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -12,6 +15,7 @@ public interface ITestEntityDataProvider {
     /**
      * Gets bean by id.
      *
+     * @param <T>  the type parameter
      * @param bean the bean
      * @param id   the id
      * @return the by id
@@ -21,6 +25,7 @@ public interface ITestEntityDataProvider {
     /**
      * Save bean in DS.
      *
+     * @param <T>  the type parameter
      * @param bean the bean
      * @return the id
      */
@@ -29,83 +34,36 @@ public interface ITestEntityDataProvider {
     /**
      * Update bean.
      *
+     * @param <T>  the type parameter
      * @param bean the TestBean
      */
     public <T >void update(T bean);
 
     /**
-     * Delete Student from DS.
+     * Create course long.
      *
-     * @param Id the id
-     */
-    public Status deleteStudent(Long Id);
-
-    /**
-     * Delete Teacher from DS.
-     *
-     * @param Id the id
-     */
-    public Status deleteTeacher(Long Id);
-
-    /**
-     * Create student long.
-     *
-     * @param fname       the fname
-     * @param lname       the lname
-     * @param age         the age
-     * @param email       the email
-     * @param country     the country
-     * @param preferences the preferences
+     * @param courseName        the course name
+     * @param courseDescription the course description
+     * @param sections          the sections
      * @return the long
      */
-    public Long createStudent(String fname, String lname, int age,
-                              String email, String country, String preferences);
+    public Long createCourse(String courseName,String courseDescription,Map<String,Section> sections);
 
     /**
-     * Create teacher long.
+     * Delete course status.
      *
-     * @param fname      the fname
-     * @param lname      the lname
-     * @param age        the age
-     * @param email      the email
-     * @param country    the country
-     * @param competence the competence
-     * @param experience the experience
-     * @return the long
-     */
-    public Long createTeacher(String fname,String lname, int age,
-                              String email,String country,String competence,
-                              int experience);
-
-    /**
-     * Update teacher status.
-     *
-     * @param id         the id
-     * @param fname      the fname
-     * @param lname      the lname
-     * @param age        the age
-     * @param email      the email
-     * @param country    the country
-     * @param competence the competence
-     * @param experience the experience
+     * @param Id the id
      * @return the status
      */
-    public Status updateTeacher(Long id,String fname,String lname, int age,
-                                String email,String country,String competence,
-                                int experience);
+    public Status deleteCourse(Long Id);
 
     /**
-     * Update student status.
+     * Instantiates a new Update course.
      *
-     * @param id          the id
-     * @param fname       the fname
-     * @param lname       the lname
-     * @param age         the age
-     * @param email       the email
-     * @param country     the country
-     * @param preferences the preferences
+     * @param courseName        the course name
+     * @param courseDescription the course description
+     * @param sections          the sections
      * @return the status
      */
-    public Status updateStudent(Long id,String fname, String lname, int age,
-                                String email, String country, String preferences);
+    public Status updateCourse(Long id, String courseName, String courseDescription, Map<String,Section> sections );
 }

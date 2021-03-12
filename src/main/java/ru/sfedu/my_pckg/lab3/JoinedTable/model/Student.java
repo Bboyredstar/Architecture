@@ -39,7 +39,7 @@ public class Student extends User {
                 "\nemail: " + getEmail() +
                 "\nage: " + getAge()+
                 "\ncountry: " + getCountry()+
-                "\npreferences " + getPreferences() +
+                "\npreferences: " + getPreferences() +
                 "\n}";
     }
     @Override

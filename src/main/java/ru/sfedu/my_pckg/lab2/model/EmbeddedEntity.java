@@ -1,5 +1,7 @@
 package ru.sfedu.my_pckg.lab2.model;
 
+import ru.sfedu.my_pckg.utils.helpers.Helper;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -58,7 +60,7 @@ public class EmbeddedEntity implements Serializable {
         return "EmbeddedEntity{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", sessions=" + sessions +
+                ", sessions=" + Helper.ListObjectToString(sessions) +
                 '}';
     }
 }

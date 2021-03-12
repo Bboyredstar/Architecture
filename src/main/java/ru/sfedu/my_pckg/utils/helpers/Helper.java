@@ -32,6 +32,13 @@ public class Helper {
         return list.stream().map(Objects::toString).collect(Collectors.joining(" ,"));
     }
 
+    public static <T> String ListObjectToString(List<T> list) {
+        if (list == null) {
+            return "null";
+        }
+        return list.stream().map(T::toString).collect(Collectors.joining(" ,"));
+    }
+
     public static String ListStringToString(List<String> list) {
         return list.stream().map(Objects::toString).collect(Collectors.joining(" ,"));
     }
@@ -45,6 +52,27 @@ public class Helper {
         }
         catch (Exception e){
             return new ArrayList<>();
+        }
+    }
+    public static Set<String> stringToSet(String string){
+        try {
+            return Stream.of(string.split(","))
+                    .map(String::trim)
+                    .collect(Collectors.toSet());
+        }
+        catch (Exception e){
+            return null;
+        }
+    }
+
+    public static Map<String,String> stringToMap(String string){
+        try {
+            return Stream.of(string.split(","))
+                    .map(s -> s.split(":"))
+                    .collect(Collectors.toMap(e -> e[0], e ->(e[1])));
+        }
+        catch (Exception e){
+            return null;
         }
     }
 

@@ -3,6 +3,7 @@ package ru.sfedu.my_pckg.lab4.listCollection.api;
 
 import ru.sfedu.my_pckg.enums.Status;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -12,100 +13,62 @@ public interface ITestEntityDataProvider {
     /**
      * Gets bean by id.
      *
+     * @param <T>  the type parameter
      * @param bean the bean
      * @param id   the id
      * @return the by id
      */
-    public <T> Optional<T> getByID(Class<T> bean,long id);
+    public <T> Optional<T> getByID(Class<T> bean, long id);
 
     /**
      * Save bean in DS.
      *
+     * @param <T>  the type parameter
      * @param bean the bean
      * @return the id
      */
-    public<T> Long save(T bean);
+    public <T> Long save(T bean);
 
     /**
      * Update bean.
      *
+     * @param <T>  the type parameter
      * @param bean the TestBean
      */
-    public <T >void update(T bean);
+    public <T> void update(T bean);
 
     /**
-     * Delete Student from DS.
+     * Delete section from DS.
      *
      * @param Id the id
-     */
-    public Status deleteStudent(Long Id);
-
-    /**
-     * Delete Teacher from DS.
-     *
-     * @param Id the id
-     */
-    public Status deleteTeacher(Long Id);
-
-    /**
-     * Create student long.
-     *
-     * @param fname       the fname
-     * @param lname       the lname
-     * @param age         the age
-     * @param email       the email
-     * @param country     the country
-     * @param preferences the preferences
-     * @return the long
-     */
-    public Long createStudent(String fname, String lname, int age,
-                              String email, String country, String preferences);
-
-    /**
-     * Create teacher long.
-     *
-     * @param fname      the fname
-     * @param lname      the lname
-     * @param age        the age
-     * @param email      the email
-     * @param country    the country
-     * @param competence the competence
-     * @param experience the experience
-     * @return the long
-     */
-    public Long createTeacher(String fname,String lname, int age,
-                              String email,String country,String competence,
-                              int experience);
-
-    /**
-     * Update teacher status.
-     *
-     * @param id         the id
-     * @param fname      the fname
-     * @param lname      the lname
-     * @param age        the age
-     * @param email      the email
-     * @param country    the country
-     * @param competence the competence
-     * @param experience the experience
      * @return the status
      */
-    public Status updateTeacher(Long id,String fname,String lname, int age,
-                                String email,String country,String competence,
-                                int experience);
+    public Status deleteSection(Long Id);
+
 
     /**
-     * Update student status.
+     * Update section status.
      *
      * @param id          the id
-     * @param fname       the fname
-     * @param lname       the lname
-     * @param age         the age
-     * @param email       the email
-     * @param country     the country
-     * @param preferences the preferences
+     * @param name        the name
+     * @param description the description
+     * @param videos      the videos
+     * @param materials   the materials
      * @return the status
      */
-    public Status updateStudent(Long id,String fname, String lname, int age,
-                                String email, String country, String preferences);
+    public Status updateSection(long id, String name,
+                                String description, List<String> videos, List<String> materials);
+
+    /**
+     * Create section long.
+     *
+     * @param name        the name
+     * @param description the description
+     * @param videos      the videos
+     * @param materials   the materials
+     * @return the long
+     */
+    public Long createSection(String name, String description,
+                              List<String> videos, List<String> materials);
+
 }

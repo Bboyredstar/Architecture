@@ -84,5 +84,9 @@ public class Constants {
   public static final String SELECT_IDS = " SELECT id FROM ";
   public static final String BIGINT = "BIGINT";
   public static final String VARCHAR = "VARCHAR";
+  public static final String H2 = "H2";
+  public static final String POSTGRES = "POSTGRESQL";
+  public static final String NATIVE_SQL = "SELECT count(*) FROM course_activity as c_1 RIGHT JOIN courseactivity as c_2 ON c_1.courseactivity_id = c_2.id JOIN \n" +
+        "course_many_to_many as c_3 ON c_1.course_many_to_many_id = c_3.id;";
 
 }

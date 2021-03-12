@@ -98,8 +98,6 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
 
     }
 
-
-
     public Session getSession() throws IOException {
         SessionFactory factory = HibernateUtil.getSessionFactory();
         return factory.openSession();

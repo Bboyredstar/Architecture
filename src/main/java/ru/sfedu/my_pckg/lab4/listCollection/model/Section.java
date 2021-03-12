@@ -1,61 +1,35 @@
-
 package ru.sfedu.my_pckg.lab4.listCollection.model;
 
-import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.CsvCustomBindByName;
-import org.simpleframework.xml.Attribute;
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
-import org.simpleframework.xml.Root;
-import ru.sfedu.my_pckg.utils.csvConverters.UrlTransformer;
+
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-/**
- * Class Section
- */
-@Root
+@Entity(name="section_list")
 public class Section implements Serializable{
-
-  //
-  // Fields
-  //
-  @CsvBindByName
-  @Attribute(name="id")
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
-  @CsvBindByName
-  @Element(name="course")
-  private long course;
-  @CsvBindByName
-  @Element(name="name")
   private String name;
-  @CsvBindByName
-  @Element(name="description")
   private String description;
-  @ElementList(inline = true, entry = "material")
-  @CsvCustomBindByName(column = "materials", converter = UrlTransformer.class)
+  @ElementCollection
+  @OrderColumn
+  @CollectionTable(name="materials_list")
   private List<String> materials;
-  @ElementList(inline = true, entry = "video")
-  @CsvCustomBindByName(column = "videos", converter = UrlTransformer.class)
+  @OrderColumn
+  @CollectionTable(name="videos_list")
+  @ElementCollection
   private List<String> videos;
   
   //
   // Constructors
   //
-  public Section() { };
-  
-  //
-  // Methods
-  //
-
-
-  //
-  // Accessor methods
-  //
+  public Section () { };
 
   /**
    * Set the value of id
@@ -71,22 +45,6 @@ public class Section implements Serializable{
    */
   public long getId () {
     return id;
-  }
-
-  /**
-   * Set the value of course
-   * @param  Id the new value of course
-   */
-  public void setCourse (long Id) {
-    this.course = Id;
-  }
-
-  /**
-   * Get the value of course
-   * @return the value of course
-   */
-  public long getCourse () {
-    return course;
   }
 
   /**
@@ -162,7 +120,6 @@ public class Section implements Serializable{
   public String toString(){
     return " \nSection : { "+
             "\nid: " + getId() +
-            "\ncourseId: " + getCourse() +
             "\nname: " + getName() +
             "\ndescription: " + getDescription() +
             "\nvideos: " + getVideos().stream().map(Objects::toString).collect(Collectors.joining(" ,"))+
@@ -172,8 +129,7 @@ public class Section implements Serializable{
   }
   @Override
   public int hashCode(){
-    return Objects.hash(getId(),getCourse(),
-            getCourse(),getName(),getDescription(),
+    return Objects.hash(getId(),getName(),getDescription(),
             getVideos().stream().map(Objects::toString).collect(Collectors.joining(" ,")),
             getMaterials().stream().map(Objects::toString).collect(Collectors.joining(" ,")));
   }
@@ -184,7 +140,6 @@ public class Section implements Serializable{
     if (Obj == null || getClass() != Obj.getClass()) return false;
     Section section = (Section) Obj;
     if (getId() != section.getId()) return false;
-    if (getCourse() != section.getCourse()) return false;
     if (!getName().equals(section.getName())) return false;
     if (!getDescription().equals(section.getDescription())) return false;
     if (!Helper.ListStringToString(getMaterials()).equals(Helper.ListStringToString(section.getMaterials()))) return false;

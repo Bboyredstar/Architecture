@@ -6,13 +6,14 @@ import org.hibernate.NonUniqueObjectException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import ru.sfedu.my_pckg.Constants;
 import ru.sfedu.my_pckg.enums.Status;
-import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Student;
-import ru.sfedu.my_pckg.lab3.MappedSuperclass.model.Teacher;
+import ru.sfedu.my_pckg.lab4.mapCollection.model.Section;
 import ru.sfedu.my_pckg.utils.HibernateUtil;
 
 import javax.transaction.Transactional;
 import java.io.IOException;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
@@ -21,52 +22,38 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
     static Session session;
 
     @Override
-    public Long createStudent(String fname, String lname, int age,
-                              String email, String country, String preferences) {
-        Student stud = new Student();
-        stud.setFirstName(fname);
-        stud.setSecondName(lname);
-        stud.setAge(age);
-        stud.setEmail(email);
-        stud.setCountry(country);
-        stud.setPreferences(preferences);
-        log.debug("Initializing bean:" + stud);
-        Long id = this.save(stud);
-        log.debug("Saving student with id: " + id);
+    public Long createSection(String name, String description,
+                              Map<String,String> materials, Map<String,String> videos) {
+
+        if(!checkName(name)){
+            return null;
+        }
+        Section section = new Section();
+        section.setName(name);
+        section.setDescription(description);
+        section.setVideos(videos);
+        section.setMaterials(materials);
+        log.debug("Initializing section: "+ section);
+        long id = this.save(section);
+        log.debug("Saving section with id: "+ id);
         return id;
     }
 
-    @Override
-    public Long createTeacher(String fname,String lname, int age,
-                               String email,String country,String competence,
-                               int experience){
-        Teacher teacher = new Teacher();
-        teacher.setFirstName(fname);
-        teacher.setSecondName(lname);
-        teacher.setAge(age);
-        teacher.setEmail(email);
-        teacher.setCountry(country);
-        teacher.setCompetence(competence);
-        teacher.setExperience(experience);
-        log.debug("Initializing bean:" + teacher);
-        Long id = this.save(teacher);
-        log.debug("Saving teacher with id: " + id);
-        return id;
-    }
 
     @Override
-    public Status updateStudent(Long id,String fname, String lname, int age,
-                                String email, String country, String preferences) {
+    public Status updateSection(Long id,String name, String description,
+                                Map<String,String> materials, Map<String,String> videos) {
+
+        if(!checkName(name)){
+            return Status.FAIL;
+        }
         try {
-            log.debug("In updateStudent method");
-            Student stud = getByID(Student.class, id).get();;
-            stud.setFirstName(fname);
-            stud.setSecondName(lname);
-            stud.setAge(age);
-            stud.setEmail(email);
-            stud.setCountry(country);
-            stud.setPreferences(preferences);
-            this.update(stud);
+            Section section = getByID(Section.class, id).get();
+            section.setName(name);
+            section.setDescription(description);
+            section.setMaterials(materials);
+            section.setVideos(videos);
+            this.update(section);
             return Status.SUCCESSFUL;
         } catch (NoSuchElementException e) {
             log.error("Updating bean error");
@@ -74,31 +61,6 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
         }
 
     }
-
-    @Override
-    public Status updateTeacher(Long id,String fname,String lname, int age,
-                                String email,String country,String competence,
-                                int experience) {
-        try {
-            log.debug("In updateTeacher method");
-            Teacher teacher = getByID(Teacher.class, id).get();
-            teacher.setFirstName(fname);
-            teacher.setSecondName(lname);
-            teacher.setAge(age);
-            teacher.setEmail(email);
-            teacher.setCountry(country);
-            teacher.setCompetence(competence);
-            teacher.setExperience(experience);
-            this.update(teacher);
-            return Status.SUCCESSFUL;
-        } catch (NoSuchElementException e) {
-            log.error("Updating bean error");
-            return Status.FAIL;
-        }
-
-    }
-
-
 
     public Session getSession() throws IOException {
         SessionFactory factory = HibernateUtil.getSessionFactory();
@@ -120,14 +82,14 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
         }
     }
 
-
-    public Status deleteStudent(Long Id) {
+    @Override
+    public Status deleteSection(Long Id) {
         log.debug("On deleteStudent method");
         try {
             session = this.getSession();
-            Student student = this.getByID(Student.class,Id).get();
+            Section section = this.getByID(Section.class,Id).get();
             Transaction transaction = session.beginTransaction();
-            session.delete(student);
+            session.delete(section);
             transaction.commit();
             return Status.SUCCESSFUL;
         } catch (IOException | NoSuchElementException e) {
@@ -139,23 +101,6 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
         }
     }
 
-    public Status deleteTeacher(Long Id) {
-        log.debug("On deleteTeacher method");
-        try {
-            session = this.getSession();
-            Teacher teacher = this.getByID(Teacher.class,Id).get();
-            Transaction transaction = session.beginTransaction();
-            session.delete(teacher);
-            transaction.commit();
-            return Status.SUCCESSFUL;
-        } catch (IOException | NoSuchElementException e) {
-            log.error(e);
-            return Status.FAIL;
-
-        } finally {
-            if (session != null) session.close();
-        }
-    }
     @Override
     @Transactional
     public <T> Optional<T> getByID(Class<T> bean, long id) {
@@ -188,6 +133,17 @@ public class HibernateEntityProvider implements ITestEntityDataProvider {
         }
     }
 
+    public boolean checkName(String name){
+        if(name.trim().isEmpty()){
+            log.error(Constants.BAD_NAME);
+            return false;
+        }
+        if (name.length()<2){
+            log.error(Constants.BAD_NAME_LENGTH);
+            return false;
+        }
+        return true;
+    }
 }
 
 
