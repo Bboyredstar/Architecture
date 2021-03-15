@@ -55,4 +55,25 @@ public interface IHibernateProvider {
      * @return the status
      */
     public Status updateEntity(String classname, List<String> parameters);
+
+    /**
+     * Gets summary information native.
+     *
+     * @return the summary information native
+     */
+    public String gettingSummaryInformationNative();
+
+    /**
+     * Gets summary information criteria.
+     *
+     * @return the summary information criteria
+     */
+    public String gettingSummaryInformationCriteria();
+
+    /**
+     * Gets summary information hql.
+     *
+     * @return the summary information hql
+     */
+    public String gettingSummaryInformationHQL();
 }

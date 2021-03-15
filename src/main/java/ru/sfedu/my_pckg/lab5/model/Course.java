@@ -1,7 +1,5 @@
 package ru.sfedu.my_pckg.lab5.model;
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
-import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import javax.persistence.*;
 import java.util.List;

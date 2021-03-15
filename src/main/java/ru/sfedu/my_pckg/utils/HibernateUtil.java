@@ -32,9 +32,12 @@ public class HibernateUtil {
             // loads configuration and mappings
             String db = (SELECTED_DB==null)? Constants.POSTGRES:SELECTED_DB;
             log.debug("Selected DB :" +db);
+            log.debug("Config"+ USER_CONFIG_PATH);
             switch (db){
                 case(Constants.H2):
                     filepath = (USER_CONFIG_PATH ==null) ? (ConfigurationUtil.getConfigurationEntry("PATH_TO_CFG_XML_H2")) :(USER_CONFIG_PATH);
+                    log.debug("Config"+ USER_CONFIG_PATH);
+                    break;
                 case (Constants.POSTGRES):
                     filepath =  (USER_CONFIG_PATH ==null) ? (ConfigurationUtil.getConfigurationEntry("PATH_TO_CFG_XML")) :(USER_CONFIG_PATH);
                     break;

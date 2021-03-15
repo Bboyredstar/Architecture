@@ -8,6 +8,8 @@ import ru.sfedu.my_pckg.lab2.api.HibernateEntityProvider;
 import ru.sfedu.my_pckg.lab2.api.ITestEntityDataProvider;
 import ru.sfedu.my_pckg.lab2.model.EmbeddedEntity;
 
+import ru.sfedu.my_pckg.lab5.api.HibernateProvider;
+import ru.sfedu.my_pckg.lab5.api.IHibernateProvider;
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import java.util.*;
@@ -357,12 +359,32 @@ public class ProjectAppClient {
         }
     }
 
+    public static void lab5Result(List<String> args){
+        IHibernateProvider provider = new HibernateProvider();
+        log.debug(args);
+        switch (args.get(1).trim().toLowerCase()){
+            case("create"):
+                log.info("::::::::::: " +args.get(2));
+                log.debug(":::::::::: "+args.get(3));
+                provider.createEntity(args.get(2),Helper.stringToListString(args.get(3)));
+                break;
+            case ("update"):
+               provider.updateEntity(args.get(2),Helper.stringToListString(args.get(3)));
+                break;
+            case ("delete"):
+                provider.deleteEntity(Long.valueOf(args.get(2)), args.get(3));
+                break;
+            case ("summary"):
+                provider.gettingSummaryInformationCriteria();
+                break;
+        }
+    }
+
 
     public static void main(String[] args) {
 
         List<String> arguments = Arrays.asList(args);
-        log.debug(arguments.toString());
-
+        log.debug(arguments);
         switch (arguments.get(0)){
             case("lab1"):
                 lab1Result(arguments);
@@ -377,6 +399,7 @@ public class ProjectAppClient {
                 lab4Result(arguments);
                 break;
             case("lab5"):
+                lab5Result(arguments);
                 break;
             default:
                 log.error("Args error!");

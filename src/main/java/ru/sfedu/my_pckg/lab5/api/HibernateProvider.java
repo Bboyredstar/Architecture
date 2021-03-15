@@ -2,18 +2,18 @@ package ru.sfedu.my_pckg.lab5.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hibernate.NonUniqueObjectException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import org.hibernate.*;
+import org.hibernate.criterion.Projections;
 import ru.sfedu.my_pckg.Constants;
 import ru.sfedu.my_pckg.enums.Status;
 import ru.sfedu.my_pckg.lab5.model.*;
+import ru.sfedu.my_pckg.utils.ConfigurationUtil;
 import ru.sfedu.my_pckg.utils.HibernateUtil;
 import ru.sfedu.my_pckg.utils.helpers.Helper;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import java.io.IOException;
+import java.sql.*;
 import java.text.ParseException;
 import java.util.*;
 import java.util.stream.Collector;
@@ -382,6 +382,7 @@ public class HibernateProvider implements  IHibernateProvider{
         Teacher owner;
         try {
             owner = getByID(Teacher.class, ownerId).get();
+
         }
         catch(NoSuchElementException e){
             log.error("Problem with ownerId!");
@@ -544,6 +545,7 @@ public class HibernateProvider implements  IHibernateProvider{
                     return Status.FAIL;
             }
             transaction.commit();
+            log.debug(Status.SUCCESSFUL);
             return Status.SUCCESSFUL;
         } catch (IOException | NoSuchElementException e) {
             log.error(e);
@@ -614,5 +616,137 @@ public class HibernateProvider implements  IHibernateProvider{
         }
     }
 
+
+
+    public Connection initConnectionH2() throws SQLException, IOException {
+        String url = ConfigurationUtil.getConfigurationEntry("URL");
+        String user = ConfigurationUtil.getConfigurationEntry("USER");
+        String password = ConfigurationUtil.getConfigurationEntry("PASSWORD");
+        String driver = ConfigurationUtil.getConfigurationEntry("DRIVER");
+        try {
+            Class.forName(driver);
+        } catch (ClassNotFoundException e) {
+            log.error(e);
+            log.fatal(Constants.DRIVER_ERROR + driver);
+            System.exit(1);
+        }
+        Connection connection = DriverManager.getConnection(url, user, password);
+        return connection;
+    }
+
+    public String gettingSummaryInformationHQL(){
+        try {
+            Connection conn = this.initConnectionH2();
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(Constants.NATIVE_SQL);
+            StringBuilder records  = new StringBuilder();
+            ResultSetMetaData rsmd = rs.getMetaData();
+            while(rs.next()) {
+                int numColumns = rsmd.getColumnCount();
+                for (int i=1; i<=numColumns; i++) {
+                    String column_name = rsmd.getColumnName(i);
+                    records.append(column_name);
+                    records.append(" ");
+                    records.append(rs.getObject(column_name));
+                    records.append(" \n");
+                }
+            }
+            log.debug(records);
+            conn.close();
+            return " ";
+        }
+        catch (SQLException | IOException e){
+            log.error(e);
+            return null;
+        }
+
+    }
+
+    public Connection initConnection() throws SQLException, IOException {
+        String url = ConfigurationUtil.getConfigurationEntry("URL_POSTGRES");
+        String user = ConfigurationUtil.getConfigurationEntry("USER_POSTGRES");
+        String password = ConfigurationUtil.getConfigurationEntry("USER_PASSWORD");
+        String driver = ConfigurationUtil.getConfigurationEntry("DRIVER_POSTGRES");
+        try {
+            Class.forName(driver);
+        } catch (ClassNotFoundException e) {
+            log.error(e);
+            log.fatal(Constants.DRIVER_ERROR + driver);
+            System.exit(1);
+        }
+        Connection connection = DriverManager.getConnection(url, user, password);
+        return connection;
+    }
+
+    public String gettingSummaryInformationNative(){
+        try {
+            Connection conn = this.initConnection();
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(Constants.NATIVE_SQL);
+            StringBuilder records  = new StringBuilder();
+            ResultSetMetaData rsmd = rs.getMetaData();
+            while(rs.next()) {
+                int numColumns = rsmd.getColumnCount();
+                for (int i=1; i<=numColumns; i++) {
+                    String column_name = rsmd.getColumnName(i);
+                    records.append(column_name);
+                    records.append(" ");
+                    records.append(rs.getObject(column_name));
+                    records.append(" \n");
+                }
+            }
+            log.debug(records);
+            conn.close();
+            return " ";
+        }
+        catch (SQLException | IOException e){
+            log.error(e);
+            return null;
+        }
+    }
+
+   public void executeTimeNative(){
+       log.debug("START");
+       long startTime = System.currentTimeMillis();
+       gettingSummaryInformationNative();
+       long endTime = System.currentTimeMillis();
+       log.debug("END");
+       log.debug("Time: "+ String.valueOf(endTime-startTime) +" ms");
+   }
+
+    public void executeTimeCriteria(){
+        log.debug("START");
+        long startTime = System.currentTimeMillis();
+        gettingSummaryInformationCriteria();
+        long endTime = System.currentTimeMillis();
+        log.debug("END");
+        log.debug("Time: "+ String.valueOf(endTime-startTime) +" ms");
+    }
+
+    public void executeTimeHQL(){
+        log.debug("START");
+        long startTime = System.currentTimeMillis();
+        gettingSummaryInformationHQL();
+        long endTime = System.currentTimeMillis();
+        log.debug("END");
+        log.debug("Time: "+ String.valueOf(endTime-startTime) +" ms");
+    }
+
+    public String gettingSummaryInformationCriteria(){
+        try{
+            Session session = this.getSession();
+            Transaction transaction = session.beginTransaction();
+            Criteria criteria = session.createCriteria(Course.class);
+            criteria.setProjection(Projections.count("id"));
+            List totalCount = criteria.list();
+            transaction.commit();
+            log.debug("Result: "+totalCount.get(0).toString());
+            return totalCount.toString();
+
+        } catch (IOException e) {
+            log.error(e);
+            return " ";
+        }
+    }
 }
 

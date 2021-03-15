@@ -23,12 +23,21 @@ class HibernateProviderTest {
     }
 
     @Test
+    void createCourseTEst(){
+        Long id = provider.createEntity("Course",Arrays.asList("Name","123","Description"));
+        assertNotNull(id);
+    }
+
+    @Test
     void createEntityFail(){
         Long id = provider.createEntity("",Arrays.asList("Name","Surname","10","email","country","preferences","10"));
         assertNull(id);
     }
 
-
+    @Test
+    void getById() {
+        provider.getByID(Teacher.class, 123);
+    }
     @Test
     void createStudent() {
         Long id = provider.createStudent(Helper.generateUserFName(),Helper.generateUserLName(),Helper.randomNumber(25,30),Helper.randomEmail(),Helper.randomCountry(),Helper.randomPreferences());
@@ -69,18 +78,6 @@ class HibernateProviderTest {
         assertNotNull(review);
     }
 
-    @Test
-    void createQuestion(){
-        Long questId = provider.createQuestion("Test question",85L,84L);
-        assertNotNull(questId);
-    }
-
-    @Test
-    void createAnswer(){
-        Long questId = provider.createQuestion("Test question",85L,84L);
-        Long answId = provider.createAnswer("Test answer    ",questId);
-        assertNotNull(answId);
-    }
 
     @Test
     void addingStudents() {
@@ -118,4 +115,34 @@ class HibernateProviderTest {
         assertEquals(Status.FAIL,provider.updateEntity("",Arrays.asList("1","New Name Upd","","10","mail","country","pref","3")));
     }
 
+    @Test
+    void getSummaryNative(){
+       assertNotNull(provider.gettingSummaryInformationNative());
+    }
+
+    @Test
+    void getSummaryCriteria(){
+        assertNotNull(provider.gettingSummaryInformationCriteria());
+    }
+
+    @Test
+    void getSummaryH2(){
+        assertNotNull(provider.gettingSummaryInformationHQL());
+    }
+
+    @Test
+    void getTimeNative(){
+        provider.executeTimeNative();
+    }
+
+    @Test
+    void getTimeHQL(){
+        provider.executeTimeHQL();
+    }
+
+
+    @Test
+    void getTimeCriteria(){
+        provider.executeTimeCriteria();
+    }
 }
